@@ -1,0 +1,17 @@
+<h1>Editing phone number</h1>
+<%= error_messages_for 'phonenum' %>
+<%= form_tag({ :action => "update" }) %>
+
+<input id="phonenum_id" name="phonenum[id]" type="hidden" value="<%= @phonenum.id %>" /><p><label for="phonenum_name">Name</label><br /><input id="phonenum_name" name="phonenum[name]" size="30" type="text" value="<%= @phonenum.name %>" /></p>
+<p><label for="phonenum_dialcode">Dialcode</label><br /><input id="phonenum_dialcode" name="phonenum[dialcode]" size="30" type="text" value="<%= @phonenum.dialcode %>" /></p>
+<p><label for="phonenum_notes">Notes</label><br />
+<textarea cols="30" id="phonenum_notes" name="phonenum[notes]" rows="5" wrap="virtual"><%= @phonenum.notes %></textarea></p>
+<p><label for="phonenum_loc">Locaction</label><br /><input id="phonenum_loc" name="phonenum[loc]" size="30" type="text" value="<%= @phonenum.loc %>" /></p>
+<p><label for="phonenum_cat">Category</label><br />
+  <%= optionList(@phonenum.cat, "phonenum[cat]", categoryNames, true) %>
+</p>
+
+<input type='submit' value='Confirm data'></form>
+
+<%= link_to 'Show', :action => 'show', :id => @phonenum.id %> |
+<%= link_to 'Back', :action => 'list' %>

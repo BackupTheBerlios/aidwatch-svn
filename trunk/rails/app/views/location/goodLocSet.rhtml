@@ -1,0 +1,10 @@
+<h2> <%= @curloc.htmlName %> </h2>
+<h2> <%= link_to("Confirm #{@curloc.htmlName}", :action => 'doLocSet', :params => { 'lsc' => 1 } ) %> </h2>
+<% if @curloc.parent > 0 %>
+<h2> <%= link_to("[== UP ==]", :action => 'doLocSet', :params => { 'changeto' => @curloc.parent } ) %> </h2> <br>
+<% end %>
+<% @locchildren.each { |c| %>
+<%= link_to(c.htmlName, :action => 'doLocSet', :params => { 'changeto' => c.id } ) %>
+<br>
+<% } %>
+<h2> <%= link_to("Confirm #{@curloc.htmlName}", :action => 'doLocSet', :params => { 'lsc' => 1 } ) %> </h2>

@@ -1,0 +1,8 @@
+<h1>Adjust Locations for <%= @volunteer.name %></h1>
+
+<p><h2>Location where currently located: &nbsp; <%= Location.convertCodeToLoc(@volunteer.curloc).htmlName %> 
+&nbsp; &nbsp; <%= link_to 'Change', :controller => 'location', :action => 'goodLocSet', :params => { "locobject_id" => @volunteer.id, "locclass" => "Volunteer",  "locfield" => "curloc", "cblocmem" => 'adjustStatusOrLocation', "cbloccon" => 'volunteer' } %></h2>
+<p><h2>Desired destination location: &nbsp; &nbsp; <%= Location.convertCodeToLoc(@volunteer.targetloc).htmlName %> 
+&nbsp; &nbsp; <%= link_to 'Change', :controller => 'location', :action => 'goodLocSet', :params => { "locobject_id" => @volunteer.id, "locclass" => "Volunteer",  "locfield" => "targetloc", "cblocmem" => 'adjustStatusOrLocation', "cbloccon" => 'volunteer' } %></p></h2>
+
+<%= link_to("Finished", :controller => "volunteer", :action => "showVolunteerFromSession", :id => @volunteer.id) %>

@@ -1,0 +1,20 @@
+<h1>Account Settings</h1>
+
+<%= @messages ? "<strong>***#{@messages.join('<br>')}</strong>" : "" %>
+<%= error_messages_for 'user' %>
+
+<p>Login: <strong><%= @user.login %></strong></p>
+
+<p>
+  Read privileges: <strong><%= @user.readp.size > 0 ? @user.readp : "none" %></strong><br>
+  Write privileges: <strong><%= @user.writep.size > 0 ? @user.writep : "none" %></strong><br>
+  Manage privileges: <strong><%= @user.managep.size > 0 ? @user.managep : "none" %></strong><br>
+  Verified email address: <strong> <%= @user.veremail.size > 0 ? @user.veremail : '(none)' %> </strong><br>
+</p>
+<% unless @user.login == 'guest' %>
+<%= link_to("send verification email", :action =>'sendVerifyTicket')  %> <br>
+<label for="user_email">Email address:</label><br>
+  <%= form_tag ( :action => 'updateUserEmail') %>
+    <input id="user_email" name="user[email]" size="40" type="text" value='<%= @user.email || "" %>' />
+    <input type="submit" value="Update" /></form>
+<% end %>

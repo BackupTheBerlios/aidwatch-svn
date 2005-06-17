@@ -1,0 +1,10 @@
+<body onload="document.forms[0].elements[0].focus();">
+<h1>Editing location</h1>
+loc is
+<%= @loc.inspect %>
+ok
+<%= error_messages_for 'loc' %>
+<%= form 'loc', :action => 'update' %>
+
+<%= link_to 'Show', :action => 'show', :id => @loc.id %> |
+</body>

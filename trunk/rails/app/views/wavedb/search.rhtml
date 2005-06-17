@@ -1,0 +1,18 @@
+<html>
+<body>
+
+<%= form_tag({ :action => "search" }) %>
+
+<strong>Search:</strong><input name="searchterm" size="20" type="text" value="">
+<input type='submit' value='SUBMIT'></form>
+
+
+<% if @aps %>
+<% @aps.each_with_index() { |a, i| %>
+<%	next unless i < @limit %>
+<%=  a.exactstr %>
+<% } %>
+<% end %>
+
+</body>
+</html>

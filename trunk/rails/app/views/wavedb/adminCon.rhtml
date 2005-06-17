@@ -1,0 +1,12 @@
+<h1>Admin Console</h1>
+Adjust privileges for
+<ul>
+<% WaveDBUtils::validControllers.each { |cname| %>
+<%   if @user.isManager?(cname) || @user.isAdmin?(cname) %>
+       <li><%= link_to("#{cname} records", :action => 'manageUserPriv', :params => {'privCon' => cname}) %></li>
+<%   end %>
+<% } %>
+</ul>
+
+Need help?  Read <a href="http://wiki.asiaquake.org/asiaquake/published/AccessControlSystem">this</a>
+

@@ -1,0 +1,15 @@
+development:
+  adapter: mysql
+  database: db_name
+  host: localhost
+  username: username
+  password: password
+  socket: /var/run/mysqld/mysqld.sock
+
+test:
+  adapter: mysql
+  database: db_name
+  host: localhost
+  username: username
+  password: password
+  socket: /var/run/mysqld/mysqld.sock

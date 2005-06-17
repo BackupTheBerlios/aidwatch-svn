@@ -1,0 +1,58 @@
+<%= @msg || "" %>
+<%= @params['confirmDelete'] ? link_to("#{@deleteMsg}", { :action => "destroy", :id => @person.id }, :class => "delete" ) : "" %>
+<h1><%= @person.name %></h1>
+<% u = printUnknownLong() %>
+<table width="68%" border="0" cellspacing="5" cellpadding="5">
+  <tr>
+    <td width="55%" valign="top">
+          <p>
+          Status: <strong><%= statusNames[@person.status] %></strong><br>
+          Sex: <strong><%= sexNames[@person.sex] %></strong><br>
+          Age: <strong><%= @person.age.to_i > 0 ? @person.age : u %></strong><br>
+          Country of Origin: <strong><%= countryNamesHash[@person.origcode] %></strong>
+          </p>
+    </td>
+    <td width="45%" valign="top" align="left">
+          Height: <strong><%= @person.height.size > 0 ? @person.height : u %></strong><br>
+          Weight: <strong><%= @person.weight.size > 0 ? @person.weight : u %></strong><br>
+          Hair color: <strong><%= @person.haircolor.size > 0 ? @person.haircolor : u %></strong><br>
+          Eye color: <strong><%= @person.eyecolor.size > 0 ? @person.eyecolor : u %></strong>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top">
+      <p><em>Family information</em><br>
+      Contact Name: <strong><%= @person.famconame.size > 0 ? @person.famconame : u %></strong><br>
+      Phone Number: <strong><%= @person.famcophone.size > 0 ? @person.famcophone : u %></strong><br>
+      Email: <strong><%= @person.famemail.size > 0 ? @person.famemail : u %></strong><br>
+      Relationship: <strong><%= @person.famcorel.size > 0 ? @person.famcorel : u %></strong><br>
+      Number in family: <strong><%= @person.famnum || u %></strong>
+      </p>
+
+      <p><em>Relief/aid worker information</em><br>
+      Contact Name: <strong><%= @person.relconame.size > 0 ? @person.relconame : u %></strong><br>
+      Phone Number: <strong><%= @person.relcophone.size > 0 ? @person.relcophone : u %></strong><br>
+      Organization: <strong><%= @person.relcoorg.size > 0 ? @person.relcoorg : u %></strong>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top">
+      <p>
+      Location when lost: <strong><%= Location.convertCodeToLoc(@person.lostloc).htmlName %></strong><br>
+      Location where found: <strong><%= Location.convertCodeToLoc(@person.foundloc).htmlName %></strong><br>
+      Where staying: <strong><%= Location.convertCodeToLoc(@person.stayingloc).htmlName %></strong></p>
+      <p>Specific location person last seen: <strong><%= @person.speclostplace.size > 0 ? @person.speclostplace : u %></strong></p>
+      <p>Address before disaster: <strong><%= @person.homeaddr.size > 0 ? @person.homeaddr : u %></strong></p>
+      <p>Notes: <strong><%= @person.notes.size > 0 ? @person.notes : "none" %></strong></p>
+      <p>Medical Notes: <strong><%= @person.mednotes.size > 0 ? @person.mednotes :  "none" %></strong></p>
+      <p>Hospital where person staying: <strong><%= @person.hospital.size > 0 ? @person.hospital :  u %></strong></p>
+      <p>Email watchlist: <strong><%= @person.emails %></strong></p>
+    </td>
+  </tr>
+</table>
+</form>
+
+<p>
+<%= @user.hasVerifiedEmail?() ? link_to ('Set Email Watch', :action => 'addToWatchList', :id => @person.id)+" | " : 0 %>
+<%= link_to 'Edit', :action => 'edit', :id => @person.id %> |
+<%= link_to 'Back', :action => 'list' %>

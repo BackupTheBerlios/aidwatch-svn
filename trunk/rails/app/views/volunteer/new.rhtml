@@ -1,0 +1,112 @@
+<body onload="document.forms[0].elements[0].focus();">
+<h1>New volunteer</h1>
+
+<%= error_messages_for 'volunteer' %>
+<%= form_tag( :action => 'create' ) %>
+
+<% now = Time.new %>
+
+<table width="68%" border="2" cellspacing="5" cellpadding="5">
+  <tr>
+    <td colspan="2"><label for="volunteer_name">Name</label><br>
+      <input id="volunteer_name" name="volunteer[name]" size="40" type="text" value='<%= @volunteer.name || "" %>'  /></td>
+    </tr>
+  <tr>
+    <td width="70%" valign="top">
+      <table width="100%" height="113" border="0" cellpadding="0" cellspacing="5">
+        <tr>
+          <td><div align="right"><label for="volunteer_email">Email:</label></div></td>
+          <td><input id="volunteer_email" name="volunteer[email]" size="30" type="text" value='<%= @volunteer.email || "" %>' /></td>
+        </tr>
+        <tr>
+          <td><div align="right"><label for="volunteer_phone">Phone Number:</label></div></td>
+          <td><input id="volunteer_phone" name="volunteer[phone]" size="30" type="text" value='<%= @volunteer.phone || "" %>' /></td>
+        </tr>
+        <tr>
+          <td><div align="right">
+            <label for="volunteer_origcode">Country of Origin:</label>
+          </div></td>
+          <td>
+            <%= optionList(@volunteer.origcode || "Select Country", "volunteer[origcode]", countryNamesHash, true, unknownKey = "ZZ") %>
+          </td>
+        </tr>
+      </table>
+</td>
+    <td width="35%" valign="top" align="left">
+      <table width="100%" height="67" border="0" cellpadding="0" cellspacing="5">
+        <tr>
+          <td><div align="right">
+            <label for="volunteer_sex">Sex:</label></div></td>
+          <td>
+            <%= optionList(@volunteer.sex || "Select Gender", "volunteer[sex]", sexNames, true, unknownKey = 0) %>
+          </td>
+        </tr>
+        <tr>
+          <td><div align="right">
+            <label for="volunteer_age">Age:</label>
+          </div></td>
+          <td><input id="volunteer_age" name="volunteer[age]" size="10" type="text" value='<%= @volunteer.age || "" %>' /></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr valign="top">
+    <td colspan="2">
+      <p><label for="volunteer_skillcat">Skill Category:</label>
+         <%= optionList(@volunteer.skillcat || "Select Category", "volunteer[skillcat]", skillNames, false, unknownKey = 0) %>
+      </p>
+      <p><label for="volunteer_skilldesc">Skill description:</label><br>
+      <textarea name="volunteer[skilldesc]" cols="37" rows="3" id="volunteer_skilldesc"><%= @volunteer.skilldesc || "" %></textarea>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top">
+      <p><label for="volunteer_canpay">Can pay travel costs?</label>
+         <%= optionList(@volunteer.canpay, "volunteer[canpay]", canPayNames, true, unknownKey = 0) %>
+        </p>
+      </td>
+    </tr>
+  <tr>
+    <td colspan="2" valign="top">
+      Availability:<br>
+        <select name="volunteer[targetstart][y]">
+        <% if @volunteer.targetstart %>
+          <option value="<%= @volunteer.targetstart.year %>"><%= @volunteer.targetstart.year %><br>
+        <% end %>
+        <% years.each { |y| %>
+           <% if @volunteer.targetstart %>
+           <% next if @volunteer.targetstart.year == y %>
+           <% end %>
+           <option value="<%= y %>"><%= y %><br>
+        <% } %>
+        </select> - 
+      <input id="volunteer_targetstart_m" name="volunteer[targetstart][m]" size="2" type="text" value='<%= @volunteer.targetstart ? format('%02d',@volunteer.targetstart.month) : format('%02d',now.month) %>' /> - 
+      <input id="volunteer_targetstart_d" name="volunteer[targetstart][d]" size="2" type="text" value='<%= @volunteer.targetstart ? format('%02d',@volunteer.targetstart.day) : format('%02d',now.day) %>' /> <em>(mm-dd)</em> thru 
+        <select name="volunteer[targetend][y]">
+        <% if @volunteer.targetend %>
+          <option value="<%= @volunteer.targetend.year %>"><%= @volunteer.targetend.year %><br>
+        <% end %>
+        <% years.each { |y| %>
+           <% if @volunteer.targetend %>
+           <% next if @volunteer.targetend.year == y %>
+           <% end %>
+           <option value="<%= y %>"><%= y %><br>
+        <% } %>
+        </select> - 
+      <input id="volunteer_targetend_m" name="volunteer[targetend][m]" size="2" type="text" value='<%= @volunteer.targetend ? format('%02d',@volunteer.targetend.month) : format('%02d',now.month) %>' /> - 
+      <input id="volunteer_targetend_d" name="volunteer[targetend][d]" size="2" type="text" value='<%= @volunteer.targetend ? format('%02d',@volunteer.targetend.day) : format('%02d',now.day) %>' /> <em>(mm-dd)</em>
+      <p><label for="volunteer_targetagency">Ideal agency/organization to join up with:</label><br>
+      <textarea name="volunteer[targetagency]" cols="60" rows="2" id="volunteer_targetagency"><%= @volunteer.targetagency || "" %></textarea>
+      <p><label for="volunteer_notes">Notes</label><br>
+      <textarea name="volunteer[notes]" cols="60" rows="4" id="volunteer_notes"><%= @volunteer.notes || "" %></textarea>
+</p>
+
+      <div align="right"><input type="submit" value="Create" /></div>
+    </td>
+  </tr>
+</table>
+</form>
+
+<%= link_to 'Back', :action => 'list' %>
+</body>

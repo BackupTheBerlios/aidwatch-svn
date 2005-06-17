@@ -1,0 +1,15 @@
+
+<h1>Users</h1>
+Italics indicate Writer ability.
+Bold-face indicates Manager capability.  Managers may promote/demote to/from Writer.  Square brackets indicate system administrators.
+<table>
+	<% @userlist.each { |u|  %>
+  <tr>
+	<td>	<%= u.htmlName %> </td>
+	<td><%= (@session['user'] && @session['user'].isManager? && u.canDemote?) ? (link_to 'Demote', :action => 'demote', :id => u.id) : "" %></td>
+  </tr>
+	<% } %>
+</table>
+
+<br />
+

@@ -1,0 +1,10 @@
+<% require 'action_view/helpers/url_helper' %>
+Dear <%= @login %>,
+
+The status has changed on person <%= @personname %> on
+http://rails.asiaquake.org/person/show/<%= @personid %>
+
+Thank you for using AsiaQuake.org.
+
+--= Message sent at <%= Time.new.to_s %> =--
+

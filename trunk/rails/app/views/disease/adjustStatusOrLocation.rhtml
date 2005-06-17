@@ -1,0 +1,6 @@
+<h1>Adjust Locations for <%= diseaseNames[@disease.discat] %></h1>
+
+<p><h2>Location of disease cases: &nbsp; <%= Location.convertCodeToLoc(@disease.loc).htmlName %> 
+&nbsp; &nbsp; <%= link_to 'Change', :controller => 'location', :action => 'goodLocSet', :params => { "locobject_id" => @disease.id, "locclass" => "Disease",  "locfield" => "loc", "cblocmem" => 'adjustStatusOrLocation', "cbloccon" => 'disease' } %></h2>
+
+<%= link_to("Finished", :controller => "disease", :action => "showDiseaseFromSession", :id => @disease.id) %>

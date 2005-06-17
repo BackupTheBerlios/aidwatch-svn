@@ -1,0 +1,8 @@
+<body onload="document.forms[0].elements[0].focus();">
+<h1>New location</h1>
+
+<%= error_messages_for 'loc' %>
+<%= form 'loc', :action => 'create' %>
+
+<%= link_to 'Show', :action => 'show' %>
+</body>

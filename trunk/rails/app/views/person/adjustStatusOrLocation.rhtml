@@ -1,0 +1,10 @@
+<h1>Adjust Locations for <%= @person.name %></h1>
+
+<p><h2>Location when lost: &nbsp; <%= Location.convertCodeToLoc(@person.lostloc).htmlName %> 
+&nbsp; &nbsp; <%= link_to 'Change', :controller => 'location', :action => 'goodLocSet', :params => { "locobject_id" => @person.id, "locclass" => "Person",  "locfield" => "lostloc", "cblocmem" => 'adjustStatusOrLocation', "cbloccon" => 'person' } %></h2>
+<p><h2>Location where found: &nbsp; &nbsp; <%= Location.convertCodeToLoc(@person.foundloc).htmlName %> 
+&nbsp; &nbsp; <%= link_to 'Change', :controller => 'location', :action => 'goodLocSet', :params => { "locobject_id" => @person.id, "locclass" => "Person",  "locfield" => "foundloc", "cblocmem" => 'adjustStatusOrLocation', "cbloccon" => 'person' } %></p></h2>
+<p><h2>Where staying: &nbsp; <%= Location.convertCodeToLoc(@person.stayingloc).htmlName %> 
+&nbsp; &nbsp; <%= link_to 'Change', :controller => 'location', :action => 'goodLocSet', :params => { "locobject_id" => @person.id, "locclass" => "Person",  "locfield" => "stayingloc", "cblocmem" => 'adjustStatusOrLocation', "cbloccon" => 'person' } %></p></h2>
+
+<%= link_to("Finished", :controller => "person", :action => "show", :id => @person.id) %>

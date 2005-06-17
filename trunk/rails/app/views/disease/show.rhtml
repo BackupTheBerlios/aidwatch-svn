@@ -1,0 +1,22 @@
+<%= @params['confirmDelete'] ? link_to("#{@deleteMsg}", { :action => "destroy", :id => @disease.id }, :class => "delete" ) : "" %>
+<h1><%= diseaseNames[@disease.discat] %></h1>
+<% u = printUnknownLong() %>
+<table width="68%" border="0" cellspacing="5" cellpadding="5">
+  <tr>
+    <td width="55%" valign="top">
+      <p>
+      Current location:  <strong><%= Location.convertCodeToLoc(@disease.loc).htmlName %></strong><br>
+      Number of cases: <strong><%= @disease.numcases %></strong>
+      </p>
+    </td>
+  </tr>
+  <tr valign="top">
+    <td >
+      <p>Notes: <strong><%= @disease.notes || "none" %></strong></p>
+      <p>Last modified: <strong><%= @disease.lastchange %></p>
+    </td>
+  </tr>
+</table>
+
+<%= link_to 'Edit', :action => 'edit', :id => @disease.id %> |
+<%= link_to 'Back', :action => 'list' %>

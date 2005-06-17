@@ -1,0 +1,38 @@
+<body onload="document.forms[0].elements[0].focus();">
+<h1>People</h1>
+<table cellspacing="5">
+<tr><td><%= link_to 'Add person', :action => 'new' %> | <%= link_to 'Show all', :action => 'list' %> | <%= fullPageStatus() %>
+<tr valign="top"><td>
+<%= form_tag({ :action => "personSearch" }) %>
+  <label for="searchterm">Search term: </label><input name="searchterm" size="20" type="text" value="">
+</td>
+<td>
+   <%= optionList("Select Status", "status", statusNames, false, unknownKey = 0) %>
+<input type='submit' value='Search'></form>
+</td></tr></table>
+
+<table width="100%" cellpadding="5" cellspacing="0">
+  <tr>
+  <%= allHtmlColumns %>
+  </tr>
+
+<% pager.each { |p| %>
+<% u = printUnknownShort() %>
+  <tr valign="top">
+    <td id="lightblueline" NOWRAP><%= link_to(p.name, {:action => 'show', :id => p.id}, {:class => "tablelink"}) %></td>
+    <td id="lightblueline"><%= p.sex.to_i > 0 ? sexNames[p.sex] : u %></td>
+    <td id="lightblueline"><%= p.age.to_i > 0 ? p.age.to_i : u %></td>
+    <td id="lightblueline"><%= p.height.size > 0 ? p.height : u %></td>
+    <td id="lightblueline"><%= p.haircolor.size > 0 ? p.haircolor : u %></td>
+    <td id="lightblueline"><%= p.eyecolor.size > 0 ? p.eyecolor : u %></td>
+    <td id="lightblueline"><%= statusNames[p.status] %></td>
+    <td id="lightblueline"><%= countryNamesHash[p.origcode] %></td>
+    <td id="lightblueline"><%= p.speclostplace.size > 0 ? p.speclostplace.to_s[0,75] : u %><%= p.speclostplace.size > 75 ? "..." : "" %></td>
+    <%= @user.isWriter?(@controller.controller_name) ? "<td>"+(link_to 'Edit', :action => 'edit', :id => p.id)+"</td>" : "" %>
+    <%= @user.isWriter?(@controller.controller_name) ? "<td>"+(link_to 'Delete', :action => 'destroy', :id => p.id, :params => { "confirmDelete" => 1 })+"</td>" : "" %>
+  </tr>
+<% } %>
+</table>
+
+<br />
+</body>

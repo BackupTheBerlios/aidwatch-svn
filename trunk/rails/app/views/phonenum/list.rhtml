@@ -1,0 +1,34 @@
+<body onload="document.forms[0].elements[0].focus();">
+<h1>Phone Numbers</h1>
+
+<div id="message"> <%= @message %> </div>
+<table cellspacing="5">
+<tr><td><%= link_to 'Add phone number', :action => 'new' %> | <%= link_to 'Show all', :action => 'list' %> |  <%= fullPageStatus %>
+<tr valign="top"><td>
+<%= form_tag({ :action => "namesearchsub" }) %>
+  <label for="searchterm">Search term: </label> <input name="searchterm" size="20" type="text" value="">
+</td>
+<td>
+<input type='submit' value='Search'></form>
+</td></tr>
+</table>
+
+<table width="100%" cellpadding="5" cellspacing="0">
+  <tr>
+  <%=  allHtmlColumns %>
+  </tr>
+  <% pager.each { |phonenum| %>
+  <tr valign="top">
+    <td id="lightblueline"><%= link_to(phonenum.name.to_s[0,50], { :action => 'show', :id => phonenum.id }, { :class => "tablelink" } ) %></td>
+    <td id="lightblueline"><%= phonenum.dialcode.to_s %></td>
+    <td id="lightblueline"><%= phonenum.notes.to_s[0,75] %><%= phonenum.notes ? (phonenum.notes.size > 75 ? "...":"&nbsp;") : ""%></td>
+    <td id="lightblueline"><%= link_to(categoryNames[phonenum.cat], :action => 'searchCat', :id => phonenum.cat)  %></td>
+    <td id="lightblueline"><%= format('%02.2f', phonenum.relevance)%></td>
+    <%= @user.isWriter?(@controller.controller_name) ? "<td>"+(link_to 'Edit', :action => 'edit', :id => phonenum.id)+"</td>" : "" %>
+    <%= @user.isWriter?(@controller.controller_name) ? "<td>"+(link_to 'Delete', {:action => 'destroy', :id => phonenum.id}, :confirm => "Are you sure you want to delete this entry: #{phonenum.name.gsub(/'/,"\\'")}")+"</td>" : "" %>
+  </tr>
+<% } %>
+</table>
+
+<br />
+</body>

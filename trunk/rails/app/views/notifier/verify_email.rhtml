@@ -1,0 +1,11 @@
+<% require 'action_view/helpers/url_helper' %>
+Dear <%= @login %>,
+
+Your account on asiaquake.org with login <%= @login %>  has tried to
+verify the email address <%= @email %>.  To verify, please click the link 
+below:
+<% goodem = @email.gsub(/@/, '%40') %>
+http://rails.asiaquake.org/wavedb/processVerifyTicket?verem=<%=goodem%>&login=<%=@login%>&pvt=<%=@pvt%>
+
+Thanks for joining AsiaQuake.org!
+

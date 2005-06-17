@@ -1,0 +1,150 @@
+<h1>Editing person</h1>
+
+<%= @msg || "" %>
+<%= error_messages_for 'person' %>
+<%= form_tag ( :action => 'update') %>
+
+<table width="68%" border="2" cellspacing="5" cellpadding="5">
+  <tr>
+    <td colspan="2"><label for="person_name">Name (full name if available)</label><br>
+      <input id="person_id" name="person[id]" type="hidden" value='<%= @person.id %> || "" %>' />
+      <input id="person_name" name="person[name]" size="40" type="text" value='<%= @person.name || "" %>'  /></td>
+    </tr>
+  <tr>
+    <td width="55%" valign="top">
+      <table width="100%" height="67" border="0" cellpadding="0" cellspacing="5">
+        <tr>
+          <td NOWRAP><div align="right"><label for="person_status">Status:</label></div></td>
+          <td>
+            <%= optionList(@person.status, "person[status]", statusNames, false, unknownKey = 0) %>
+          </td>
+        </tr>
+        <tr>
+          <td><div align="right">
+            <label for="person_sex">Sex:</label></div></td>
+          <td>
+            <%= optionList(@person.sex, "person[sex]", sexNames, true, unknownKey = 0) %>
+          </td>
+        </tr>
+        <tr>
+          <td><div align="right">
+            <label for="person_age">Age:</label>
+          </div></td>
+          <td><input id="person_age" name="person[age]" size="20" type="text" value='<%= @person.age || "" %>' /></td>
+        </tr>
+        <tr>
+          <td><div align="right">
+            <label for="person_origcode">Country of<br>Origin:</label>
+          </div></td>
+          <td>
+            <%= optionList(@person.origcode, "person[origcode]", countryNamesHash, true, unknownKey = "ZZ") %>
+          </td>
+        </tr>
+      </table>
+</td>
+    <td width="45%" valign="top" align="left">
+      <table width="240" border="0" cellspacing="5" cellpadding="0">
+        <tr>
+          <td width="94"><div align="right"><label for="person_height">Height:</label></div></td>
+          <td width="110"><input id="person_height" name="person[height]" size="20" type="text" value=<%= @person.height || "" %> ></td>
+        </tr>
+        <tr>
+          <td><div align="right"><label for="person_weight">Weight:</label></div></td>
+          <td><input id="person_weight" name="person[weight]" size="20" type="text" value='<%= @person.weight || "" %>' /></td>
+        </tr>
+        <tr>
+          <td><div align="right"><label for="person_haircolor">Hair color:</label></div></td>
+          <td><input id="person_haircolor" name="person[haircolor]" size="20" type="text" value='<%= @person.haircolor || "" %>' /></td>
+        </tr>
+        <tr>
+          <td><div align="right"><label for="person_eyecolor">Eye color:</label></div></td>
+          <td><input id="person_eyecolor" name="person[eyecolor]" size="20" type="text" value='<%= @person.eyecolor || "" %>' /></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top"><p><em>Family information</em></p>
+      <table width="80%" height="113" border="0" cellpadding="0" cellspacing="5">
+        <tr>
+          <td width="133">
+            <div align="right"><label for="person_famconame">Contact Name:</label></div></td>
+          <td width="242"><input id="person_famconame" name="person[famconame]" size="40" type="text" value='<%= @person.famconame || "" %>' /></td>
+        </tr>
+        <tr>
+          <td><div align="right"><label for="person_famcophone">Phone Number:</label></div></td>
+          <td><input id="person_famcophone" name="person[famcophone]" size="40" type="text" value='<%= @person.famcophone || "" %>' /></td>
+        </tr>
+        <tr>
+          <td><div align="right"><label for="person_famemail">Email:</label></div></td>
+          <td><input id="person_famemail" name="person[famemail]" size="40" type="text" value='<%= @person.famemail || "" %>' /></td>
+        </tr>
+        <tr>
+          <td><div align="right"><label for="person_famcorel">Relationship:</label></div></td>
+          <td><input id="person_famcorel" name="person[famcorel]" size="40" type="text" value='<%= @person.famcorel || "" %>' /></td>
+        </tr>
+        <tr>
+          <td>
+            <div align="right"><label for="person_famnum">Number in family:</label></div></td>
+          <td width="242"><input id="person_famnum" name="person[famnum]" size="20" type="text" value='<%= @person.famnum || "" %>' /></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top"><p><em>Relief/aid worker information</em></p>
+      <table width="80%" height="86" border="0" cellpadding="0" cellspacing="5">
+        <tr>
+          <td width="133"><div align="right"><label for="person_relconame">Contact Name:</label></div></td>
+          <td width="242"><input id="person_relconame" name="person[relconame]" size="40" type="text" value='<%= @person.relconame || "" %>' /></td>
+        </tr>
+        <tr>
+          <td><div align="right"><label for="person_relcophone">Phone Number:</label></div></td>
+          <td><input id="person_relcophone" name="person[relcophone]" size="40" type="text" value='<%= @person.relcophone || "" %>' /></td>
+        </tr>
+        <tr>
+          <td><div align="right"><label for="person_relcoorg">Organization:</label></div></td>
+          <td><input id="person_relcoorg" name="person[relcoorg]" size="40" type="text" value='<%= @person.relcoorg || "" %>' /></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top">
+
+    <p>Location when lost: &nbsp; <%= Location.convertCodeToLoc(@person.lostloc).htmlName %> 
+&nbsp; &nbsp; <%= link_to 'Change', :controller => 'location', :action => 'goodLocSet', :params => { "locobject_id" => @person.id, "locclass" => "Person",  "locfield" => "lostloc", "cblocmem" => 'edit', "cbloccon" => 'person' } %><br>
+    Location where found: &nbsp; &nbsp; <%= Location.convertCodeToLoc(@person.foundloc).htmlName %>
+&nbsp; &nbsp; <%= link_to 'Change', :controller => 'location', :action => 'goodLocSet', :params => { "locobject_id" => @person.id, "locclass" => "Person",  "locfield" => "foundloc", "cblocmem" => 'edit', "cbloccon" => 'person' } %><br>
+    Where staying: &nbsp; <%= Location.convertCodeToLoc(@person.stayingloc).htmlName %> 
+&nbsp; &nbsp; <%= link_to 'Change', :controller => 'location', :action => 'goodLocSet', :params => { "locobject_id" => @person.id, "locclass" => "Person",  "locfield" => "stayingloc", "cblocmem" => 'edit', "cbloccon" => 'person' } %></p>
+
+
+      <p><label for="person_speclostplace">Specific location person last seen:</label><br>
+      <textarea name="person[speclostplace]" cols="40" rows="4" id="person_speclostplace"><%= @person.speclostplace || "" %></textarea>
+      </p>
+      <p><label for="person_homeaddr">Address before disaster:</label><br>
+      <textarea name="person[homeaddr]" cols="40" rows="4" id="person_homeaddr"><%= @person.homeaddr || "" %></textarea>
+      </p>
+      <p><label for="person_notes">Notes</label><br>
+      <textarea name="person[notes]" cols="60" rows="4" id="person_notes"><%= @person.notes || "" %></textarea>
+</p>
+      <p>
+        <label for="person_mednotes">Medical Notes</label>
+        <br />
+        <textarea name="person[mednotes]" cols="60" rows="4" id="person_mednotes"><%= @person.mednotes || "" %></textarea>
+</p>
+      <p>
+        <label for="person_hospital">Hospital where person staying</label>
+        <br />
+        <input id="person_hospital" name="person[hospital]" size="30" type="text" value='<%= @person.hospital || "" %>' />
+      </p>
+
+      <div align="right"><input type="submit" value="Update" /></div>
+    </td>
+  </tr>
+</table>
+</form>
+
+<%= link_to 'Show', :action => 'show', :id => @person.id %> |
+<%= link_to 'Back', :action => 'list' %>

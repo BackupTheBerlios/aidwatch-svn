@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+first_volunteer:
+  id: 1
+  name: Anna Lissa Cruz
+  targetstart: ~
+  targetend: ~
+
+another_volunteer:
+  id: 2
+  name: Rudi Cilibrasi

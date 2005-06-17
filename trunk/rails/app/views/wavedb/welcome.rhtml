@@ -1,0 +1,34 @@
+<h1>Welcome</h1>
+
+<p>
+<p><a href="http://wiki.asiaquake.org">AsiaQuakeWiki</a><br>
+<p><a href="http://wiki.asiaquake.org/asiaquake/published/MissionStatement">Mission Statement</a><br>
+<a href="http://www.tsunamihelp.info">Indian Ocean Disaster Relief Portal</a><br>
+<a href="http://groups.yahoo.com/group/itrp">Indian Tsunami Relief Project yahoo group</a></p>
+<table>
+<% if @user.isAnyManager? || @user.isAnyAdmin? %>
+<tr><td>
+<%= link_to "Administration Console", :controller => 'wavedb', :action => 'adminCon' %>
+</td></tr>
+<% end %>
+<% if @user.isReader?('volunteer') %>
+<tr><td>
+<%= link_to "List Volunteers", :controller => 'volunteer', :action => 'list' %>
+</td></tr>
+<% end %>
+<tr><td>
+<%= link_to "New Volunteer", :controller => 'volunteer', :action => 'new' %>
+</td></tr>
+<tr><td>
+<%= link_to "List Person", :controller => 'person', :action => 'list' %>
+</td></tr>
+<tr><td>
+<%= link_to "New Person", :controller => 'person', :action => 'new' %>
+</td></tr>
+<tr><td>
+<%= link_to "New Phone Number", :controller => 'phonenum', :action => 'new' %>
+</td></tr>
+<tr><td>
+<%= link_to "List Phone Numbers", :controller => 'phonenum', :action => 'list' %>
+</td></tr>
+</table>

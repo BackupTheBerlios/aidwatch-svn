@@ -1,0 +1,8 @@
+<% for column in Supply.content_columns %>
+<p>
+  <b><%= column.human_name %>:</b> <%= @supply[column.name] %>
+</p>
+<% end %>
+
+<%= link_to 'Edit', :action => 'edit', :id => @supply.id %> |
+<%= link_to 'Back', :action => 'list' %>

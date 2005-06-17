@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+first_phonenum:
+  id: 1
+  name: AID-India
+  dialcode: 123456789
+  notes: notes
+  cat: 2
+
+another_phonenum:
+  id: 2
+  name: AID-Sri Lanka
+  dialcode: 123456789
+  notes: notes for phonenum 2
+  cat: 3
+
+disposable_phonenum:
+  id: 3
+  name: To Be Deleted
+  dialcode: 0988549592
+  cat: 2

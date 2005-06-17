@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+first_loc:
+  id: 2167
+  loccode: U
+  name: Unknown
+  prompt: "?"
+  flags: 0
+  fullcode: G-U
+  parent: 1
+

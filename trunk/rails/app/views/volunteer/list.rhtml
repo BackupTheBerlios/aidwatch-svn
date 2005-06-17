@@ -1,0 +1,42 @@
+<body onload="document.forms[0].elements[0].focus();">
+<h1>Volunteers</h1>
+<table cellspacing="5">
+<tr><td><%= link_to 'Add volunteer', :action => 'new' %> | <%= link_to 'Show all', :action => 'list' %> | <%= fullPageStatus %>
+<tr valign="top"><td>
+<%= form_tag({ :action => "volunteerSearch" }) %>
+  <label for="searchterm">Search term: </label><input name="searchterm" size="20" type="text" value="">
+</td>
+<td>
+  <%= optionList("Select Category", "cid", skillNames, false, unknownKey = 0) %>
+<input type='submit' value='Search'></form>
+</td></tr></table>
+
+<table width="100%" cellpadding="5" cellspacing="0">
+  <tr>
+  <%=  allHtmlColumns %>
+  </tr>
+
+<% pager.each { |v| %>
+<% u = printUnknownShort() %>
+  <tr valign="top">
+    <td id="lightblueline" NOWRAP><%= link_to(v.name, {:action => 'show', :id => v.id}, {:class => "tablelink"}) %></td>
+    <td id="lightblueline" NOWRAP><%= v.sex.to_i > 0 ? sexNames[v.sex] : u %></td>
+    <td id="lightblueline" NOWRAP><%= v.age.to_i > 0 ? v.age.to_i : u %></td>
+    <td id="lightblueline" NOWRAP><%= printHTMLDateShort(v.targetstart) %></td>
+    <td id="lightblueline" NOWRAP><%= printHTMLDateShort(v.targetend) %></td>
+    <td id="lightblueline" NOWRAP><%= v.targetloc %></td>
+    <td id="lightblueline"><%= v.origcode == "ZZ" ? "unspecified" : countryNamesHash[v.origcode] %></td>
+    <td id="lightblueline"><%= v.skillcat ? skillNames[v.skillcat] : ""%></td>
+    <td id="lightblueline">
+      <% if v.skilldesc %><%= v.skilldesc.size > 0 ? v.skilldesc.to_s[0,75] : u %>
+        <%= v.skilldesc.size > 75 ? "..." : "" %>
+      <% end %>
+      </td>
+    <td><%= link_to 'Edit', :action => 'edit', :id => v.id %></td>
+    <td><%= link_to 'Delete', :action => 'destroy', :id => v.id, :params => { "confirmDelete" => 1 } %></td>
+  </tr>
+<% } %>
+</table>
+<em><font size=1>*yy-mm-dd</font></em>
+<br />
+</body>

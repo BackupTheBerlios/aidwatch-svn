@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title><%= controller.controller_name %>#<%= controller.action_name %></title>
+  <link href="/stylesheets/wavedb.css" rel="stylesheet" type="text/css" />
+  </style>
+</head>
+<body>
+<div id="container">
+
+  <div id="header">&nbsp;</div>
+  <div id="main-menu">
+      <div><%= link_to "Phone Numbers", {:controller=>"phonenum", :action=>"list"},{:class => "main-menu"} %></div>
+      <div><%= link_to "People", {:controller=>"person", :action=>"list"},{:class => "main-menu"} %></div>
+      <div><%= link_to "Volunteers", {:controller=>"volunteer", :action=>"list"},{:class => "main-menu"} %></div>
+      <div><%= link_to "Supplies", {:controller=>"supply", :action=>"list"},{:class => "main-menu"} %></div>
+      <div><%= link_to "Diseases", {:controller=>"disease", :action=>"list"},{:class => "main-menu"} %></div>
+  </div>
+
+  <div id="actionbox">
+    <div class="bluebox">
+      <span style="color:white;font-family:Arial;font-size:13px;font-weight:bold;">DATABASE</span>
+    </div>
+      <%= link_to "Add Phone Number", { :controller => 'phonenum', :action => 'new'},{ :class => "actions" } %><br>
+      <%= link_to "Add Person", { :controller => 'person', :action => 'new'},{ :class => "actions" } %><br>
+      <%= link_to "Add Volunteer", { :controller => 'volunteer', :action => 'new'},{ :class => "actions" } %><br>
+      <%= link_to "Report Disease", { :controller => 'disease', :action => 'new'},{ :class => "actions" } %><br>
+  </div>
+
+  <% unless @user.login == "guest" || @user.login == nil%>
+    <div id="accountbox">
+      <div class="pinkbox">
+        <span style="color:#903;font-family:Arial;font-size:13px;font-weight:bold;">ACCOUNT</span>
+      </div>
+      <%= link_to "Account Settings", {:controller=>"wavedb", :action=>"accountSettings"},{ :class => "actions"} %><br>
+        <% if @user.isAnyManager? || @user.isAnyAdmin? %>
+           <%= link_to "Admin Console", {:controller=>"wavedb", :action=>"adminCon"}, { :class => "actions"} %>
+        <% end %>
+    </div>
+  <% end %>
+
+
+<div id="login">
+    <% unless @user.login == "guest" || @user.login == nil%>
+         Logged in as <strong><%= @user.login %></strong>.
+         <strong><%= link_to "logout", :controller=>"wavedb", :action=>"logout" %></strong>
+    <% else %>
+         <strong><%= link_to "Login", :controller=>"wavedb",:action=>"login" %></strong> | 
+         <strong><%= link_to "Not Registered?", :controller=>"wavedb", :action=>"signup" %></strong>
+    <% end %>
+</div>
+
+   <% @session['return-to'] = @request.request_uri unless @request.request_uri =~ /\/wavedb\/log/ || @request.request_uri =~ /\/signup$/ || @request.request_uri =~ /manageUserPriv/ %>
+
+  <div id="mainsection">
+    <%= @content_for_layout %>
+  </div>
+  <div id="paypal"><form action="https://www.paypal.com/cgi-bin/webscr" method="post"><input type="hidden" name="cmd" value="_s-xclick"><input type="image" src="../../images/paypal.gif" name="submit" alt="Make payments with PayPal - it's fast, free and secure!" border=0><input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7----- "></form></div>
+</div>
+<hr>
+
+ <div id="footer"><div style="position:relative;float:left">Comments/Questions?  Send mail to the <a href="mailto:annalissac@gmail.com">developers</a></div>
+ </div>
+</body>
+</html>

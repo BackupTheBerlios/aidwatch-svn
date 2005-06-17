@@ -1,0 +1,29 @@
+<body onload="document.forms[0].elements[0].focus();">
+<h1>New phone number</h1>
+
+<%= error_messages_for 'phonenum' %>
+
+<%= form_tag({ :action => "create" }) %>
+<p><label for="phonenum_name">Name</label><br /><input id="phonenum_name" name="phonenum[name]" size="30" type="text" value='<%= @phonenum.name || "" %>' /></p>
+<p><label for="phonenum_dialcode">Dialcode</label><br /><input id="phonenum_dialcode" name="phonenum[dialcode]" size="30" type="text" value='<%= @phonenum.dialcode || "" %>' /></p>
+<p><label for="phonenum_notes">Notes</label><br />
+<textarea cols="30" id="phonenum_notes" name="phonenum[notes]" rows="5" wrap="virtual"><%= @phonenum.dialcode || "" %></textarea></p>
+<p><label for="phonenum_loc">Location</label><br /><input id="phonenum_loc" name="phonenum[loc]" size="30" type="text" value='<%= @phonenum.loc || "G-U" %>' /></p>
+<p><label for="phonenum_cat">Category</label><br />
+  <%= optionList(( @phonenum.cat || "Select Category"), "phonenum[cat]", categoryNames, true) %>
+</p>
+
+<p>
+<input type='submit' value='Confirm data'></form>
+
+<p>
+<%= link_to 'Back', :action => 'list' %>
+<% unless @phonenum.errors.empty? %>
+  The phone number couldn't be saved due to these errors:
+  <ul>
+  <% @phonenum.errors.each_full do |message| %>
+    <li><%= message %></li>
+  <% end %>
+  </ul>
+<% end %>
+</body>

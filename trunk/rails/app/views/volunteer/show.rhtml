@@ -1,0 +1,45 @@
+<%= @params['confirmDelete'] ? link_to("#{@deleteMsg}", { :action => "destroy", :id => @volunteer.id }, :class => "delete" ) : "" %>
+<h1><%= @volunteer.name %></h1>
+
+<table width="68%" border="0" cellspacing="5" cellpadding="5">
+  <tr>
+    <td width="55%" valign="top">
+      <p>
+      Email: <strong><%= @volunteer.email || "" %></strong><br>
+      Phone Number: <strong><%= @volunteer.phone || "" %></strong><br>
+      Country of Origin: <strong>
+        <% if @volunteer.origcode=="ZZ" %>
+             unspecified
+        <% else %>
+             <%= countryNamesHash[@volunteer.origcode] %>
+        <% end %>
+        </strong>
+      </p>
+    </td>
+    <td width="45%" valign="top" align="left">
+       Sex: <strong><%= @volunteer.sex ? sexNames[@volunteer.sex] : "" %></strong><br>
+       Age: <strong><%= @volunteer.age || "" %></strong>
+    </td>
+  </tr>
+  <tr valign="top">
+    <td colspan="2">
+      <p>Skill Category: <strong><%= @volunteer.skillcat ? skillNames[@volunteer.skillcat] : "" %></strong><br>
+         Skill description: <strong><%= @volunteer.skilldesc || "" %></strong></p>
+      <p>Can pay travel? <strong><%= canPayNames[@volunteer.canpay] %></strong>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top">
+      <p>Availability: <strong><%= printHTMLDateLong(@volunteer.targetstart) %></strong> thru <strong><%= printHTMLDateLong(@volunteer.targetend) %></strong></p>
+      <p>
+        Current location:  <strong><%= Location.convertCodeToLoc(@volunteer.curloc).htmlName %></strong><br>
+        Desired destination location:  <strong><%= Location.convertCodeToLoc(@volunteer.targetloc).htmlName %></strong>
+      </p>
+      <p>Ideal organization to join up with: <strong><%= @volunteer.targetagency || "" %></strong></p>
+      <p>Notes: <strong><%= @volunteer.notes || "" %></strong></p>
+    </td>
+  </tr>
+</table>
+<%= @user.hasVerifiedEmail? ? link_to( 'sendNote', :controller => 'wavedb', :action => "sendVolunteerEmail", :params => { 'volid' => @volunteer.id, 'bodytxt' => 'please contact me', 'subject' => 'please contact me' } ) : '' %>
+<%= link_to 'Edit', :action => 'edit', :id => @volunteer.id %> |
+<%= link_to 'Back', :action => 'list' %>

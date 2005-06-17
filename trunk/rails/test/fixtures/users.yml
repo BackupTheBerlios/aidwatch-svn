@@ -1,0 +1,27 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+guest:
+  id: 1
+  login: guest
+  password: "15da96ab7bc277f17d17abd8b036a56ba1f9fe40"
+
+janedoe:
+  id: 4
+  login: janedoe
+  password: "334e598849c0d72cbc21875ec83c4dff0c7f73ef"
+  email: "janedoe@doe.com"
+  writep: "disease,location,person,phonenum,supply,volunteer,wavedb"
+  readp: "disease,location,person,phonenum,supply,volunteer,wavedb"
+  managep: "disease,location,person,phonenum,supply,volunteer,wavedb"
+  adminp: "disease,location,person,phonenum,supply,volunteer,wavedb"
+  veremail: "janedoe@doe.com"
+
+johndoe:
+  id: 2
+  login: johndoe
+  password: "1e7e2100e3b9a918bc4679d6e107c51870bd782c"
+  email: "johndoe@doe.com"
+  readp: ""
+  writep: "disease,location,person,phonenum,supply,volunteer,wavedb"
+  managep: ""
+  adminp: ""

@@ -1,0 +1,32 @@
+<h1>Editing disease report</h1>
+
+<%= error_messages_for 'disease' %>
+<%= form_tag( :action => 'update', :id => @disease.id ) %>
+
+<table width="68%" border="2" cellspacing="5" cellpadding="5">
+  <tr>
+    <td>
+       <p>Current location: &nbsp; <%= Location.convertCodeToLoc(@disease.loc).htmlName %> 
+&nbsp; &nbsp; <%= link_to 'Change', :controller => 'location', :action => 'goodLocSet', :params => { "locobject_id" => @disease.id, "locclass" => "Disease",  "locfield" => "loc", "cblocmem" => 'edit', "cbloccon" => 'disease' } %></p>
+      <p><label for="disease_discat">Disease Category:</label>
+      <%= optionList((@disease.discat ? @disease.discat : "Select category"), "disease[discat]", diseaseNames, true) %>
+      </p>
+      <p>Number of people affected by disease:&nbsp;
+         <input id="disease_numcases" name="disease[numcases]" size="20" type="text" value='<%= @disease.numcases || "" %>' />
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p><label for="disease_reliefcon">Relief Contact:</label><br>
+      <input id="disease_reliefcon" name="disease[reliefcon]" size="40" type="text" value='<%= @disease.reliefcon || "" %>' /></p>
+      <p><label for="disease_notes">Notes:</label><br>
+      <textarea name="disease[notes]" cols="60" rows="4" id="disease_notes"><%= @disease.notes || "" %></textarea></p>
+
+      <div align="right"><input type="submit" value="Update" /></div>
+    </td>
+  </tr>
+</table>
+</form>
+
+<%= link_to 'Show', :action => 'show', :id => @disease.id %> |
+<%= link_to 'Back', :action => 'list' %>

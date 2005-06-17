@@ -1,0 +1,21 @@
+<%= @params['confirmDelete'] ? link_to("#{@deleteMsg}", { :action => "destroy", :id => @phonenum.id }, :class => "delete" ) : "" %>
+<h1><%= @phonenum.name %></h1>
+<p>
+  <b>Dialcode:</b> <%= @phonenum.dialcode %> 
+</p>
+
+<p>
+  <b>Notes:</b> <%= @phonenum.notes %> 
+</p>
+
+<p>
+  <b>Location:</b> <%= @phonenum.loc %> 
+</p>
+
+<p>
+  <b>Category:</b> <%= categoryNames[@phonenum.cat] %>
+</p>
+
+
+<%= @user.isWriter?(@controller.controller_name) ? (link_to 'Edit', :action => 'edit', :id => @phonenum.id) : "" %>
+<%= link_to 'Back', :action => 'list' %>

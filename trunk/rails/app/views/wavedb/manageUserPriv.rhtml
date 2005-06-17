@@ -1,0 +1,26 @@
+<h3>User Privileges: <%= @cname %></h3>
+<%= @messages ? @messages.join(';') : "" %>
+<%= form_tag( :action => 'processPriv' ) %>
+<table border="2">
+<tr>
+  <td>User</td>
+  <td>Read</td>
+  <td>Write</td>
+  <td>Manage</td>
+  <td>Admin</td>
+</tr>
+
+<% @users.each { |u| %>
+<tr>
+  <td NOWRAP><%= u.login %></td>
+  <td width="25"><div align="center"><%= setPrivBox(u,@cname,'readp') %></div></td>
+  <td width="25"><div align="center"><%= setPrivBox(u,@cname,'writep') %></div></td>
+  <td width="25"><div align="center"><%= setPrivBox(u,@cname,'managep') %></div></td>
+  <td width="25"><div align="center"><%= setPrivBox(u,@cname,'adminp') %></div></td>
+</tr>
+<% } %>
+</table>
+
+<input type="hidden" name="privCon" value="<%= @cname %>">
+<input type="submit" value="DONE">
+</form>

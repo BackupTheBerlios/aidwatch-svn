@@ -1,0 +1,17 @@
+<body onload="document.forms[0].elements[0].focus();">
+<h1>Registration</h1>
+<%= render_errors @user %>
+<%= start_form_tag :action=> "signup" %>
+  <label for="user_login">Desired login:</label><br/>
+  <%= text_field "user", "login", :size => 30 %><br/>
+  <label for="user_password">Choose password:</label><br/>
+  <%= password_field "user", "password", :size => 30 %><br/>
+  <label for="user_password_confirmation">Confirm password:</label><br/>
+  <%= password_field "user", "password_confirmation", :size => 30 %><br/>
+  <label for="user_password_confirmation">Email address:</label><br/>
+  <%= text_field "user", "email", :size => 30 %>&nbsp;
+
+<input type="submit" value="Signup &#187;" class="primary" />
+
+<%= end_form_tag %>
+</body>

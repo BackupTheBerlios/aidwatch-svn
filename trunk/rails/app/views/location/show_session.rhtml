@@ -1,0 +1,5 @@
+current loc:
+<%= @session["choseloc"] ? @session["choseloc"].to_s : "no choice" %>
+<% @session['cblocmem'] = 'show_session' %>
+<% @session['cbloccon'] = 'location' %>
+<%= link_to("pickLoc", :action => 'pickLocationAndReturn') %>

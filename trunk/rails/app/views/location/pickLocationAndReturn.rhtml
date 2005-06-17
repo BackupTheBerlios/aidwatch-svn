@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Locations</title>
+</head>
+
+<body>
+
+<h4>
+<% 
+	uplink = ''
+  dellink = ''
+	if @loc.hasParent?
+		uplink = "<h4>"+link_to("Up", { :action => "pickLocationAndReturn", :id => @loc.parent } )+"</h4>"
+	end
+%>
+<h2>
+<%= @loc.htmlName %>
+</h2>
+<br>
+
+<h3>
+<%= @loc.prompt %> <br>
+Node id =<%=@loc.id %> <br>
+</h3>
+<%= uplink %>
+<% @loc.children.each { |c| %>
+<%= link_to(c.htmlName, :action => "pickLocationAndReturn", :id => c.id) %>
+<br>
+<% } %>
+<%= uplink %>
+
+<%= link_to("Confirm selection: #{@loc.htmlName}", { :action => "pickLocationAndReturn", :id => @loc.id,  :params => { "confirm" => 1 } } ) %>
+
+</body>
+</html>
