@@ -25,9 +25,14 @@
 
 <%= link_to 'New search', :action => 'search' %>
 <% else %>
+<% if @toobusy %>
+<h1>Sorry, server too busy right now</h1><br>
+<h1> Load average <%= @toobusy %></h1>
+<% else %>
 <h1>Enter your search term: </h1>
 <%= start_form_tag :action => 'search' %>
   <%= text_field_tag 'searchterm' %>
   <%= submit_tag 'Search' %>
 <%= end_form_tag %>
+<% end %>
 <% end %>

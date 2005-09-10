@@ -11,6 +11,17 @@ class PeopleController < ApplicationController
     "'#{str}'"
   end
 
+  def loadavg
+    cmdname = '/usr/bin/uptime'
+    upt = nil
+    `#{cmdname}`.gsub(/load average:\s+([\d.]*)/) { |mat| upt = $1 }
+    upt.to_f
+  end
+
+  def isOkToSearch
+    loadavg < 0.5
+  end
+
   def whereclause(searchterm)
       "MATCH(searchstuff) AGAINST(#{dbesc(searchterm)})"
   end
@@ -20,14 +31,18 @@ class PeopleController < ApplicationController
   end
 
   def search
-    searchterm = @params['searchterm']
-    if searchterm
-      numperpage = 20
-      paginate_from_sql(Person, sqlstmt(searchterm), Person.count(whereclause(searchterm)), numperpage)
+    if isOkToSearch
+      searchterm = @params['searchterm']
+      if searchterm
+        numperpage = 20
+        paginate_from_sql(Person, sqlstmt(searchterm), Person.count(whereclause(searchterm)), numperpage)
+      else
+        @people = nil
+      end
+      @searchterm = searchterm
     else
-      @people = nil
+      @toobusy = loadavg().to_s
     end
-    @searchterm = searchterm
   end
 
   def paginate_from_sql(model, sql, total, per_page)
