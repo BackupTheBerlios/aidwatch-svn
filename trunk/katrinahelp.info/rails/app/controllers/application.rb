@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
   def paginate_from_sql(model, sql, total, per_page)
     @person_pages = Paginator.new self, total, per_page, @params['page']
     if @person_pages
-      @people = model.find_by_sql(sql + " LIMIT #{per_page} " +
+      @people = model.find_by_sql(sql + "ORDER BY last_name LIMIT #{per_page} " +
                               "OFFSET #{@person_pages.current.to_sql[1]}")
     else
       @people = nil
