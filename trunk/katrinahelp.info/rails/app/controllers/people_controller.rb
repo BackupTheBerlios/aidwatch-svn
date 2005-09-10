@@ -11,10 +11,6 @@ class PeopleController < ApplicationController
     "'#{str}'"
   end
 
-  #def list
-  #  @person_pages, @people = paginate :person, :per_page => 10
-  #end
-
   def whereclause(searchterm)
       "MATCH(searchstuff) AGAINST(#{dbesc(searchterm)})"
   end
@@ -28,10 +24,10 @@ class PeopleController < ApplicationController
     if searchterm
       numperpage = 20
       paginate_from_sql(Person, sqlstmt(searchterm), Person.count(whereclause(searchterm)), numperpage)
-#      @person_pages, @people = paginate :person, :per_page => 10
     else
       @people = nil
     end
+    @searchterm = searchterm
   end
 
   def paginate_from_sql(model, sql, total, per_page)
@@ -80,4 +76,5 @@ class PeopleController < ApplicationController
 #    Person.find(params[:id]).destroy
 #    redirect_to :action => 'list'
 #  end
+
 end

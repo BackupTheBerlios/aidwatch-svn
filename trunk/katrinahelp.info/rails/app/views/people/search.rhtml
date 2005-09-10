@@ -14,18 +14,16 @@
     <td><%=h person.send(column.name) %></td>
   <% end %>
     <td><%= link_to 'Show', :action => 'show', :id => person %></td>
-    <td><%= link_to 'Edit', :action => 'edit', :id => person %></td>
-    <td><%= link_to 'Destroy', {:action => 'destroy', :id => person}, :confirm => 'Are you sure?' %></td>
   </tr>
 <% end %>
 </table>
 
-<%= link_to 'Previous page', { :page => @person_pages.current.previous } if @person_pages.current.previous %>
-<%= link_to 'Next page', { :page => @person_pages.current.next } if @person_pages.current.next %> 
+<%= link_to 'Previous page', { :searchterm => @searchterm, :page => @person_pages.current.previous } if @person_pages.current.previous %>
+<%= link_to 'Next page', { :searchterm => @searchterm, :page => @person_pages.current.next } if @person_pages.current.next %> 
 
 <br />
 
-<%= link_to 'New person', :action => 'new' %>
+<%= link_to 'New search', :action => 'search' %>
 <% else %>
 <h1>Enter your search term: </h1>
 <%= start_form_tag :action => 'search' %>
