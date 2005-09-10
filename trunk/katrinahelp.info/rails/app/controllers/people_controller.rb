@@ -8,7 +8,7 @@ class PeopleController < ApplicationController
     if isOkToSearch
       searchterm = @params['searchterm']
       if searchterm
-        numperpage = 20
+        numperpage = 50
         paginate_from_sql(Person, sqlstmt(searchterm), Person.count(whereclause(searchterm)), numperpage)
       else
         @people = nil

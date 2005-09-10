@@ -27,7 +27,7 @@ class ApplicationController < ActionController::Base
   end
 
   def isOkToSearch
-    loadavg < 0.5
+    loadavg < 0.75
   end
 
   def whereclause(searchterm)
