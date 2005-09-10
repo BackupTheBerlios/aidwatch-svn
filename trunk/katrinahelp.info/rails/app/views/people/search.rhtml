@@ -1,18 +1,25 @@
 <% if @people %>
 <h1>Showing search results</h1>
+<%= link_to 'Previous page', { :searchterm => @searchterm, :page => @person_pages.current.previous } if @person_pages.current.previous %>
+<%= link_to 'Next page', { :searchterm => @searchterm, :page => @person_pages.current.next } if @person_pages.current.next %> 
+<%= link_to 'New search', :action => 'search' %>
 
-<table>
+<table width="100% cellpadding="5" cellspacing="0">
   <tr>
-  <% for column in Person.content_columns %>
-    <th><%= column.human_name %></th>
-  <% end %>
+    <th>Last</th>
+    <th>First</th>
+    <th>Home City</th>
+    <th>Source</th>
+    <th>Misc</th>
   </tr>
   
 <% for person in @people %>
   <tr>
-  <% for column in Person.content_columns %>
-    <td><%=h person.send(column.name) %></td>
-  <% end %>
+    <td><%= person.last_name %></td>
+    <td NOWRAP><%= person.first_name %></td>
+    <td NOWRAP><%= person.home_city %>, <%= person.home_state %></td>
+    <td><a href='<%= person.source_url %>' target='_blank'><%= person.source_name %></a></td>
+    <td><%= person.misctext %></td>
     <td><%= link_to 'Show', :action => 'show', :id => person %></td>
   </tr>
 <% end %>
