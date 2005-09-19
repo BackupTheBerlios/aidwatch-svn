@@ -35,7 +35,7 @@
 <h1>Sorry, server too busy right now</h1><br>
 <h1> Load average <%= @toobusy %></h1>
 <% else %>
-<h1>Enter your search term: </h1>
+<h2>Enter your search term: </h2>
 <p>Please enter the name, city, state or zip code of the person you are searching for.</p>
 <%= start_form_tag :action => 'search' %>
   <%= text_field_tag 'searchterm' %>
@@ -43,6 +43,7 @@
 <%= end_form_tag %>
 <p>RData is an open-source <a href="rubyonrails.org">Ruby on Rails</a> project.  The code is a available through an <a href="http://svn.berlios.de/wsvn/aidwatch/trunk/katrinahelp.info/rails/?rev=0&sc=0">online viewer</a> or can be checked out from a subversion repository using the following command:</p>
 <pre>$: svn co svn://svn.berlios.de/aidwatch/trunk/katrinahelp.info</pre>
-<p>This searchable database is brought to you by the <a href="http://asiaquake.org/">AsiaQuake</a> database team.</p>
+<p>This searchable database is brought to you by the <a
+href="http://asiaquake.org/">AsiaQuake</a> database team and the administrators of <a href="http://katrinahelp.info/">KatrinaHelp.info</a>.</p>
 <% end %>
 <% end %>
