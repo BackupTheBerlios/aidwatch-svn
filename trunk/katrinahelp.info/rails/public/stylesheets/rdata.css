@@ -6,6 +6,16 @@ body, p, ol, ul, td {
   line-height: 18px;
 }
 
+td {
+  font-size:   11px;
+  line-height: 16px;
+}
+
+h3 {
+  background: #DBDBDB;
+  padding: 2px;
+}
+
 th {
   font-size:   14px;
   border-bottom-style: solid;
@@ -13,14 +23,12 @@ th {
   border-bottom-width:1px;
 }
 
-td {
+.list td {
   padding: 5px;
   margin: 0xp;
   border-bottom-style: solid;
   border-bottom-color: #DBDBDB;
   border-bottom-width:1px;
-
-table
 
 pre {
   background-color: #eee;

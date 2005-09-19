@@ -1,8 +1,43 @@
-<% for column in Person.content_columns %>
-<p>
-  <b><%= column.human_name %>:</b> <%=h @person.send(column.name) %>
-</p>
-<% end %>
+<h1>Details for <%= "#{@person.last_name}, #{@person.first_name}" %></h1>
 
-<%= link_to 'Edit', :action => 'edit', :id => @person %> |
-<%= link_to 'Back', :action => 'list' %>
+<table cellspacing=10 cellpadding=10>
+<tr valign="top">
+
+<td width="50%">
+<h3>Person Info</h3>
+<p>
+	<b>Last:</b> <%= @person.last_name %><br/>
+	<b>First:</b> <%= @person.first_name %><br/>
+	<b>Home street:</b> <%= @person.home_street %><br/>
+	<b>City:</b> <%= @person.home_city %><br/>
+	<b>State:</b> <%= @person.home_state %><br/>
+	<b>Zip:</b> <%= @person.home_zip %><br/>
+	<b>Neighborhood:</b> <%= @person.home_neighborhood %><br/>
+</p>
+</td>
+<td>
+<h3>Original Entry Info</h3>
+<p>
+	<b>Source Name:</b> <a href="<%= @person.source_url %>"><%= @person.source_name %></a><br/>
+	<b>Source Date:</b> <%= @person.source_date %><br/>
+</p>
+
+</td></tr>
+<tr>
+<td>
+<h3>Notes</h3>
+
+<p>
+	<b>Miscellaneous Text:</b><br/>
+	<%= @person.misctext %><br/>
+</p>
+
+<p>
+	<b>Other:</b><br/>
+	<%= @person.other %><br/>
+</p>
+</td>
+</tr>
+</tr></table>
+
+<%= link_to 'Edit Notes', :action => 'edit', :id => @person %>

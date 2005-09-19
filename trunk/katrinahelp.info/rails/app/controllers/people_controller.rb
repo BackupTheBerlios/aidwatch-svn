@@ -37,19 +37,19 @@ class PeopleController < ApplicationController
 #    end
 #  end
 
-#  def edit
-#    @person = Person.find(params[:id])
-#  end
+  def edit
+    @person = Person.find(params[:id])
+  end
 
-#  def update
-#    @person = Person.find(params[:id])
-#    if @person.update_attributes(params[:person])
-#      flash[:notice] = 'Person was successfully updated.'
-#      redirect_to :action => 'show', :id => @person
-#    else
-#      render :action => 'edit'
-#    end
-#  end
+  def update
+    @person = Person.find(params[:id])
+    if @person.update_attributes(params[:person])
+      flash[:notice] = 'Person was successfully updated.'
+      redirect_to :action => 'show', :id => @person
+    else
+      render :action => 'edit'
+    end
+  end
 
 #  def destroy
 #    Person.find(params[:id]).destroy

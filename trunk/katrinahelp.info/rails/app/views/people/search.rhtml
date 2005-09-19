@@ -2,10 +2,11 @@
 <h1>Showing search results</h1>
 <%= link_to 'Previous page', { :searchterm => @searchterm, :page => @person_pages.current.previous } if @person_pages.current.previous %>
 <%= link_to 'Next page', { :searchterm => @searchterm, :page => @person_pages.current.next } if @person_pages.current.next %> 
-<%= link_to 'New search', :action => 'search' %>
+<%= link_to 'NEW SEARCH', :action => 'search' %>
 
-<table width="100% cellpadding="5" cellspacing="0">
+<table class="list" width="100% cellpadding="5" cellspacing="0">
   <tr>
+    <th>&nbsp;</th>
     <th>Last</th>
     <th>First</th>
     <th>Home City</th>
@@ -15,12 +16,12 @@
   
 <% for person in @people %>
   <tr>
-    <td NOWRAP><%= person.last_name %></td>
-    <td NOWRAP><%= person.first_name %></td>
-    <td><%= person.home_city %>, <%= person.home_state %></td>
-    <td><a href='<%= person.source_url %>' target='_blank'><%= person.source_name %></a></td>
-    <td><%= person.misctext %></td>
     <td><%= link_to 'Show', :action => 'show', :id => person %></td>
+    <td><%= person.last_name %></td>
+    <td><%= person.first_name %></td>
+    <td><%= person.home_city %>, <%= person.home_state %></td>
+    <td><a href='<%= person.source_url %>' target='_blank'><%= person.source_name[0..25] %></a></td>
+    <td><%= person.misctext && person.misctext.size > 25 ? person.misctext[0..25]+"..." : ""%></td>
   </tr>
 <% end %>
 </table>
@@ -28,9 +29,7 @@
 <%= link_to 'Previous page', { :searchterm => @searchterm, :page => @person_pages.current.previous } if @person_pages.current.previous %>
 <%= link_to 'Next page', { :searchterm => @searchterm, :page => @person_pages.current.next } if @person_pages.current.next %> 
 
-<br />
-
-<%= link_to 'New search', :action => 'search' %>
+<%= link_to 'NEW SEARCH', :action => 'search' %>
 <% else %>
 <% if @toobusy %>
 <h1>Sorry, server too busy right now</h1><br>
@@ -44,6 +43,6 @@
 <%= end_form_tag %>
 <p>RData is an open-source <a href="rubyonrails.org">Ruby on Rails</a> project.  The code is a available through an <a href="http://svn.berlios.de/wsvn/aidwatch/trunk/katrinahelp.info/rails/?rev=0&sc=0">online viewer</a> or can be checked out from a subversion repository using the following command:</p>
 <pre>$: svn co svn://svn.berlios.de/aidwatch/trunk/katrinahelp.info</pre>
-<p>This searchable database is brought to you by the <a href="http://asiaquake.org">AsiaQuake</a> database team.</p>
+<p>This searchable database is brought to you by the <a href="http://asiaquake.org/">AsiaQuake</a> database team.</p>
 <% end %>
 <% end %>
