@@ -3,10 +3,10 @@
 class ApplicationController < ActionController::Base
 
   def paginate_from_sql_pets(model, sql, total, per_page)
-    @pets_pages = Paginator.new self, total, per_page, @params['page']
-    if @pets_pages
+    @pet_pages = Paginator.new self, total, per_page, @params['page']
+    if @pet_pages
       @pets = model.find_by_sql(sql + "ORDER BY petname LIMIT #{per_page} " +
-                              "OFFSET #{@pets_pages.current.to_sql[1]}")
+                              "OFFSET #{@pet_pages.current.to_sql[1]}")
     else
       @pets = nil
     end

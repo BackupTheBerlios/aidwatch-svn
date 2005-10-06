@@ -36,7 +36,7 @@ class PetsController < ApplicationController
     @searchterm = searchterm
     if searchterm
       numperpage = 50
-      @pet_pages, @pets = paginate_from_sql_pets(Pet, sqlstmtpets(searchterm), Pet.count(whereclause(searchterm)), numperpage)
+      paginate_from_sql_pets(Pet, sqlstmtpets(searchterm), Pet.count(whereclause(searchterm)), numperpage)
     else
       @pets = nil
     end
