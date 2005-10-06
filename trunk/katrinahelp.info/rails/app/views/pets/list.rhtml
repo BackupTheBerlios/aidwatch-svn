@@ -1,0 +1,29 @@
+<h1>Listing pets</h1>
+
+<%= render_partial "nav" %>
+
+<table>
+  <tr>
+  <% for column in Pet.content_columns %>
+    <th><%= column.human_name %></th>
+  <% end %>
+  </tr>
+  
+<% for pet in @pets %>
+  <tr>
+  <% for column in Pet.content_columns %>
+    <td><%=h pet.send(column.name) %></td>
+  <% end %>
+    <td><%= link_to 'Show', :action => 'show', :id => pet %></td>
+    <td><%= link_to 'Edit', :action => 'edit', :id => pet %></td>
+    <td><%= link_to 'Destroy', {:action => 'destroy', :id => pet}, :confirm => 'Are you sure?' %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'Previous page', { :page => @pet_pages.current.previous } if @pet_pages.current.previous %>
+<%= link_to 'Next page', { :page => @pet_pages.current.next } if @pet_pages.current.next %> 
+
+<br />
+
+<%= link_to 'New pet', :action => 'new' %>

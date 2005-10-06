@@ -1,0 +1,8 @@
+<% for column in Pet.content_columns %>
+<p>
+  <b><%= column.human_name %>:</b> <%=h @pet.send(column.name) %>
+</p>
+<% end %>
+
+<%= link_to 'Edit', :action => 'edit', :id => @pet %> |
+<%= link_to 'Back', :action => 'list' %>
