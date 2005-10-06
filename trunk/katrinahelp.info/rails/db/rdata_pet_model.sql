@@ -8,7 +8,7 @@
 -- Table structure for table `people`
 --
 
-CREATE TABLE `pet` (
+CREATE TABLE `pets` (
   `id` int(11) NOT NULL auto_increment,
   kennel_id int(11),
   sourceref varchar(255) default NULL,

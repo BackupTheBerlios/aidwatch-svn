@@ -1,0 +1,21 @@
+#!/usr/bin/ruby
+#str = File.open("/home/sites/katrinahelp.info/rails/log/development.log", "r").read
+str = STDIN.read
+
+str.gsub!(/[\r\n]+/m, '<br>')
+str.gsub!(/\033\[([^m]*)m/) { |m|
+  subpat = $1
+  if subpat =~ /(\d+);3(\d+)/
+    leftnum, rightnum = $1.to_i, $2.to_i
+    leftnum = 2 if leftnum > 2
+    leftnum *= 4
+  "<font color='##{leftnum}0#{rightnum}000'>"
+    #puts "Got #{leftnum}, #{rightnum}"
+  else
+#    puts "Got reset."
+    "</font>"
+  end
+#  puts "Got subpat <#{subpat}>"
+}
+
+puts str

@@ -2,6 +2,16 @@
 # Likewise will all the methods added be available for all controllers.
 class ApplicationController < ActionController::Base
 
+  def paginate_from_sql_pets(model, sql, total, per_page)
+    @pets_pages = Paginator.new self, total, per_page, @params['page']
+    if @pets_pages
+      @pets = model.find_by_sql(sql + "ORDER BY petname LIMIT #{per_page} " +
+                              "OFFSET #{@pets_pages.current.to_sql[1]}")
+    else
+      @pets = nil
+    end
+  end
+
   def paginate_from_sql(model, sql, total, per_page)
     @person_pages = Paginator.new self, total, per_page, @params['page']
     if @person_pages
@@ -37,6 +47,10 @@ class ApplicationController < ActionController::Base
 
   def sqlstmt(searchterm)
       "SELECT * FROM people WHERE #{whereclause(searchterm)}";
+  end
+
+  def sqlstmtpets(searchterm)
+      "SELECT * FROM pets WHERE #{whereclause(searchterm)}";
   end
 
 end
