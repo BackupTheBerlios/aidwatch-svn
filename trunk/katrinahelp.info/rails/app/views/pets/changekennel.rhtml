@@ -1,0 +1,9 @@
+Assign pet to which kennel?
+
+<table>
+<% @kennels.each { |k| %>
+<tr><td>
+<%=  link_to "#{k.last_name}, #{k.first_name}", :action => 'updatekennelto', :id => @pet.id, :params => { 'kenid' => k.id } %>
+</td></tr>
+<% } %>
+</table>
