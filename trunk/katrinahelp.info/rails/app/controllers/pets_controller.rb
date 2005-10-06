@@ -8,6 +8,21 @@ class PetsController < ApplicationController
     @pet_pages, @pets = paginate :pet, :per_page => 10
   end
 
+  def changekennel
+    @pet = Pet.find(params[:id])
+    @kennels = Kennel.find_all
+  end
+
+  def updatekennelto
+    @pet = Pet.find(params[:id])
+    @kennel = Kennel.find(params[:kenid])
+    if @pet && @kennel
+      @pet.kennel = @kennel
+      @pet.save
+    end
+    render :action => 'show'
+  end
+
   def show
     @pet = Pet.find(params[:id])
     if @pet

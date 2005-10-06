@@ -1,3 +1,8 @@
+<% if @kennel %>
+Kennel: <%= link_to @kennel.last_name, :controller => 'kennels', :action => 'show', :id => @kennel.id %>
+<% else %>
+(no kennel assigned)
+<% end %>
 <% for column in Pet.content_columns %>
 <p>
   <b><%= column.human_name %>:</b> <%=h @pet.send(column.name) %>

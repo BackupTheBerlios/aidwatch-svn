@@ -1,5 +1,7 @@
 <h1>Editing pet</h1>
 
+<%= link_to "Assign or change kennel", :action => 'changekennel', :id => @pet.id %>
+<br>
 <%= start_form_tag :action => 'update', :id => @pet %>
   <%= render_partial 'form' %>
   <%= submit_tag 'Edit' %>
