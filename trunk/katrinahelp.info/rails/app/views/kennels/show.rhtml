@@ -1,0 +1,8 @@
+<% for column in Kennel.content_columns %>
+<p>
+  <b><%= column.human_name %>:</b> <%=h @kennel.send(column.name) %>
+</p>
+<% end %>
+
+<%= link_to 'Edit', :action => 'edit', :id => @kennel %> |
+<%= link_to 'Back', :action => 'list' %>

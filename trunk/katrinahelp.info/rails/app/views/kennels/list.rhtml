@@ -1,0 +1,27 @@
+<h1>Listing kennels</h1>
+
+<table>
+  <tr>
+  <% for column in Kennel.content_columns %>
+    <th><%= column.human_name %></th>
+  <% end %>
+  </tr>
+  
+<% for kennel in @kennels %>
+  <tr>
+  <% for column in Kennel.content_columns %>
+    <td><%=h kennel.send(column.name) %></td>
+  <% end %>
+    <td><%= link_to 'Show', :action => 'show', :id => kennel %></td>
+    <td><%= link_to 'Edit', :action => 'edit', :id => kennel %></td>
+    <td><%= link_to 'Destroy', {:action => 'destroy', :id => kennel}, :confirm => 'Are you sure?' %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'Previous page', { :page => @kennel_pages.current.previous } if @kennel_pages.current.previous %>
+<%= link_to 'Next page', { :page => @kennel_pages.current.next } if @kennel_pages.current.next %> 
+
+<br />
+
+<%= link_to 'New kennel', :action => 'new' %>
