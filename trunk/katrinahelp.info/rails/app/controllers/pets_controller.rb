@@ -10,6 +10,9 @@ class PetsController < ApplicationController
 
   def show
     @pet = Pet.find(params[:id])
+    if @pet
+      @kennel = @pet.kennel
+    end
   end
 
   def new

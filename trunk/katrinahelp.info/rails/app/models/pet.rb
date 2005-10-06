@@ -1,5 +1,5 @@
 class Pet < ActiveRecord::Base
-  has_one :kennel
+  belongs_to :kennel
   def updateSearchStuff()
     self.searchstuff =
       [ animaltype, breed, petname ].join(' ').downcase
