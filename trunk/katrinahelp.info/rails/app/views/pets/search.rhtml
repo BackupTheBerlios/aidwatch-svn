@@ -1,3 +1,5 @@
+<%= render_partial 'nav' %>
+
 <% if @pets %>
 <h1>Showing <%= @pets.size %> pet search results</h1>
 <%= link_to 'Previous page', { :searchterm => @searchterm, :page => @pet_pages.current.previous } if @pet_pages.current.previous %>
