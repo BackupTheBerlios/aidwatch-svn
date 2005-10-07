@@ -1,13 +1,52 @@
-<% if @kennel %>
-Kennel: <%= link_to @kennel.last_name, :controller => 'kennels', :action => 'show', :id => @kennel.id %>
-<% else %>
-(no kennel assigned)
-<% end %>
+<div id="mainbox">
+<div id="header">
+<div id="sitetitle">rPet</div>
+<%= render_partial "shared/nav" %>
+</div>
+
+
+<br />
+
+
+<!--BEGIN TOP NAVIGATION-->
+
+<!--  DO NOT ERASE the NEXT piece of coding. It is very important.-->
+<div style="clear: both" id="blank"/>
+
+
+<!--BEGIN MAIN CONTENT-->
+
+
+<div id="contentbox">
+
+<h2>Pet's detail</h2>
+
+<br/>
+<table width="100%">
+  <tr>
+   <td class="shade">Kennel : </td>
+   <% if @kennel %>
+   <td><%= link_to @kennel.last_name, :controller => 'kennels', :action => 'show', :id => @kennel.id %></td>
+   <% else %>
+   <td> (no kennel assigned) </td>
+   <% end %>
+ </tr>
 <% for column in Pet.content_columns %>
-<p>
-  <b><%= column.human_name %>:</b> <%=h @pet.send(column.name) %>
+  <tr>
+  <td class="shade"><%= column.human_name %> : </td>
+  <td><%=h @pet.send(column.name) %> </td>
 </p>
 <% end %>
 
-<%= link_to 'Edit', :action => 'edit', :id => @pet %> |
-<%= link_to 'Back', :action => 'list' %>
+</table>
+
+</div>
+<%= render_partial "shared/sidenav" %>
+<br />
+
+<div style="clear:both;">
+<%= render_partial "shared/footer" %>
+</div>
+<br />
+
+</div>
