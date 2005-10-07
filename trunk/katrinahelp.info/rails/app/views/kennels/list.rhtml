@@ -1,29 +1,53 @@
-<h1>Listing kennels</h1>
+<div id="mainbox">
+<div id="header">
+<div id="sitetitle">rPet</div>
+<%= render_partial "shared/nav" %>
+</div>
 
-<%= render :partial => "shared/nav" %>
 
-<table>
+<br />
+
+
+<!--BEGIN TOP NAVIGATION-->
+
+<!--  DO NOT ERASE the NEXT piece of coding. It is very important.-->
+<div style="clear: both" id="blank"/>
+
+
+<!--BEGIN MAIN CONTENT-->
+
+
+<div id="contentbox">
+
+<h2>Listing kennels</h2>
+<br/>
+<table width="100%">
   <tr>
-  <% for column in Kennel.content_columns %>
-    <th><%= column.human_name %></th>
-  <% end %>
-  </tr>
-  
+<th> First Name </th>
+<th> City </th>
+<th> Email </th>
+<th> Details </th>
+</tr>
 <% for kennel in @kennels %>
-  <tr>
-  <% for column in Kennel.content_columns %>
-    <td><%=h kennel.send(column.name) %></td>
-  <% end %>
-    <td><%= link_to 'Show', :action => 'show', :id => kennel %></td>
-    <td><%= link_to 'Edit', :action => 'edit', :id => kennel %></td>
-    <td><%= link_to 'Destroy', {:action => 'destroy', :id => kennel}, :confirm => 'Are you sure?' %></td>
-  </tr>
+<tr>
+<td> <%= kennel.first_name %> </td>
+<td> <%= kennel.city %> </td>
+<td> <%= kennel.email %> </td>
+<td> <%= link_to "detail", :action=>"show", :id=>kennel.id %> </td>
+</tr>
 <% end %>
 </table>
 
 <%= link_to 'Previous page', { :page => @kennel_pages.current.previous } if @kennel_pages.current.previous %>
 <%= link_to 'Next page', { :page => @kennel_pages.current.next } if @kennel_pages.current.next %> 
 
+</div>
+<%= render_partial "shared/sidenav" %>
 <br />
 
-<%= link_to 'New kennel', :action => 'new' %>
+<div style="clear:both;">
+<%= render_partial "shared/footer" %>
+</div>
+<br />
+
+</div>
