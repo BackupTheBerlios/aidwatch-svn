@@ -9,7 +9,6 @@
 
 <p><label for="pet_listing">Listing</label><br/>
 <%= text_field 'pet', 'listing'  %></p>
-
 <p><label for="pet_animaltype">Animaltype</label><br/>
 <%= text_field 'pet', 'animaltype'  %></p>
 
@@ -52,11 +51,8 @@
 <p><label for="pet_notes">Notes</label><br/>
 <%= text_field 'pet', 'notes'  %></p>
 
-<p><label for="pet_created_at">Created at</label><br/>
-<%= datetime_select 'pet', 'created_at'  %></p>
-
 <p><label for="pet_searchstuff">Searchstuff</label><br/>
-<%= text_area 'pet', 'searchstuff'  %></p>
+<%= text_area 'pet', 'searchstuff','cols' => 22,'rows' => 10 %></p>
 
 <p><label for="pet_searchhelper">Searchhelper</label><br/>
 <%= text_field 'pet', 'searchhelper'  %></p>
