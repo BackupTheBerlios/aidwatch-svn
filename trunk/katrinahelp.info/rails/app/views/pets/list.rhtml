@@ -1,7 +1,21 @@
 <h1>Listing pets</h1>
 
 <%= render_partial "shared/nav" %>
+<table>
+  <tr>
+<td> petname </td>
+<td> animaltype </td>
+<td> details </td>
+</tr>
+<% for pet in @pets %>
+<tr>
+<td> <%= pet.petname %> </td>
+<td> <%= pet.animaltype %> </td>
+<td> <%= link_to "detail", :action=>"show", :id=>pet.id %> </td>
+</tr>
+<% end %>
 
+</table>
 <table>
   <tr>
   <% for column in Pet.content_columns %>
