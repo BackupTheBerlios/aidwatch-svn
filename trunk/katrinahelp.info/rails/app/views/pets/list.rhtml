@@ -1,11 +1,32 @@
-<h1>Listing pets</h1>
-
+<div id="mainbox">
+<div id="header">
+<div id="sitetitle">rPet</div>
 <%= render_partial "shared/nav" %>
-<table>
+</div>
+
+
+<br />
+
+
+<!--BEGIN TOP NAVIGATION-->
+
+<!--  DO NOT ERASE the NEXT piece of coding. It is very important.-->
+<div style="clear: both" id="blank"/>
+
+
+<!--BEGIN MAIN CONTENT-->
+
+
+<div id="contentbox">
+
+<h2>Listing pets</h2>
+
+<br/>
+<table width="100%">
   <tr>
-<td> petname </td>
-<td> animaltype </td>
-<td> details </td>
+<th> Pet Name </th>
+<th> Animal Type </th>
+<th> Details </th>
 </tr>
 <% for pet in @pets %>
 <tr>
@@ -14,30 +35,18 @@
 <td> <%= link_to "detail", :action=>"show", :id=>pet.id %> </td>
 </tr>
 <% end %>
-
-</table>
-<table>
-  <tr>
-  <% for column in Pet.content_columns %>
-    <th><%= column.human_name %></th>
-  <% end %>
-  </tr>
-  
-<% for pet in @pets %>
-  <tr>
-  <% for column in Pet.content_columns %>
-    <td><%=h pet.send(column.name) %></td>
-  <% end %>
-    <td><%= link_to 'Show', :action => 'show', :id => pet %></td>
-    <td><%= link_to 'Edit', :action => 'edit', :id => pet %></td>
-    <td><%= link_to 'Destroy', {:action => 'destroy', :id => pet}, :confirm => 'Are you sure?' %></td>
-  </tr>
-<% end %>
 </table>
 
 <%= link_to 'Previous page', { :page => @pet_pages.current.previous } if @pet_pages.current.previous %>
 <%= link_to 'Next page', { :page => @pet_pages.current.next } if @pet_pages.current.next %> 
 
+</div>
+<%= render_partial "shared/sidenav" %>
 <br />
 
-<%= link_to 'New pet', :action => 'new' %>
+<div style="clear:both;">
+<%= render_partial "shared/footer" %>
+</div>
+<br />
+
+</div>
