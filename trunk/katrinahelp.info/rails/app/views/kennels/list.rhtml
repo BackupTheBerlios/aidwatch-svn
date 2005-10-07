@@ -30,7 +30,7 @@
 </tr>
 <% for kennel in @kennels %>
 <tr>
-<td> <%= kennel.first_name %> </td>
+<td> <%= kennel.first_name %> (<%= link_to "edit", :action=>"edit", :id=>kennel.id %> | <%= link_to 'delete', {:action => 'destroy', :id => kennel}, :confirm => 'Are you sure?' %>)</td>
 <td> <%= kennel.city %> </td>
 <td> <%= kennel.email %> </td>
 <td> <%= link_to "detail", :action=>"show", :id=>kennel.id %> </td>
