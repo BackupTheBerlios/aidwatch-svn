@@ -1,0 +1,182 @@
+/* CSS Document */
+
+body   {
+background:#f1f1f1;
+
+}
+
+
+#mainbox    {
+
+
+width:95%;
+background: #fff;
+margin:auto;
+border: 1px solid #cccccc;
+}
+
+#header   {
+height:130px;
+background:url(header.gif);
+}
+
+#sitetitle {
+font-family:verdana,arial, sans-serif;
+font-size:200%;
+font-weight: bold;
+padding-top: 1em;
+padding-right: .5em;
+padding-left: .5em;
+padding-bottom: .5em;
+color:#fff;
+text-align:left;
+}
+
+#mainnav {
+ margin-top: 22px;
+ font-weight: bold;
+ padding-right: 5px;
+ font-family:verdana,arial, sans-serif;
+ font-size: 80%;
+ color: #ffffff;
+ text-align: right;
+}
+
+#mainnav a {
+ color: #ffffff;
+ text-decoration: none;
+ padding-left: 5px;
+ padding-right: 5px;
+}
+
+#mainnav a:hover {
+ color: #aaffaa;
+ text-decoration: none;
+ padding-left: 5px;
+ padding-right: 5px;
+}
+
+/*  SIDE BAR PROPERTIES  */
+
+#sidebar  {
+
+width:14%;
+float:right;
+padding-right:30px;
+margin-top:10px;
+padding-left:30px;
+font-family:verdana,arial, sans-serif;
+font-size:80%;
+line-height:1.5em;
+border-left:1px solid #eeeeee;
+
+}
+
+#sidebar  b  {
+font-family:verdana,arial, sans-serif;
+font-size:105%;
+color:#3879ff;
+text-decoration:none;
+}
+
+#sidebar a   {
+color:#989898;
+text-decoration:none;
+}
+
+#sidebar a:hover  {
+text-decoration:none;
+color:#33cc33;
+}
+
+/*    MAIN CONTENT PROPERTIES   */
+
+#contentbox   {
+
+float:left;
+text-align:left;
+width:70%;
+font-size:80%;
+font-family: verdana, times new roman, helvetica, arial, sans-serif;
+padding-left: 35px;
+padding-bottom:50px;
+line-height:1.1em;
+
+
+}
+
+#contentbox h2  {
+font-family:verdana,arial, sans-serif;
+font-size:110%;
+color:#3879ff;
+}
+
+#contentbox h3  {
+font-family:verdana helvetica, arial, sans-serif;
+font-size:100%;
+color:#33cc33;
+}
+
+
+#contentbox a  {
+color:#3879ff;
+text-decoration:none;
+}
+
+#contentbox a:hover  {
+color:#33cc33;
+text-decoration:none;
+}
+
+
+#footer  {
+width:400px;
+margin:auto;
+text-align:center;
+font-family:verdana,arial, sans-serif;
+color:#383838;
+padding-top:5px;
+text-decoration:none;
+font-size:60%;
+border-top:1px solid #eeeeee;
+}
+
+#footer   a  {
+text-decoration:none;
+color:#383838;
+
+}
+
+#footer   a:hover  {
+text-decoration:none;
+
+
+}
+
+/* Commence hack IE5-Mac \*/
+#nav-menu li a
+{
+float: none
+}
+
+/* End IE5-Mac hack */
+
+/* CSS Document */
+
+td {
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: #fcfcfc;
+}
+
+table {
+ font-size: 85%;
+ border: 1px solid #eeeeee;
+}
+
+th, .shade {
+ background: #f4f4f4;
+ font-weight: bold;
+ color: #333333;
+}
