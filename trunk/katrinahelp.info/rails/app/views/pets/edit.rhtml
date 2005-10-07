@@ -1,5 +1,27 @@
-<h1>Editing pet</h1>
+<div id="mainbox">
+<div id="header">
+<div id="sitetitle">rPet</div>
+<%= render_partial "shared/nav" %>
+</div>
 
+
+<br />
+
+
+<!--BEGIN TOP NAVIGATION-->
+
+<!--  DO NOT ERASE the NEXT piece of coding. It is very important.-->
+<div style="clear: both" id="blank"/>
+
+
+<!--BEGIN MAIN CONTENT-->
+
+
+<div id="contentbox">
+
+<h2>Editing pet</h2>
+
+<br/>
 <%= link_to "Assign or change kennel", :action => 'changekennel', :id => @pet.id %>
 <br>
 <%= start_form_tag :action => 'update', :id => @pet %>
@@ -9,3 +31,13 @@
 
 <%= link_to 'Show', :action => 'show', :id => @pet %> |
 <%= link_to 'Back', :action => 'list' %>
+</div>
+<%= render_partial "shared/sidenav" %>
+<br />
+
+<div style="clear:both;">
+<%= render_partial "shared/footer" %>
+</div>
+<br />
+
+</div>
