@@ -1,8 +1,40 @@
-<h1>New kennel</h1>
+<div id="mainbox">
+<div id="header">
+<div id="sitetitle">rPet</div>
+<%= render_partial "shared/nav" %>
+</div>
+
+
+<br />
+
+
+<!--BEGIN TOP NAVIGATION-->
+
+<!--  DO NOT ERASE the NEXT piece of coding. It is very important.-->
+<div style="clear: both" id="blank"/>
+
+
+<!--BEGIN MAIN CONTENT-->
+
+
+<div id="contentbox">
+
+<h2>New kennel</h2>
+
+<br/>
 
 <%= start_form_tag :action => 'create' %>
   <%= render_partial 'form' %>
   <%= submit_tag "Create" %>
 <%= end_form_tag %>
 
-<%= link_to 'Back', :action => 'list' %>
+</div>
+<%= render_partial "shared/sidenav" %>
+<br />
+
+<div style="clear:both;">
+<%= render_partial "shared/footer" %>
+</div>
+<br />
+
+</div>
