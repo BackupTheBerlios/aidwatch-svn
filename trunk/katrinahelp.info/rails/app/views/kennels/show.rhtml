@@ -1,8 +1,43 @@
-<% for column in Kennel.content_columns %>
-<p>
-  <b><%= column.human_name %>:</b> <%=h @kennel.send(column.name) %>
-</p>
-<% end %>
+<div id="mainbox">
+<div id="header">
+<div id="sitetitle">rPet</div>
+<%= render_partial "shared/nav" %>
+</div>
 
-<%= link_to 'Edit', :action => 'edit', :id => @kennel %> |
-<%= link_to 'Back', :action => 'list' %>
+
+<br />
+
+
+<!--BEGIN TOP NAVIGATION-->
+
+<!--  DO NOT ERASE the NEXT piece of coding. It is very important.-->
+<div style="clear: both" id="blank"/>
+
+
+<!--BEGIN MAIN CONTENT-->
+
+
+<div id="contentbox">
+
+<h2>Kennel's detail</h2>
+
+<br/>
+<table width="60%">
+
+<% for column in Kennel.content_columns %>
+<tr>
+  <td class="shade"><%= column.human_name %> : </td> <td><%=h @kennel.send(column.name) %> </td>
+</tr>
+<% end %>
+</table>
+
+</div>
+<%= render_partial "shared/sidenav" %>
+<br />
+
+<div style="clear:both;">
+<%= render_partial "shared/footer" %>
+</div>
+<br />
+
+</div>
