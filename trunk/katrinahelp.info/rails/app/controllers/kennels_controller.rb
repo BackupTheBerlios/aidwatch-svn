@@ -19,7 +19,7 @@ class KennelsController < ApplicationController
   def create
     @kennel = Kennel.new(params[:kennel])
     if @kennel.save
-      flash[:notice] = 'Kennel was successfully created.'
+      flash[:notice] = 'Kennel was successfully added to the system.' 
       redirect_to :action => 'list'
     else
       render :action => 'new'
@@ -33,7 +33,7 @@ class KennelsController < ApplicationController
   def update
     @kennel = Kennel.find(params[:id])
     if @kennel.update_attributes(params[:kennel])
-      flash[:notice] = 'Kennel was successfully updated.'
+      flash[:notice] = 'Kennel was successfully updated and saved to the system.'
       redirect_to :action => 'show', :id => @kennel
     else
       render :action => 'edit'
