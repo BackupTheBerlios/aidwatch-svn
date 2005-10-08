@@ -38,7 +38,7 @@ class PetsController < ApplicationController
     @pet = Pet.new(params[:pet])
     @pet.updateSearchStuff
     if @pet.save
-      flash[:notice] = 'Pet was successfully created.'
+      flash[:notice] = 'Pet was successfully created and added to the system.'
       redirect_to :action => 'list'
     else
       render :action => 'new'
@@ -66,7 +66,7 @@ class PetsController < ApplicationController
     if @pet.update_attributes(params[:pet])
       @pet.updateSearchStuff
       @pet.save
-      flash[:notice] = 'Pet was successfully updated.'
+      flash[:notice] = 'Pet's profile was successfully updated and saved to the system .'
       redirect_to :action => 'show', :id => @pet
     else
       render :action => 'edit'
