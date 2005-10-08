@@ -1,5 +1,14 @@
 == Welcome to Rails
 
+Please create your own Rakefile and database.yml file.  Examples are located in
+the following locations:
+
+./Rakefile.example
+./config/database.yml.example
+
+To start quickly, simply copy the examples and rename to "Rakefile", and
+"database.yml", respectively.
+
 Rails is a web-application and persistance framework that includes everything
 needed to create database-backed web-applications according to the
 Model-View-Control pattern of separation. This pattern splits the view (also

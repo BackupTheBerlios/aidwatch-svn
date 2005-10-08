@@ -14,7 +14,8 @@ class Pet < ActiveRecord::Base
                   }
   def updateSearchStuff()
     self.searchstuff =
-      [ animaltype, breed, petname ].join(' ').downcase
+      [ animaltype, breed, petname, color, coat, gender, markings, lastlocal,
+      lastdetail ].join(' ').downcase
     self.save
   end
 

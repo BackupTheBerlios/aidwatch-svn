@@ -30,6 +30,7 @@ class ApplicationController < ActionController::Base
   end
 
   def loadavg
+    return 0.5
     cmdname = '/usr/bin/uptime'
     upt = nil
     `#{cmdname}`.gsub(/load average:\s+([\d.]*)/) { |mat| upt = $1 }
@@ -38,7 +39,8 @@ class ApplicationController < ActionController::Base
 
   def isOkToSearch
     #loadavg < 0.75
-    loadavg < 1.2
+    #loadavg < 1.2
+    true
   end
 
   def whereclause(searchterm)
