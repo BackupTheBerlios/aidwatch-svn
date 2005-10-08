@@ -74,7 +74,7 @@
       <tr valign="top">
         <td>Unique markings:</td>
         <td>
-        <%= text_area 'pet', 'markings', :cols => 20, :rows => 5 %>
+        <%= text_area 'pet', 'markings', :cols => 18, :rows => 5 %>
         </td>
       </tr>
     </table>
@@ -89,6 +89,17 @@
         <%= text_area 'pet', 'lastdetail', :cols => 20, :rows => 5 %></p>
       </td></tr>
       </table>
+    <h3>Data Source Information</h3>
+    <table border=0>
+    <tr>
+        <td align="right">Source Name:</td>
+        <td><%= text_field 'pet', 'sourceref', :size => 18 %></td>
+    </tr>
+    <tr>
+        <td align="right">Source URL:</td>
+        <td><%= text_field 'pet', 'sourceurl', :size => 18 %></td>
+    </tr>
+    </table>
 </div>
 <!--[eoform:pet]-->
 
