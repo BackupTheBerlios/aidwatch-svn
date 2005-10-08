@@ -1,60 +1,94 @@
 <%= error_messages_for 'pet' %>
 
 <!--[form:pet]-->
-<p><label for="pet_sourceref">Sourceref</label><br/>
-<%= text_field 'pet', 'sourceref'  %></p>
-
-<p><label for="pet_sourceurl">Sourceurl</label><br/>
-<%= text_field 'pet', 'sourceurl'  %></p>
-
-<p><label for="pet_listing">Listing</label><br/>
-<%= text_field 'pet', 'listing'  %></p>
-<p><label for="pet_animaltype">Animaltype</label><br/>
-<%= text_field 'pet', 'animaltype'  %></p>
-
-<p><label for="pet_gender">Gender</label><br/>
-<%= text_field 'pet', 'gender'  %></p>
-
-<p><label for="pet_breed">Breed</label><br/>
-<%= text_field 'pet', 'breed'  %></p>
-
-<p><label for="pet_age">Age</label><br/>
-<%= text_field 'pet', 'age'  %></p>
-
-<p><label for="pet_bodysize">Bodysize</label><br/>
-<%= text_field 'pet', 'bodysize'  %></p>
-
-<p><label for="pet_color">Color</label><br/>
-<%= text_field 'pet', 'color'  %></p>
-
-<p><label for="pet_coat">Coat</label><br/>
-<%= text_field 'pet', 'coat'  %></p>
-
-<p><label for="pet_markings">Markings</label><br/>
-<%= text_field 'pet', 'markings'  %></p>
-
-<p><label for="pet_petname">Petname</label><br/>
-<%= text_field 'pet', 'petname'  %></p>
-
-<p><label for="pet_lastlocal">Lastlocal</label><br/>
-<%= text_field 'pet', 'lastlocal'  %></p>
-
-<p><label for="pet_lastdetail">Lastdetail</label><br/>
-<%= text_field 'pet', 'lastdetail'  %></p>
-
-<p><label for="pet_currentlocal">Currentlocal</label><br/>
-<%= text_field 'pet', 'currentlocal'  %></p>
-
-<p><label for="pet_isresolved">Isresolved</label><br/>
-<%= text_field 'pet', 'isresolved'  %></p>
-
-<p><label for="pet_notes">Notes</label><br/>
-<%= text_field 'pet', 'notes'  %></p>
-
-<p><label for="pet_searchstuff">Searchstuff</label><br/>
-<%= text_area 'pet', 'searchstuff','cols' => 22,'rows' => 10 %></p>
-
-<p><label for="pet_searchhelper">Searchhelper</label><br/>
-<%= text_field 'pet', 'searchhelper'  %></p>
+<div id="section1">
+    <h3>Pet Description</h3>
+<table border="0">
+      <tr>
+        <td><em>*</em> Animal: </td>
+        <td>
+        <select name="pet[animaltype]">
+          <%= options_for_select Pet.animaltypes, @pet.animaltype %>
+          <option value="other"> other</option>
+        </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Pet Name: </td>
+        <td><%= text_field 'pet', 'petname', :size => 20 %></td>
+      </tr>
+      <tr>
+        <td><em>*</em> Primary<br>Color: </td>
+        <td>
+        <select name="pet[color]">
+          <%= options_for_select Pet.colors, @pet.color %>
+          <option value="other"> other</option>
+        </select>
+        </td>
+      </tr>
+      <tr>
+        <td><em>*</em> Gender: </td>
+        <td>
+          <%= radio_button "pet", "gender", "Male" %>Male
+          <%= radio_button "pet", "gender", "Female" %>Female
+          <%= radio_button "pet", "gender", "Unknown" %>Unknown<br/>
+        </td>
+      </tr>
+      <tr>
+        <td>Spayed /<br>Neutered?: </td>
+        <td>
+          <%= radio_button "pet", "isneutered", "Yes" %>Yes
+          <%= radio_button "pet", "isneutered", "No" %>No
+          <%= radio_button "pet", "isneutered", "Unknown" %>Unknown<br/>
+        </td>
+      </tr>
+      <tr>
+        <td>Breed:</td>
+        <td><%= text_field 'pet', 'breed', :size => 20 %></td>
+      </tr>
+      <tr>
+        <td>Mix?:</td>
+        <td>
+          <%= radio_button "pet", "ismixed", "Yes" %>Yes
+          <%= radio_button "pet", "ismixed", "No" %>No
+          <%= radio_button "pet", "ismixed", "Unknown" %>Unknown<br/>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td>Size:</td>
+        <td>
+          <% Pet.sizes.each do |size| %>
+            <%= radio_button "pet", "bodysize", size %> <%= size %><br/>
+          <% end %>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td>Coat Type:</td>
+        <td>
+          <% Pet.coattypes.each do |coat| %>
+            <%= radio_button "pet", "coat", coat %> <%= coat %><br/>
+          <% end %>
+          <input type ="radio" name="pet" value="other"> other<br/>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td>Unique markings:</td>
+        <td>
+        <%= text_area 'pet', 'markings', :cols => 20, :rows => 5 %>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div id="section2">
+    <h3>Last Known Location</h3>
+      <table border=0>
+      <tr><td>
+        <p>General (city, parish, zip):<br/>
+        <%= text_field 'pet', 'lastlocal', :size => 25 %></p>
+        <p> Detailed<br>(address, neighborhood, landmark): <br/>
+        <%= text_area 'pet', 'lastdetail', :cols => 20, :rows => 5 %></p>
+      </td></tr>
+      </table>
+</div>
 <!--[eoform:pet]-->
 

@@ -2,14 +2,12 @@
 
 body   {
 background:#f1f1f1;
-
+font-family:verdana,arial, sans-serif;
 }
-
 
 #mainbox    {
 
-
-width:95%;
+width:830px;
 background: #fff;
 margin:auto;
 border: 1px solid #cccccc;
@@ -35,7 +33,7 @@ text-align:left;
 #mainnav {
  margin-top: 22px;
  font-weight: bold;
- padding-right: 5px;
+ padding-right: 15px;
  font-family:verdana,arial, sans-serif;
  font-size: 80%;
  color: #ffffff;
@@ -60,16 +58,16 @@ text-align:left;
 
 #sidebar  {
 
-width:14%;
+margin: 0; padding: 0;
+width: 150px;
 float:right;
-padding-right:30px;
-margin-top:10px;
-padding-left:30px;
+padding-right:20px;
+margin-top:20px;
+padding-left:20px;
 font-family:verdana,arial, sans-serif;
-font-size:80%;
+font-size:75%;
 line-height:1.5em;
 border-left:1px solid #eeeeee;
-
 }
 
 #sidebar  b  {
@@ -99,7 +97,8 @@ width:70%;
 font-size:80%;
 font-family: verdana, times new roman, helvetica, arial, sans-serif;
 padding-left: 35px;
-padding-bottom:50px;
+padding-right: 10px
+padding-bottom:40px;
 line-height:1.1em;
 
 
@@ -112,9 +111,15 @@ color:#3879ff;
 }
 
 #contentbox h3  {
-font-family:verdana helvetica, arial, sans-serif;
-font-size:100%;
-color:#33cc33;
+  font-family:verdana, helvetica, arial, sans-serif;
+  display:block;
+  font-size:11px;
+  padding:0 3px;
+  line-height:1.5em;
+  width:auto;
+  text-align:left;
+  border-bottom:1px dotted #CCC;
+  color:#333;
 }
 
 
@@ -130,7 +135,6 @@ text-decoration:none;
 
 
 #footer  {
-width:400px;
 margin:auto;
 text-align:center;
 font-family:verdana,arial, sans-serif;
@@ -179,4 +183,28 @@ th, .shade {
  background: #f4f4f4;
  font-weight: bold;
  color: #333333;
+}
+
+#section1 {
+  float:left;
+  width:330px;
+  padding:10px;
+  text-align:right;
+  line-height:2.5em;
+}
+#section2 {
+  float:left;
+  width:200px;
+  padding: 10 0 10 10;
+  text-align:left;
+  line-height:2.5em;
+}
+.notice {
+  margin-left: 10px;
+  color: green;
+  font-size: 13px;
+}
+
+#section1 em, #section2 em {
+  color: red;
 }

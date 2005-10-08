@@ -1,22 +1,3 @@
-
-
-
-<div id="mainbox">
-<div id="header">
-<div id="sitetitle">rPet</div>
-<%= render_partial "shared/nav" %>
-</div>
-
-
-<br />
-
-
-<!--BEGIN TOP NAVIGATION-->
-
-<!--  DO NOT ERASE the NEXT piece of coding. It is very important.-->
-<div style="clear: both" id="blank"/>
-
-
 <!--BEGIN MAIN CONTENT-->
 
 
@@ -27,17 +8,7 @@
 <br/>
 
 <%= start_form_tag :action => 'create' %>
-  <%= render_partial 'form' %>
-  <%= submit_tag "Create" %>
+  <%= render :partial => 'form' %>
+      <div ><%= submit_tag "Create Pet" %></div>
 <%= end_form_tag %>
-
-</div>
-<%= render_partial "shared/sidenav" %>
-<br />
-
-<div style="clear:both;">
-<%= render_partial "shared/footer" %>
-</div>
-<br />
-
 </div>

@@ -31,7 +31,7 @@ class PetsController < ApplicationController
   end
 
   def new
-    @pet = Pet.new
+    @pet = Pet.new_with_defaults
   end
 
   def create

@@ -26,6 +26,8 @@ CREATE TABLE `pets` (
   lastlocal varchar(255) default NULL,
   lastdetail varchar(255) default NULL,
   currentlocal varchar(255) default NULL,
+  isneutered varchar(255) default NULL,
+  ismixed varchar(255) default NULL,
   isresolved int(11),
   notes varchar(255),
   created_at datetime,
