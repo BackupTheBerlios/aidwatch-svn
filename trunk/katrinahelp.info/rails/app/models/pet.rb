@@ -1,5 +1,6 @@
 class Pet < ActiveRecord::Base
   belongs_to :kennel
+  has_many :watch
   @@ANIMALTYPES = [ "dog", "cat", "equine", "barnyard", "bird",
                     "reptile", "sm. mammal"]
   @@SIZES       = [ "small (less than 20 lbs.)", "medium (20 to 50 lbs.)",

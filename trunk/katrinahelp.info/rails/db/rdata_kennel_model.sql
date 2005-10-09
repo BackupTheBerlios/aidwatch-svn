@@ -26,7 +26,6 @@ CREATE TABLE `kennels` (
   `searchstuff` text,
   `searchhelper` int(11) default NULL,
   PRIMARY KEY  (`id`),
-  UNIQUE KEY `id` (`id`),
-  FULLTEXT KEY `searchstuff` (`searchstuff`)
-) TYPE=MyISAM;
+  UNIQUE KEY `id` (`id`)
+);
 
