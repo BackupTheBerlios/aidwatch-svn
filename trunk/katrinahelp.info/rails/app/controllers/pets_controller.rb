@@ -1,4 +1,11 @@
 class PetsController < ApplicationController
+  private
+  def prompt_invalid_record(prompt="You have requested an invalid record.")
+      flash[:notice] = prompt
+      redirect_to :action => 'list'
+  end
+
+  public
   def index
     list
     render :action => 'list'
@@ -11,6 +18,8 @@ class PetsController < ApplicationController
   def changekennel
     @pet = Pet.find(params[:id])
     @kennels = Kennel.find_all
+    rescue
+      prompt_invalid_record
   end
 
   def updatekennelto
@@ -21,6 +30,8 @@ class PetsController < ApplicationController
       @pet.save
     end
     render :action => 'show'
+    rescue
+      prompt_invalid_record
   end
 
   def show
@@ -28,7 +39,10 @@ class PetsController < ApplicationController
     if @pet
       @kennel = @pet.kennel
     end
+    rescue
+      prompt_invalid_record("Sorry, we can't find the pet you requested.")
   end
+
 
   def new
     @pet = Pet.new_with_defaults
@@ -47,6 +61,9 @@ class PetsController < ApplicationController
 
   def edit
     @pet = Pet.find(params[:id])
+    # prevents throwing an exception in the case of an invalid pet id
+    rescue
+      prompt_invalid_record
   end
 
   def search
@@ -71,10 +88,14 @@ class PetsController < ApplicationController
     else
       render :action => 'edit'
     end
+    rescue
+      prompt_invalid_record
   end
 
   def destroy
     Pet.find(params[:id]).destroy
     redirect_to :action => 'list'
+    rescue
+      prompt_invalid_record
   end
 end
