@@ -6,10 +6,10 @@
 <h2>Editing pet</h2>
 
 <br/>
-<%= link_to "Assign or change kennel", :action => 'changekennel', :id => @pet.id %>
+<%= link_to "Assign or change kennel", :action => 'changekennel', :id => @pet %>
 <br>
 <%= start_form_tag :action => 'update', :id => @pet %>
   <%= render_partial 'form' %>
-  <%= submit_tag 'Edit' %>
+  <div id="submit"><%= submit_tag 'Update' %></div>
 <%= end_form_tag %>
 </div>

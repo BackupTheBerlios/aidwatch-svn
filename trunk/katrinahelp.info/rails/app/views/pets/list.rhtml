@@ -14,14 +14,14 @@
 </tr>
 <% for pet in @pets %>
 <tr>
-<td> <%= pet.petname %>  (<%= link_to "edit", :action=>"edit", :id=>pet.id %> | <%= link_to 'delete', {:action => 'destroy', :id => pet}, :confirm => 'Are you sure?' %>)</td>
+<td> <%= good_print(pet.petname) %>  (<%= link_to "edit", :action=>"edit", :id=>pet.id %> | <%= link_to 'delete', {:action => 'destroy', :id => pet}, :confirm => 'Are you sure?' %>)</td>
 <td> <%= pet.animaltype %> </td>
 <td> <%= link_to "detail", :action=>"show", :id=>pet.id %> </td>
 </tr>
 <% end %>
 </table>
 
-<%= link_to 'Previous page', { :page => @pet_pages.current.previous } if @pet_pages.current.previous %>
-<%= link_to 'Next page', { :page => @pet_pages.current.next } if @pet_pages.current.next %> 
+<%= link_to 'Previous page', { :page => @pet_pages.current.previous }, { :class => "nextprev" } if @pet_pages.current.previous %>
+<%= link_to 'Next page', { :page => @pet_pages.current.next }, { :class => "nextprev"} if @pet_pages.current.next %> 
 
 </div>
