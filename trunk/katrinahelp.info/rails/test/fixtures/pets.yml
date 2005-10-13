@@ -1,5 +1,6 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 first_pet:
   id: 1
+  petname: fluffy
 another_pet:
   id: 2

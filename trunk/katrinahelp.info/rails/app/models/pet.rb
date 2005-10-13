@@ -29,5 +29,13 @@ class Pet < ActiveRecord::Base
   def Pet.colors() @@COLORS end
   def Pet.sizes() @@SIZES end
 
+  def valid?()
+    if petname
+      petname.gsub(/\s/,'').size > 4
+    else
+      false
+    end
+  end
+
   validates_presence_of :animaltype, :color, :gender
 end
