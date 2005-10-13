@@ -4,9 +4,27 @@ class PeopleController < ApplicationController
     render :action => 'search'
   end
 
+  private
+  def convertToWiki(str)
+    IO.popen('/usr/local/bin/htmltowiki', 'r+') { |f|
+      f.puts str
+      f.close_write
+      return f.readlines
+    }
+  end
+
+  public
+
+  def convertHtmlToWiki
+    htmlpage = params['htmlpage']['body'] if params['htmlpage']
+    @wikitxt = nil
+    if htmlpage
+      @wikitxt = convertToWiki(htmlpage)
+    end
+  end
   def search
     if isOkToSearch
-      searchterm = @params['searchterm']
+      searchterm = params['searchterm']
       if searchterm
         numperpage = 50
         paginate_from_sql(Person, sqlstmt(searchterm), Person.count(whereclause(searchterm)), numperpage)
