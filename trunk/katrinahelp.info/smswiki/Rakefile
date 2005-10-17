@@ -200,3 +200,12 @@ desc "Migrate the database according to the migrate scripts in db/migrate (only 
 task :migrate => :environment do
   ActiveRecord::Migrator.migrate(File.dirname(__FILE__) + '/db/migrate/', ENV["VERSION"] ? ENV["VERSION"].to_i : nil)
 end
+
+desc "Deploy basic application directories"
+task :deploy => :environment do
+  dirs = %w{ app lib test public config}
+  onserver = "webuser@complearn.org:/home/webuser/hosting/smswiki.asiaquake.org/messagelogger"
+  dirs.each do | dir|
+    `rsync -avz -e ssh "#{RAILS_ROOT}/#{dir}" "#{onserver}" --exclude ".svn"`
+  end
+end
