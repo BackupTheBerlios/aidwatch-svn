@@ -1,22 +1,24 @@
-<h1>Listing wiki_messages</h1>
+<% even=0 %>
+<h1>Wiki Messages</h1>
 
-<table>
+<table cellspacing=0 cellpadding=5>
   <tr>
   <% for column in WikiMessage.content_columns %>
       <% next if column.human_name.downcase == 'mar' %>
+      <% next if column.human_name.downcase == 'modified at' %>
     <th><%= column.human_name %></th>
   <% end %>
   </tr>
   
 <% for wiki_message in @wiki_messages %>
-  <tr>
+  <tr class="row<%= even %>">
   <% for column in WikiMessage.content_columns %>
       <% next if column.human_name.downcase == 'mar' %>
+      <% next if column.human_name.downcase == 'modified at' %>
     <td><%=h wiki_message.send(column.name) %></td>
+      <% even = 1-even -%>
   <% end %>
     <td><%= link_to 'Show', :action => 'show', :id => wiki_message %></td>
-    <td><%= link_to 'Edit', :action => 'edit', :id => wiki_message %></td>
-    <td><%= link_to 'Destroy', {:action => 'destroy', :id => wiki_message}, :confirm => 'Are you sure?' %></td>
   </tr>
 <% end %>
 </table>
@@ -25,5 +27,3 @@
 <%= link_to 'Next page', { :page => @wiki_message_pages.current.next } if @wiki_message_pages.current.next %> 
 
 <br />
-
-<%= link_to 'New wiki_message', :action => 'new' %>

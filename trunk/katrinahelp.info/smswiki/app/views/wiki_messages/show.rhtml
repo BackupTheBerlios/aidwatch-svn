@@ -1,8 +1,6 @@
-<% for column in WikiMessage.content_columns %>
-<p>
-  <b><%= column.human_name %>:</b> <%=h @wiki_message.send(column.name) %>
-</p>
-<% end %>
+<h2><%=h @wiki_message.subj %></h2>
+<p><strong>Created on: </strong><%=h @wiki_message.created_at %></p>
+<p><strong>Modified on: </strong><%=h @wiki_message.modified_at %></p>
+<p><strong>Body: </strong><%=h @wiki_message.body %></p>
 
-<%= link_to 'Edit', :action => 'edit', :id => @wiki_message %> |
 <%= link_to 'Back', :action => 'list' %>

@@ -1,9 +1,19 @@
-body { background-color: #fff; color: #333; }
+body {
+  background-color: #fff;
+  color: #333;
+}
 
-body, p, ol, ul, td {
+body, p, ol, ul, table, tr {
   font-family: verdana, arial, helvetica, sans-serif;
-  font-size:   13px;
+  font-size:   11px;
   line-height: 18px;
+}
+
+#container {
+  position: relative;
+  width: 700px;
+  margin-left: -350px;
+  left: 50%;
 }
 
 pre {
@@ -72,3 +82,17 @@ div.progressBar div.background {
   width: 0%;
 }
 
+td {
+  border-width: 0px;
+  border-bottom-width: 1px;
+  border-style: solid;
+  border-color: lightgray;
+}
+
+.row0 {
+  background: lightcyan;
+}
+
+.row1 {
+  background: white;
+}
