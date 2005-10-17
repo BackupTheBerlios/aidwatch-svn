@@ -1,0 +1,19 @@
+<%= error_messages_for 'wiki_message' %>
+
+<!--[form:wiki_message]-->
+<p><label for="wiki_message_mar">Mar</label><br/>
+<%= text_area 'wiki_message', 'mar'  %></p>
+
+<p><label for="wiki_message_subj">Subj</label><br/>
+<%= text_field 'wiki_message', 'subj'  %></p>
+
+<p><label for="wiki_message_body">Body</label><br/>
+<%= text_area 'wiki_message', 'body'  %></p>
+
+<p><label for="wiki_message_created_at">Created at</label><br/>
+<%= datetime_select 'wiki_message', 'created_at'  %></p>
+
+<p><label for="wiki_message_modified_at">Modified at</label><br/>
+<%= datetime_select 'wiki_message', 'modified_at'  %></p>
+<!--[eoform:wiki_message]-->
+

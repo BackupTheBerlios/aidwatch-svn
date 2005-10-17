@@ -1,0 +1,8 @@
+<% for column in WikiMessage.content_columns %>
+<p>
+  <b><%= column.human_name %>:</b> <%=h @wiki_message.send(column.name) %>
+</p>
+<% end %>
+
+<%= link_to 'Edit', :action => 'edit', :id => @wiki_message %> |
+<%= link_to 'Back', :action => 'list' %>

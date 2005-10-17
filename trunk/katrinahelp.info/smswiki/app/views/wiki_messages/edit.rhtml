@@ -1,0 +1,9 @@
+<h1>Editing wiki_message</h1>
+
+<%= start_form_tag :action => 'update', :id => @wiki_message %>
+  <%= render_partial 'form' %>
+  <%= submit_tag 'Edit' %>
+<%= end_form_tag %>
+
+<%= link_to 'Show', :action => 'show', :id => @wiki_message %> |
+<%= link_to 'Back', :action => 'list' %>

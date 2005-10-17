@@ -1,0 +1,27 @@
+<h1>Listing wiki_messages</h1>
+
+<table>
+  <tr>
+  <% for column in WikiMessage.content_columns %>
+    <th><%= column.human_name %></th>
+  <% end %>
+  </tr>
+  
+<% for wiki_message in @wiki_messages %>
+  <tr>
+  <% for column in WikiMessage.content_columns %>
+    <td><%=h wiki_message.send(column.name) %></td>
+  <% end %>
+    <td><%= link_to 'Show', :action => 'show', :id => wiki_message %></td>
+    <td><%= link_to 'Edit', :action => 'edit', :id => wiki_message %></td>
+    <td><%= link_to 'Destroy', {:action => 'destroy', :id => wiki_message}, :confirm => 'Are you sure?' %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'Previous page', { :page => @wiki_message_pages.current.previous } if @wiki_message_pages.current.previous %>
+<%= link_to 'Next page', { :page => @wiki_message_pages.current.next } if @wiki_message_pages.current.next %> 
+
+<br />
+
+<%= link_to 'New wiki_message', :action => 'new' %>
