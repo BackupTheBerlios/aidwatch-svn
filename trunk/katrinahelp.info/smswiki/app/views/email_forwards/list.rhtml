@@ -1,0 +1,27 @@
+<h1>Listing email_forwards</h1>
+
+<table>
+  <tr>
+  <% for column in EmailForward.content_columns %>
+    <th><%= column.human_name %></th>
+  <% end %>
+  </tr>
+  
+<% for email_forward in @email_forwards %>
+  <tr>
+  <% for column in EmailForward.content_columns %>
+    <td><%=h email_forward.send(column.name) %></td>
+  <% end %>
+    <td><%= link_to 'Show', :action => 'show', :id => email_forward %></td>
+    <td><%= link_to 'Edit', :action => 'edit', :id => email_forward %></td>
+    <td><%= link_to 'Destroy', {:action => 'destroy', :id => email_forward}, :confirm => 'Are you sure?' %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'Previous page', { :page => @email_forward_pages.current.previous } if @email_forward_pages.current.previous %>
+<%= link_to 'Next page', { :page => @email_forward_pages.current.next } if @email_forward_pages.current.next %> 
+
+<br />
+
+<%= link_to 'New email_forward', :action => 'new' %>

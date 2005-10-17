@@ -1,0 +1,9 @@
+<h1>Editing email_forward</h1>
+
+<%= start_form_tag :action => 'update', :id => @email_forward %>
+  <%= render_partial 'form' %>
+  <%= submit_tag 'Edit' %>
+<%= end_form_tag %>
+
+<%= link_to 'Show', :action => 'show', :id => @email_forward %> |
+<%= link_to 'Back', :action => 'list' %>

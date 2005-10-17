@@ -1,0 +1,13 @@
+<%= error_messages_for 'email_forward' %>
+
+<!--[form:email_forward]-->
+<p><label for="email_forward_email">Email</label><br/>
+<%= text_area 'email_forward', 'email'  %></p>
+
+<p><label for="email_forward_created_at">Created at</label><br/>
+<%= datetime_select 'email_forward', 'created_at'  %></p>
+
+<p><label for="email_forward_modified_at">Modified at</label><br/>
+<%= datetime_select 'email_forward', 'modified_at'  %></p>
+<!--[eoform:email_forward]-->
+

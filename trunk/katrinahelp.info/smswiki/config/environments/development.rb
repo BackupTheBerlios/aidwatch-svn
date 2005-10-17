@@ -12,3 +12,13 @@ ActionController::Base.perform_caching             = false
 
 # The breakpoint server port that script/breakpointer connects to.
 BREAKPOINT_SERVER_PORT = 42531
+
+ActionMailer::Base.delivery_method = :smtp
+ActionMailer::Base.server_settings = { 
+  :address    => "asiaquake.org",
+  :port       => 25,
+  :domain     => "asiaquake.org"
+} 
+ActionMailer::Base.default_charset = "utf-8" 
+ActionMailer::Base.perform_deliveries = true
+ActionMailer::Base.raise_delivery_errors = true

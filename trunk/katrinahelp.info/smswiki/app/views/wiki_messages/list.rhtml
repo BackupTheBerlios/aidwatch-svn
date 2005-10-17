@@ -3,6 +3,7 @@
 <table>
   <tr>
   <% for column in WikiMessage.content_columns %>
+      <% next if column.human_name.downcase == 'mar' %>
     <th><%= column.human_name %></th>
   <% end %>
   </tr>
@@ -10,6 +11,7 @@
 <% for wiki_message in @wiki_messages %>
   <tr>
   <% for column in WikiMessage.content_columns %>
+      <% next if column.human_name.downcase == 'mar' %>
     <td><%=h wiki_message.send(column.name) %></td>
   <% end %>
     <td><%= link_to 'Show', :action => 'show', :id => wiki_message %></td>
