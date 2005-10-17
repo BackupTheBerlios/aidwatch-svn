@@ -4,7 +4,7 @@ class Notifier < ActionMailer::Base
       w.save
       f = EmailForward.find_all
       f.each { |g|
-        EmFor::forward(g,w)
+        EmFor.deliver_forward(g,w)
       }
     end
 

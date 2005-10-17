@@ -84,4 +84,8 @@ Controllers = Dependencies::LoadingModule.root(
 )
 
 # Include your app's configuration here:
-
+ActionMailer::Base.delivery_method = :smtp
+ActionMailer::Base.server_settings = {
+  :port         => 25,
+  :domain       => "asiaquake.org",
+}
