@@ -1,0 +1,1793 @@
+nil
+
+
+Processing Base#index (for 127.0.0.1 at Sun Oct 23 17:37:52 CEST 2005)
+  Parameters: {}
+
+
+ActionController::RoutingError (Recognition failed for "/bs/"):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/routing.rb:444:in `recognition_failed'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/routing.rb:434:in `recognize!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/dispatcher.rb:32:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:105:in `handle_dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:71:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:155:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:94:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:57:in `dispatch'
+    script/server:49
+
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing MyTestController#index (for 127.0.0.1 at Sun Oct 23 17:38:27 CEST 2005)
+  Parameters: {"action"=>"index", "controller"=>"my_test"}
+
+
+ActionController::UnknownAction (No action responded to index):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/filters.rb:295:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/rescue.rb:80:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:356:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:356:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/dispatcher.rb:32:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:105:in `handle_dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:71:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:155:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:94:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:57:in `dispatch'
+    script/server:49
+
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing MyTestController#index (for 127.0.0.1 at Sun Oct 23 17:38:37 CEST 2005)
+  Parameters: {"action"=>"index", "controller"=>"my_test"}
+
+
+ActionController::UnknownAction (No action responded to index):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/filters.rb:295:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/rescue.rb:80:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:356:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:356:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/dispatcher.rb:32:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:105:in `handle_dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:71:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:155:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:94:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:57:in `dispatch'
+    script/server:49
+
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing MyTestController#index (for 127.0.0.1 at Sun Oct 23 17:39:37 CEST 2005)
+  Parameters: {"action"=>"index", "controller"=>"my_test"}
+Completed in 0.00455 (219 reqs/sec) | Rendering: 0.00070 (15%) [http://localhost/MyTest/]
+
+
+Processing MyTestController#index (for 127.0.0.1 at Sun Oct 23 17:39:55 CEST 2005)
+  Parameters: {"action"=>"index", "controller"=>"my_test"}
+Completed in 0.00455 (219 reqs/sec) | Rendering: 0.00076 (16%) [http://localhost/MyTest/]
+
+
+Processing MyTestController#index (for 127.0.0.1 at Sun Oct 23 17:40:20 CEST 2005)
+  Parameters: {"action"=>"index", "controller"=>"my_test"}
+Completed in 0.00448 (223 reqs/sec) | Rendering: 0.00069 (15%) [http://localhost/MyTest/index/]
+
+
+Processing MyTestController#index (for 127.0.0.1 at Sun Oct 23 17:40:24 CEST 2005)
+  Parameters: {"action"=>"index", "controller"=>"my_test"}
+Completed in 0.00451 (221 reqs/sec) | Rendering: 0.00072 (16%) [http://localhost/MyTest/index]
+
+
+Processing MyTestController#index (for 127.0.0.1 at Sun Oct 23 17:41:10 CEST 2005)
+  Parameters: {"action"=>"index", "controller"=>"my_test"}
+Completed in 0.00460 (217 reqs/sec) | Rendering: 0.00070 (15%) [http://localhost/MyTest/]
+
+
+Processing MyTestController#dilbert (for 127.0.0.1 at Sun Oct 23 17:41:14 CEST 2005)
+  Parameters: {"action"=>"dilbert", "controller"=>"my_test"}
+Completed in 0.00453 (220 reqs/sec) | Rendering: 0.00069 (15%) [http://localhost/MyTest/dilbert]
+
+
+Processing MyTestController#dilbert (for 127.0.0.1 at Sun Oct 23 17:41:17 CEST 2005)
+  Parameters: {"action"=>"dilbert", "controller"=>"my_test"}
+Completed in 0.00451 (221 reqs/sec) | Rendering: 0.00069 (15%) [http://localhost/MyTest/dilbert/]
+
+
+Processing RecipeController#new (for 127.0.0.1 at Sun Oct 23 18:11:30 CEST 2005)
+  Parameters: {"action"=>"new", "controller"=>"recipe"}
+  [4;33mRecipe Columns (0.004006)[m   [1;37mSHOW FIELDS FROM recipes[m
+  [4;35mRecipe Columns (0.005563)[m   [0;37mSHOW FIELDS FROM recipes[m
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/scaffolds/layout.rhtml (200 OK)
+Completed in 0.69877 (1 reqs/sec) | Rendering: 0.02709 (3%) | DB: 0.00957 (1%) [http://localhost/Recipe/new]
+
+
+Processing RecipeController#new (for 127.0.0.1 at Sun Oct 23 18:19:53 CEST 2005)
+  Parameters: {"action"=>"new", "controller"=>"recipe"}
+  [4;33mRecipe Columns (0.006431)[m   [1;37mSHOW FIELDS FROM recipes[m
+  [4;35mRecipe Columns (0.034439)[m   [0;37mSHOW FIELDS FROM recipes[m
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/scaffolds/layout.rhtml (200 OK)
+Completed in 0.07135 (14 reqs/sec) | Rendering: 0.00546 (7%) | DB: 0.04087 (57%) [http://localhost/Recipe/new]
+
+
+Processing RecipeController#new (for 127.0.0.1 at Sun Oct 23 18:21:05 CEST 2005)
+  Parameters: {"action"=>"new", "controller"=>"recipe"}
+  [4;33mRecipe Columns (0.004238)[m   [1;37mSHOW FIELDS FROM recipes[m
+  [4;35mRecipe Columns (0.031984)[m   [0;37mSHOW FIELDS FROM recipes[m
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/scaffolds/layout.rhtml (200 OK)
+Completed in 0.06711 (14 reqs/sec) | Rendering: 0.00530 (7%) | DB: 0.03622 (53%) [http://localhost/recipe/new]
+
+
+Processing RecipeController#list (for 127.0.0.1 at Sun Oct 23 18:21:10 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"recipe"}
+  [4;33mRecipe Count (0.002185)[m   [1;37mSELECT COUNT(*) FROM recipes [m
+  [4;35mRecipe Load (0.002976)[m   [0;37mSELECT * FROM recipes LIMIT 10[m
+  [4;33mRecipe Columns (0.004176)[m   [1;37mSHOW FIELDS FROM recipes[m
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/scaffolds/layout.rhtml (200 OK)
+Completed in 0.55317 (1 reqs/sec) | Rendering: 0.00564 (1%) | DB: 0.00934 (1%) [http://localhost/recipe/list]
+
+
+Processing RecipeController#new (for 127.0.0.1 at Sun Oct 23 18:21:19 CEST 2005)
+  Parameters: {"action"=>"new", "controller"=>"recipe"}
+  [4;35mRecipe Columns (0.015849)[m   [0;37mSHOW FIELDS FROM recipes[m
+  [4;33mRecipe Columns (0.005404)[m   [1;37mSHOW FIELDS FROM recipes[m
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/scaffolds/layout.rhtml (200 OK)
+Completed in 0.05583 (17 reqs/sec) | Rendering: 0.00843 (15%) | DB: 0.02125 (38%) [http://localhost/recipe/new]
+
+
+Processing RecipeController#create (for 127.0.0.1 at Sun Oct 23 18:22:15 CEST 2005)
+  Parameters: {"commit"=>"Create", "action"=>"create", "controller"=>"recipe", "recipe"=>{"date(1i)"=>"2005", "title"=>"Eiersalade", "date(2i)"=>"10", "date(3i)"=>"23", "description"=>"Een lekkere eiersalade met verse eieren", "instructions"=>"- ei\r\n- peper\r\n- zout\r\n- curry\r\n- ketshup"}}
+  [4;35mRecipe Columns (0.004222)[m   [0;37mSHOW FIELDS FROM recipes[m
+  [4;33mRecipe Columns (0.004204)[m   [1;37mSHOW FIELDS FROM recipes[m
+  [4;35mSQL (0.001810)[m   [0;37mBEGIN[m
+  [4;33mSQL (0.002155)[m   [1;37mINSERT INTO recipes (`title`, `date`, `description`, `instructions`) VALUES('Eiersalade', '2005-10-23', 'Een lekkere eiersalade met verse eieren', '- ei\r\n- peper\r\n- zout\r\n- curry\r\n- ketshup')[m
+  [4;35mSQL (0.001041)[m   [0;37mCOMMIT[m
+Redirected to http://localhost:3000/recipe/list
+Completed in 0.03903 (25 reqs/sec) | DB: 0.01343 (34%) [http://localhost/recipe/create/]
+
+
+Processing RecipeController#list (for 127.0.0.1 at Sun Oct 23 18:22:15 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"recipe"}
+  [4;33mRecipe Count (0.001811)[m   [1;37mSELECT COUNT(*) FROM recipes [m
+  [4;35mRecipe Load (0.003499)[m   [0;37mSELECT * FROM recipes LIMIT 10[m
+  [4;33mRecipe Columns (0.004129)[m   [1;37mSHOW FIELDS FROM recipes[m
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/scaffolds/layout.rhtml (200 OK)
+Completed in 0.04040 (24 reqs/sec) | Rendering: 0.00541 (13%) | DB: 0.00944 (23%) [http://localhost/recipe/list]
+
+
+Processing RecipeController#new (for 127.0.0.1 at Sun Oct 23 18:23:12 CEST 2005)
+  Parameters: {"action"=>"new", "controller"=>"recipe"}
+  [4;35mRecipe Columns (0.004136)[m   [0;37mSHOW FIELDS FROM recipes[m
+  [4;33mRecipe Columns (0.004159)[m   [1;37mSHOW FIELDS FROM recipes[m
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/scaffolds/layout.rhtml (200 OK)
+Completed in 0.03870 (25 reqs/sec) | Rendering: 0.00550 (14%) | DB: 0.00830 (21%) [http://localhost/recipe/new]
+
+
+Processing RecipeController#create (for 127.0.0.1 at Sun Oct 23 18:24:17 CEST 2005)
+  Parameters: {"commit"=>"Create", "action"=>"create", "controller"=>"recipe", "recipe"=>{"date(1i)"=>"2005", "title"=>"Hete bliksem", "date(2i)"=>"10", "date(3i)"=>"23", "description"=>"Aardappelpuree met appelmoes", "instructions"=>"- aardappels\r\n- appelmoes\r\n- melk\r\n- 1 ei"}}
+  [4;35mRecipe Columns (0.004376)[m   [0;37mSHOW FIELDS FROM recipes[m
+  [4;33mRecipe Columns (0.004162)[m   [1;37mSHOW FIELDS FROM recipes[m
+  [4;35mSQL (0.000987)[m   [0;37mBEGIN[m
+  [4;33mSQL (0.001352)[m   [1;37mINSERT INTO recipes (`title`, `date`, `description`, `instructions`) VALUES('Hete bliksem', '2005-10-23', 'Aardappelpuree met appelmoes', '- aardappels\r\n- appelmoes\r\n- melk\r\n- 1 ei')[m
+  [4;35mSQL (0.000897)[m   [0;37mCOMMIT[m
+Redirected to http://localhost:3000/recipe/list
+Completed in 0.03730 (26 reqs/sec) | DB: 0.01177 (31%) [http://localhost/recipe/create/]
+
+
+Processing RecipeController#list (for 127.0.0.1 at Sun Oct 23 18:24:18 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"recipe"}
+  [4;33mRecipe Count (0.002088)[m   [1;37mSELECT COUNT(*) FROM recipes [m
+  [4;35mRecipe Load (0.004712)[m   [0;37mSELECT * FROM recipes LIMIT 10[m
+  [4;33mRecipe Columns (0.004397)[m   [1;37mSHOW FIELDS FROM recipes[m
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/scaffolds/layout.rhtml (200 OK)
+Completed in 0.05503 (18 reqs/sec) | Rendering: 0.00566 (10%) | DB: 0.01120 (20%) [http://localhost/recipe/list]
+
+
+Processing RecipeController#edit (for 127.0.0.1 at Sun Oct 23 18:25:09 CEST 2005)
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"recipe"}
+  [4;35mRecipe Load (0.440563)[m   [0;37mSELECT * FROM recipes WHERE recipes.id = '1' LIMIT 1[m
+  [4;33mRecipe Columns (0.004279)[m   [1;37mSHOW FIELDS FROM recipes[m
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/scaffolds/layout.rhtml (200 OK)
+Completed in 0.49909 (2 reqs/sec) | Rendering: 0.00545 (1%) | DB: 0.44484 (89%) [http://localhost/recipe/edit/1]
+
+
+Processing RecipeController#show (for 127.0.0.1 at Sun Oct 23 18:25:16 CEST 2005)
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"recipe"}
+  [4;35mRecipe Load (0.003249)[m   [0;37mSELECT * FROM recipes WHERE recipes.id = '1' LIMIT 1[m
+  [4;33mRecipe Columns (0.004182)[m   [1;37mSHOW FIELDS FROM recipes[m
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/scaffolds/layout.rhtml (200 OK)
+Completed in 0.03736 (26 reqs/sec) | Rendering: 0.00528 (14%) | DB: 0.00743 (19%) [http://localhost/recipe/show/1]
+
+
+Processing RecipeController#edit (for 127.0.0.1 at Sun Oct 23 18:25:20 CEST 2005)
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"recipe"}
+  [4;35mRecipe Load (0.003253)[m   [0;37mSELECT * FROM recipes WHERE recipes.id = '1' LIMIT 1[m
+  [4;33mRecipe Columns (0.004141)[m   [1;37mSHOW FIELDS FROM recipes[m
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/scaffolds/layout.rhtml (200 OK)
+Completed in 0.04137 (24 reqs/sec) | Rendering: 0.00549 (13%) | DB: 0.00739 (17%) [http://localhost/recipe/edit/1]
+
+
+Processing RecipeController#list (for 127.0.0.1 at Sun Oct 23 18:25:26 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"recipe"}
+  [4;35mRecipe Count (0.001823)[m   [0;37mSELECT COUNT(*) FROM recipes [m
+  [4;33mRecipe Load (0.003469)[m   [1;37mSELECT * FROM recipes LIMIT 10[m
+  [4;35mRecipe Columns (0.004209)[m   [0;37mSHOW FIELDS FROM recipes[m
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/scaffolds/layout.rhtml (200 OK)
+Completed in 0.04727 (21 reqs/sec) | Rendering: 0.00543 (11%) | DB: 0.00950 (20%) [http://localhost/recipe/list]
+
+
+Processing RecipeController#destroy (for 127.0.0.1 at Sun Oct 23 18:25:31 CEST 2005)
+  Parameters: {"confirm"=>"Are you sure?", "action"=>"destroy", "id"=>"1", "controller"=>"recipe"}
+  [4;33mRecipe Load (0.003444)[m   [1;37mSELECT * FROM recipes WHERE recipes.id = '1' LIMIT 1[m
+  [4;35mSQL (0.000937)[m   [0;37mBEGIN[m
+  [4;33mRecipe Columns (0.004170)[m   [1;37mSHOW FIELDS FROM recipes[m
+  [4;35mRecipe Destroy (0.001831)[m   [0;37m DELETE FROM recipes
+ WHERE id = 1
+[m
+  [4;33mSQL (0.000860)[m   [1;37mCOMMIT[m
+Redirected to http://localhost:3000/recipe/list
+Completed in 0.02694 (37 reqs/sec) | DB: 0.01124 (41%) [http://localhost/recipe/destroy/1?confirm=Are+you+sure%3F]
+
+
+Processing RecipeController#list (for 127.0.0.1 at Sun Oct 23 18:25:32 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"recipe"}
+  [4;35mRecipe Count (0.001813)[m   [0;37mSELECT COUNT(*) FROM recipes [m
+  [4;33mRecipe Load (0.003743)[m   [1;37mSELECT * FROM recipes LIMIT 10[m
+  [4;35mRecipe Columns (0.004158)[m   [0;37mSHOW FIELDS FROM recipes[m
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/scaffolds/layout.rhtml (200 OK)
+Completed in 0.04146 (24 reqs/sec) | Rendering: 0.00540 (13%) | DB: 0.00971 (23%) [http://localhost/recipe/list]
+
+
+Processing RecipeController#list (for 127.0.0.1 at Sun Oct 23 18:42:23 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"recipe"}
+  [4;33mRecipe Count (0.011944)[m   [1;37mSELECT COUNT(*) FROM recipes [m
+  [4;35mRecipe Load (0.018932)[m   [0;37mSELECT * FROM recipes LIMIT 10[m
+  [4;33mRecipe Columns (0.017758)[m   [1;37mSHOW FIELDS FROM recipes[m
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/scaffolds/layout.rhtml (200 OK)
+Completed in 0.07975 (12 reqs/sec) | Rendering: 0.00540 (6%) | DB: 0.04863 (60%) [http://localhost/recipe/list/]
+
+
+Processing RecipeController#liSt (for 127.0.0.1 at Sun Oct 23 18:42:28 CEST 2005)
+  Parameters: {"action"=>"liSt", "controller"=>"recipe"}
+
+
+ActionController::UnknownAction (No action responded to liSt):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/filters.rb:295:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/rescue.rb:80:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:356:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:356:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/dispatcher.rb:32:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:105:in `handle_dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:71:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:155:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:94:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:57:in `dispatch'
+    script/server:49
+
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing RecipeController#List (for 127.0.0.1 at Sun Oct 23 18:42:34 CEST 2005)
+  Parameters: {"action"=>"List", "controller"=>"recipe"}
+
+
+ActionController::UnknownAction (No action responded to List):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/filters.rb:295:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/rescue.rb:80:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:356:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:356:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/dispatcher.rb:32:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:105:in `handle_dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:71:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:155:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:94:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:57:in `dispatch'
+    script/server:49
+
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing RecipeController#list (for 127.0.0.1 at Sun Oct 23 18:42:38 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"recipe"}
+  [4;35mRecipe Count (0.061625)[m   [0;37mSELECT COUNT(*) FROM recipes [m
+  [4;33mRecipe Load (0.003122)[m   [1;37mSELECT * FROM recipes LIMIT 10[m
+  [4;35mRecipe Columns (0.004128)[m   [0;37mSHOW FIELDS FROM recipes[m
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/scaffolds/layout.rhtml (200 OK)
+Completed in 0.09989 (10 reqs/sec) | Rendering: 0.00536 (5%) | DB: 0.06887 (68%) [http://localhost/recipe/list/]
+
+
+Processing Base#index (for 127.0.0.1 at Sun Oct 23 18:42:42 CEST 2005)
+  Parameters: {}
+
+
+ActionController::RoutingError (Recognition failed for "/recIpe/list/"):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/routing.rb:444:in `recognition_failed'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/routing.rb:434:in `recognize!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/dispatcher.rb:32:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:105:in `handle_dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:71:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:155:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:94:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:57:in `dispatch'
+    script/server:49
+
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing RecipeController#list (for 127.0.0.1 at Sun Oct 23 18:42:48 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"recipe"}
+  [4;33mRecipe Count (0.064958)[m   [1;37mSELECT COUNT(*) FROM recipes [m
+  [4;35mRecipe Load (0.008914)[m   [0;37mSELECT * FROM recipes LIMIT 10[m
+  [4;33mRecipe Columns (0.025597)[m   [1;37mSHOW FIELDS FROM recipes[m
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/scaffolds/layout.rhtml (200 OK)
+Completed in 0.25214 (3 reqs/sec) | Rendering: 0.00541 (2%) | DB: 0.09947 (39%) [http://localhost/recipe/list/]
+
+
+Processing RecipeController#list (for 127.0.0.1 at Sun Oct 23 18:42:51 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"recipe"}
+  [4;35mRecipe Count (0.001813)[m   [0;37mSELECT COUNT(*) FROM recipes [m
+  [4;33mRecipe Load (0.003066)[m   [1;37mSELECT * FROM recipes LIMIT 10[m
+  [4;35mRecipe Columns (0.004150)[m   [0;37mSHOW FIELDS FROM recipes[m
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/scaffolds/layout.rhtml (200 OK)
+Completed in 0.04030 (24 reqs/sec) | Rendering: 0.00543 (13%) | DB: 0.00903 (22%) [http://localhost/Recipe/list/]
+
+
+Processing Base#index (for 127.0.0.1 at Sun Oct 23 18:42:57 CEST 2005)
+  Parameters: {}
+
+
+ActionController::RoutingError (Recognition failed for "/rEcipe/list/"):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/routing.rb:444:in `recognition_failed'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/routing.rb:434:in `recognize!'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/dispatcher.rb:32:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:105:in `handle_dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:71:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:155:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:94:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:57:in `dispatch'
+    script/server:49
+
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing RecipeController#list (for 127.0.0.1 at Sun Oct 23 18:43:01 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"recipe"}
+  [4;33mRecipe Count (0.001975)[m   [1;37mSELECT COUNT(*) FROM recipes [m
+  [4;35mRecipe Load (0.003048)[m   [0;37mSELECT * FROM recipes LIMIT 10[m
+  [4;33mRecipe Columns (0.004149)[m   [1;37mSHOW FIELDS FROM recipes[m
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/scaffolds/layout.rhtml (200 OK)
+Completed in 0.04003 (24 reqs/sec) | Rendering: 0.00542 (13%) | DB: 0.00917 (22%) [http://localhost/recipe/list/]
+
+
+Processing RecipeController#show (for 127.0.0.1 at Sun Oct 23 18:43:08 CEST 2005)
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"recipe"}
+  [4;35mRecipe Load (0.003447)[m   [0;37mSELECT * FROM recipes WHERE recipes.id = '2' LIMIT 1[m
+  [4;33mRecipe Columns (0.005495)[m   [1;37mSHOW FIELDS FROM recipes[m
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/scaffolds/layout.rhtml (200 OK)
+Completed in 0.03886 (25 reqs/sec) | Rendering: 0.00580 (14%) | DB: 0.00894 (23%) [http://localhost/recipe/show/2]
+
+
+Processing RecipeController#list (for 127.0.0.1 at Sun Oct 23 18:43:11 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"recipe"}
+  [4;35mRecipe Count (0.001788)[m   [0;37mSELECT COUNT(*) FROM recipes [m
+  [4;33mRecipe Load (0.003061)[m   [1;37mSELECT * FROM recipes LIMIT 10[m
+  [4;35mRecipe Columns (0.004144)[m   [0;37mSHOW FIELDS FROM recipes[m
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/scaffolds/layout.rhtml (200 OK)
+Completed in 0.13241 (7 reqs/sec) | Rendering: 0.09776 (73%) | DB: 0.00899 (6%) [http://localhost/recipe/list]
+
+
+Processing RecipeController#list (for 127.0.0.1 at Sun Oct 23 18:43:16 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"recipe"}
+  [4;33mRecipe Count (0.013276)[m   [1;37mSELECT COUNT(*) FROM recipes [m
+  [4;35mRecipe Load (0.023703)[m   [0;37mSELECT * FROM recipes LIMIT 10[m
+  [4;33mRecipe Columns (0.007642)[m   [1;37mSHOW FIELDS FROM recipes[m
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/scaffolds/layout.rhtml (200 OK)
+Completed in 0.07585 (13 reqs/sec) | Rendering: 0.00537 (7%) | DB: 0.04462 (58%) [http://localhost/Recipe/list]
+
+
+Processing RecipeController#show (for 127.0.0.1 at Sun Oct 23 18:43:19 CEST 2005)
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"recipe"}
+  [4;35mRecipe Load (0.003200)[m   [0;37mSELECT * FROM recipes WHERE recipes.id = '2' LIMIT 1[m
+  [4;33mRecipe Columns (0.004120)[m   [1;37mSHOW FIELDS FROM recipes[m
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/scaffolds/layout.rhtml (200 OK)
+Completed in 0.03328 (30 reqs/sec) | Rendering: 0.00527 (15%) | DB: 0.00732 (21%) [http://localhost/recipe/show/2]
+
+
+Processing RecipeController#list (for 127.0.0.1 at Sun Oct 23 18:43:23 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"recipe"}
+  [4;35mRecipe Count (0.021097)[m   [0;37mSELECT COUNT(*) FROM recipes [m
+  [4;33mRecipe Load (0.003289)[m   [1;37mSELECT * FROM recipes LIMIT 10[m
+  [4;35mRecipe Columns (0.032487)[m   [0;37mSHOW FIELDS FROM recipes[m
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/scaffolds/layout.rhtml (200 OK)
+Completed in 0.28831 (3 reqs/sec) | Rendering: 0.00535 (1%) | DB: 0.05687 (19%) [http://localhost/recipe/list]
+
+
+Processing RecipeController#list (for 127.0.0.1 at Sun Oct 23 18:43:29 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"recipe"}
+  [4;33mRecipe Count (0.001787)[m   [1;37mSELECT COUNT(*) FROM recipes [m
+  [4;35mRecipe Load (0.003066)[m   [0;37mSELECT * FROM recipes LIMIT 10[m
+  [4;33mRecipe Columns (0.004858)[m   [1;37mSHOW FIELDS FROM recipes[m
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/scaffolds/layout.rhtml (200 OK)
+Completed in 0.04074 (24 reqs/sec) | Rendering: 0.00535 (13%) | DB: 0.00971 (23%) [http://localhost/Recipe/list]
+
+
+Processing RecipeController#show (for 127.0.0.1 at Sun Oct 23 18:43:37 CEST 2005)
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"recipe"}
+  [4;35mRecipe Load (0.003205)[m   [0;37mSELECT * FROM recipes WHERE recipes.id = '2' LIMIT 1[m
+  [4;33mRecipe Columns (0.004410)[m   [1;37mSHOW FIELDS FROM recipes[m
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/scaffolds/layout.rhtml (200 OK)
+Completed in 0.03459 (28 reqs/sec) | Rendering: 0.00535 (15%) | DB: 0.00762 (22%) [http://localhost/recipe/show/2]
+
+
+Processing RecipeController#list (for 127.0.0.1 at Sun Oct 23 18:43:42 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"recipe"}
+  [4;35mRecipe Count (0.001809)[m   [0;37mSELECT COUNT(*) FROM recipes [m
+  [4;33mRecipe Load (0.003121)[m   [1;37mSELECT * FROM recipes LIMIT 10[m
+  [4;35mRecipe Columns (0.004212)[m   [0;37mSHOW FIELDS FROM recipes[m
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/scaffolds/layout.rhtml (200 OK)
+Completed in 0.03989 (25 reqs/sec) | Rendering: 0.00534 (13%) | DB: 0.00914 (22%) [http://localhost/recipe/list]
+
+
+Processing RecipeController#list (for 127.0.0.1 at Sun Oct 23 18:44:26 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"recipe"}
+
+
+ActionController::MissingTemplate (Missing template ./script/../config/../app/views//recipe/list.rhtml):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:827:in `assert_existance_of_template_file'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:586:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/layout.rb:216:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:591:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/layout.rb:216:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:604:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/layout.rb:216:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:627:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/layout.rb:216:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:757:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/filters.rb:295:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/rescue.rb:80:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:356:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:356:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/dispatcher.rb:32:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:105:in `handle_dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:71:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:155:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:94:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:57:in `dispatch'
+    script/server:49
+
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing RecipeController#list (for 127.0.0.1 at Sun Oct 23 18:49:54 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"recipe"}
+  [4;33mRecipe Load (0.003268)[m   [1;37mSELECT * FROM recipes [m
+Rendering recipe/list (200 OK)
+
+
+ActionView::TemplateError (WARNING:  You have a nil object when you probably didn't expect it!  Odds are you
+want an instance of Array instead.
+
+Look in the callstack to see where you're working with an object that could be nil.
+Investigate your methods and make sure the object is what you expect!
+) on line #14 of /recipe/list.rhtml:
+11:   <td width="20%"><p align="center"><i><b>Date</b></i></td>
+12:  </tr>
+13: 
+14:  <% @recipes.each do |recipe| %>
+15:   <tr>
+16:    <td><%= link_to recipe.title, :action => "show", :id => recipe.id %></td>
+17:    <td><%= recipe.date %></td>
+
+    (erb):14:in `evaluate_locals'
+    /gems/actionpack-1.9.1/lib/action_view/base.rb:272:in `evaluate_locals'
+    /gems/actionpack-1.9.1/lib/action_view/base.rb:283:in `rhtml_render'
+    /gems/actionpack-1.9.1/lib/action_view/base.rb:208:in `send'
+    /gems/actionpack-1.9.1/lib/action_view/base.rb:208:in `render_template'
+    /gems/actionpack-1.9.1/lib/action_view/base.rb:173:in `render_file'
+    /gems/actionpack-1.9.1/lib/action_controller/base.rb:588:in `render_with_no_layout'
+    /gems/actionpack-1.9.1/lib/action_controller/layout.rb:216:in `render_without_benchmark'
+    /gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `measure'
+    /gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /gems/actionpack-1.9.1/lib/action_controller/base.rb:591:in `render_with_no_layout'
+    /gems/actionpack-1.9.1/lib/action_controller/layout.rb:216:in `render_without_benchmark'
+    /gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `measure'
+    /gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /gems/actionpack-1.9.1/lib/action_controller/base.rb:604:in `render_with_no_layout'
+    /gems/actionpack-1.9.1/lib/action_controller/layout.rb:216:in `render_without_benchmark'
+    /gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `measure'
+    /gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /gems/actionpack-1.9.1/lib/action_controller/base.rb:627:in `render_with_no_layout'
+    /gems/actionpack-1.9.1/lib/action_controller/layout.rb:216:in `render_without_benchmark'
+    /gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `measure'
+    /gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /gems/actionpack-1.9.1/lib/action_controller/base.rb:757:in `perform_action_without_filters'
+    /gems/actionpack-1.9.1/lib/action_controller/filters.rb:295:in `perform_action_without_benchmark'
+    /gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `perform_action_without_rescue'
+    /gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `measure'
+    /gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `perform_action_without_rescue'
+    /gems/actionpack-1.9.1/lib/action_controller/rescue.rb:80:in `perform_action'
+    /gems/actionpack-1.9.1/lib/action_controller/base.rb:356:in `send'
+    /gems/actionpack-1.9.1/lib/action_controller/base.rb:356:in `process'
+    /gems/rails-0.13.1/lib/dispatcher.rb:32:in `dispatch'
+    /gems/rails-0.13.1/lib/webrick_server.rb:105:in `handle_dispatch'
+    /gems/rails-0.13.1/lib/webrick_server.rb:71:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:155:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:94:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /gems/rails-0.13.1/lib/webrick_server.rb:57:in `dispatch'
+    script/server:49
+
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing RecipeController#list (for 127.0.0.1 at Sun Oct 23 18:50:01 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"recipe"}
+  [4;35mRecipe Load (0.003124)[m   [0;37mSELECT * FROM recipes [m
+Rendering recipe/list (200 OK)
+
+
+ActionView::TemplateError (WARNING:  You have a nil object when you probably didn't expect it!  Odds are you
+want an instance of Array instead.
+
+Look in the callstack to see where you're working with an object that could be nil.
+Investigate your methods and make sure the object is what you expect!
+) on line #14 of /recipe/list.rhtml:
+11:   <td width="20%"><p align="center"><i><b>Date</b></i></td>
+12:  </tr>
+13: 
+14:  <% @recipes.each do |recipe| %>
+15:   <tr>
+16:    <td><%= link_to recipe.title, :action => "show", :id => recipe.id %></td>
+17:    <td><%= recipe.date %></td>
+
+    (erb):14:in `evaluate_locals'
+    /gems/actionpack-1.9.1/lib/action_view/base.rb:272:in `evaluate_locals'
+    /gems/actionpack-1.9.1/lib/action_view/base.rb:283:in `rhtml_render'
+    /gems/actionpack-1.9.1/lib/action_view/base.rb:208:in `send'
+    /gems/actionpack-1.9.1/lib/action_view/base.rb:208:in `render_template'
+    /gems/actionpack-1.9.1/lib/action_view/base.rb:173:in `render_file'
+    /gems/actionpack-1.9.1/lib/action_controller/base.rb:588:in `render_with_no_layout'
+    /gems/actionpack-1.9.1/lib/action_controller/layout.rb:216:in `render_without_benchmark'
+    /gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `measure'
+    /gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /gems/actionpack-1.9.1/lib/action_controller/base.rb:591:in `render_with_no_layout'
+    /gems/actionpack-1.9.1/lib/action_controller/layout.rb:216:in `render_without_benchmark'
+    /gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `measure'
+    /gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /gems/actionpack-1.9.1/lib/action_controller/base.rb:604:in `render_with_no_layout'
+    /gems/actionpack-1.9.1/lib/action_controller/layout.rb:216:in `render_without_benchmark'
+    /gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `measure'
+    /gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /gems/actionpack-1.9.1/lib/action_controller/base.rb:627:in `render_with_no_layout'
+    /gems/actionpack-1.9.1/lib/action_controller/layout.rb:216:in `render_without_benchmark'
+    /gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `measure'
+    /gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /gems/actionpack-1.9.1/lib/action_controller/base.rb:757:in `perform_action_without_filters'
+    /gems/actionpack-1.9.1/lib/action_controller/filters.rb:295:in `perform_action_without_benchmark'
+    /gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `perform_action_without_rescue'
+    /gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `measure'
+    /gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `perform_action_without_rescue'
+    /gems/actionpack-1.9.1/lib/action_controller/rescue.rb:80:in `perform_action'
+    /gems/actionpack-1.9.1/lib/action_controller/base.rb:356:in `send'
+    /gems/actionpack-1.9.1/lib/action_controller/base.rb:356:in `process'
+    /gems/rails-0.13.1/lib/dispatcher.rb:32:in `dispatch'
+    /gems/rails-0.13.1/lib/webrick_server.rb:105:in `handle_dispatch'
+    /gems/rails-0.13.1/lib/webrick_server.rb:71:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:155:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:94:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /gems/rails-0.13.1/lib/webrick_server.rb:57:in `dispatch'
+    script/server:49
+
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing RecipeController#list (for 127.0.0.1 at Sun Oct 23 18:51:21 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"recipe"}
+  [4;33mRecipe Load (0.003195)[m   [1;37mSELECT * FROM recipes [m
+Rendering recipe/list (200 OK)
+  [4;35mRecipe Columns (0.004242)[m   [0;37mSHOW FIELDS FROM recipes[m
+Completed in 0.03069 (32 reqs/sec) | Rendering: 0.01909 (62%) | DB: 0.00320 (10%) [http://localhost/recipe/list]
+
+
+Processing CategoryController#index (for 127.0.0.1 at Sun Oct 23 19:47:00 CEST 2005)
+  Parameters: {"action"=>"index", "controller"=>"category"}
+  [4;33mCategory Count (0.001825)[m   [1;37mSELECT COUNT(*) FROM categories [m
+  [4;35mCategory Load (0.001892)[m   [0;37mSELECT * FROM categories LIMIT 10[m
+  [4;33mCategory Columns (0.003427)[m   [1;37mSHOW FIELDS FROM categories[m
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/scaffolds/layout.rhtml (200 OK)
+Completed in 0.05053 (19 reqs/sec) | Rendering: 0.00539 (10%) | DB: 0.00714 (14%) [http://localhost/category]
+
+
+Processing CategoryController#new (for 127.0.0.1 at Sun Oct 23 19:47:06 CEST 2005)
+  Parameters: {"action"=>"new", "controller"=>"category"}
+  [4;35mCategory Columns (0.003529)[m   [0;37mSHOW FIELDS FROM categories[m
+  [4;33mCategory Columns (0.003527)[m   [1;37mSHOW FIELDS FROM categories[m
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/scaffolds/layout.rhtml (200 OK)
+Completed in 0.02925 (34 reqs/sec) | Rendering: 0.00553 (18%) | DB: 0.00706 (24%) [http://localhost/category/new]
+
+
+Processing CategoryController#create (for 127.0.0.1 at Sun Oct 23 19:47:25 CEST 2005)
+  Parameters: {"commit"=>"Create", "category"=>{"name"=>"snacks"}, "action"=>"create", "controller"=>"category"}
+  [4;35mCategory Columns (0.003971)[m   [0;37mSHOW FIELDS FROM categories[m
+  [4;33mCategory Columns (0.003472)[m   [1;37mSHOW FIELDS FROM categories[m
+  [4;35mSQL (0.000906)[m   [0;37mBEGIN[m
+  [4;33mSQL (0.001336)[m   [1;37mINSERT INTO categories (`name`) VALUES('snacks')[m
+  [4;35mSQL (0.000881)[m   [0;37mCOMMIT[m
+Redirected to http://localhost:3000/category/list
+Completed in 0.02697 (37 reqs/sec) | DB: 0.01057 (39%) [http://localhost/category/create/]
+
+
+Processing CategoryController#list (for 127.0.0.1 at Sun Oct 23 19:47:26 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"category"}
+  [4;33mCategory Count (0.001798)[m   [1;37mSELECT COUNT(*) FROM categories [m
+  [4;35mCategory Load (0.002100)[m   [0;37mSELECT * FROM categories LIMIT 10[m
+  [4;33mCategory Columns (0.007595)[m   [1;37mSHOW FIELDS FROM categories[m
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/scaffolds/layout.rhtml (200 OK)
+Completed in 0.05771 (17 reqs/sec) | Rendering: 0.00540 (9%) | DB: 0.01149 (19%) [http://localhost/category/list]
+
+
+Processing CategoryController#new (for 127.0.0.1 at Sun Oct 23 19:47:31 CEST 2005)
+  Parameters: {"action"=>"new", "controller"=>"category"}
+  [4;35mCategory Columns (0.011972)[m   [0;37mSHOW FIELDS FROM categories[m
+  [4;33mCategory Columns (0.025120)[m   [1;37mSHOW FIELDS FROM categories[m
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/scaffolds/layout.rhtml (200 OK)
+Completed in 0.05953 (16 reqs/sec) | Rendering: 0.00538 (9%) | DB: 0.03709 (62%) [http://localhost/category/new]
+
+
+Processing CategoryController#create (for 127.0.0.1 at Sun Oct 23 19:47:36 CEST 2005)
+  Parameters: {"commit"=>"Create", "category"=>{"name"=>"beverages"}, "action"=>"create", "controller"=>"category"}
+  [4;35mCategory Columns (0.003473)[m   [0;37mSHOW FIELDS FROM categories[m
+  [4;33mCategory Columns (0.003425)[m   [1;37mSHOW FIELDS FROM categories[m
+  [4;35mSQL (0.000913)[m   [0;37mBEGIN[m
+  [4;33mSQL (0.002563)[m   [1;37mINSERT INTO categories (`name`) VALUES('beverages')[m
+  [4;35mSQL (0.000888)[m   [0;37mCOMMIT[m
+Redirected to http://localhost:3000/category/list
+Completed in 0.02774 (36 reqs/sec) | DB: 0.01126 (40%) [http://localhost/category/create/]
+
+
+Processing CategoryController#list (for 127.0.0.1 at Sun Oct 23 19:47:37 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"category"}
+  [4;33mCategory Count (0.002084)[m   [1;37mSELECT COUNT(*) FROM categories [m
+  [4;35mCategory Load (0.002412)[m   [0;37mSELECT * FROM categories LIMIT 10[m
+  [4;33mCategory Columns (0.003430)[m   [1;37mSHOW FIELDS FROM categories[m
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/scaffolds/layout.rhtml (200 OK)
+Completed in 0.03866 (25 reqs/sec) | Rendering: 0.00572 (14%) | DB: 0.00793 (20%) [http://localhost/category/list]
+
+
+Processing RecipeController#list (for 127.0.0.1 at Sun Oct 23 20:00:53 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"recipe"}
+  [4;35mRecipe Load (0.003803)[m   [0;37mSELECT * FROM recipes [m
+Rendering recipe/list (200 OK)
+  [4;33mRecipe Columns (0.004793)[m   [1;37mSHOW FIELDS FROM recipes[m
+Completed in 0.04014 (24 reqs/sec) | Rendering: 0.01961 (48%) | DB: 0.00380 (9%) [http://localhost/recipe/list]
+
+
+Processing RecipeController#show (for 127.0.0.1 at Sun Oct 23 20:00:56 CEST 2005)
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"recipe"}
+  [4;35mRecipe Load (0.003506)[m   [0;37mSELECT * FROM recipes WHERE recipes.id = '2' LIMIT 1[m
+  [4;33mRecipe Columns (0.004351)[m   [1;37mSHOW FIELDS FROM recipes[m
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/scaffolds/layout.rhtml (200 OK)
+Completed in 0.04095 (24 reqs/sec) | Rendering: 0.00527 (12%) | DB: 0.00786 (19%) [http://localhost/recipe/show/2]
+
+
+Processing RecipeController#edit (for 127.0.0.1 at Sun Oct 23 20:01:00 CEST 2005)
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"recipe"}
+  [4;35mRecipe Load (0.003572)[m   [0;37mSELECT * FROM recipes WHERE recipes.id = '2' LIMIT 1[m
+  [4;33mCategory Load (0.002349)[m   [1;37mSELECT * FROM categories [m
+Rendering recipe/edit (200 OK)
+  [4;35mRecipe Columns (0.004402)[m   [0;37mSHOW FIELDS FROM recipes[m
+  [4;33mCategory Columns (0.003419)[m   [1;37mSHOW FIELDS FROM categories[m
+Completed in 0.05651 (17 reqs/sec) | Rendering: 0.03269 (57%) | DB: 0.00592 (10%) [http://localhost/recipe/edit/2]
+
+
+Processing RecipeController#update (for 127.0.0.1 at Sun Oct 23 20:01:13 CEST 2005)
+  Parameters: {"action"=>"update", "id"=>"2", "controller"=>"recipe", "recipe"=>{"title"=>"Hete bliksem", "id"=>"2", "category_id"=>"1", "description"=>"Aardappelpuree met appelmoes", "instructions"=>"- aardappels\r\n- appelmoes\r\n- melk\r\n- 1 ei\r\n  "}}
+  [4;35mRecipe Load (0.003903)[m   [0;37mSELECT * FROM recipes WHERE recipes.id = '2' LIMIT 1[m
+  [4;33mRecipe Columns (0.006380)[m   [1;37mSHOW FIELDS FROM recipes[m
+  [4;35mSQL (0.044105)[m   [0;37mBEGIN[m
+  [4;33mRecipe Update (0.050885)[m   [1;37mUPDATE recipes SET `date` = '2005-10-23', `title` = 'Hete bliksem', `category_id` = 1, `description` = 'Aardappelpuree met appelmoes', `instructions` = '- aardappels\r\n- appelmoes\r\n- melk\r\n- 1 ei\r\n ' WHERE id = 2[m
+  [4;35mSQL (0.018986)[m   [0;37mCOMMIT[m
+Redirected to http://localhost:3000/recipe/show/2
+Completed in 0.15775 (6 reqs/sec) | DB: 0.12426 (78%) [http://localhost/recipe/update/2]
+
+
+Processing RecipeController#show (for 127.0.0.1 at Sun Oct 23 20:01:13 CEST 2005)
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"recipe"}
+  [4;33mRecipe Load (0.003500)[m   [1;37mSELECT * FROM recipes WHERE recipes.id = '2' LIMIT 1[m
+  [4;35mRecipe Columns (0.004349)[m   [0;37mSHOW FIELDS FROM recipes[m
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/scaffolds/layout.rhtml (200 OK)
+Completed in 0.05846 (17 reqs/sec) | Rendering: 0.00533 (9%) | DB: 0.00785 (13%) [http://localhost/recipe/show/2]
+
+
+Processing RecipeController#edit (for 127.0.0.1 at Sun Oct 23 20:01:25 CEST 2005)
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"recipe"}
+  [4;33mRecipe Load (0.003716)[m   [1;37mSELECT * FROM recipes WHERE recipes.id = '2' LIMIT 1[m
+  [4;35mCategory Load (0.002361)[m   [0;37mSELECT * FROM categories [m
+Rendering recipe/edit (200 OK)
+  [4;33mRecipe Columns (0.004351)[m   [1;37mSHOW FIELDS FROM recipes[m
+  [4;35mCategory Columns (0.003375)[m   [0;37mSHOW FIELDS FROM categories[m
+Completed in 0.04501 (22 reqs/sec) | Rendering: 0.02100 (46%) | DB: 0.00608 (13%) [http://localhost/recipe/edit/2]
+
+
+Processing RecipeController#list (for 127.0.0.1 at Sun Oct 23 20:01:31 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"recipe"}
+  [4;33mRecipe Load (0.003500)[m   [1;37mSELECT * FROM recipes [m
+Rendering recipe/list (200 OK)
+  [4;35mRecipe Columns (0.004434)[m   [0;37mSHOW FIELDS FROM recipes[m
+Completed in 0.03805 (26 reqs/sec) | Rendering: 0.01902 (49%) | DB: 0.00350 (9%) [http://localhost/recipe/list]
+
+
+Processing RecipeController#list (for 127.0.0.1 at Sun Oct 23 20:03:10 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"recipe"}
+  [4;33mRecipe Load (0.005460)[m   [1;37mSELECT * FROM recipes [m
+Rendering recipe/list (200 OK)
+  [4;35mRecipe Columns (0.004415)[m   [0;37mSHOW FIELDS FROM recipes[m
+  [4;33mCategory Load (0.002314)[m   [1;37mSELECT * FROM categories WHERE categories.id = 1 LIMIT 1[m
+  [4;35mCategory Columns (0.003384)[m   [0;37mSHOW FIELDS FROM categories[m
+Completed in 0.05653 (17 reqs/sec) | Rendering: 0.03577 (63%) | DB: 0.00546 (9%) [http://localhost/recipe/list]
+
+
+Processing RecipeController#list (for 127.0.0.1 at Mon Oct 24 13:31:10 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"recipe"}
+
+
+Errno::ECONNREFUSED (Connection refused - connect(2)):
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.11.1/lib/active_record/vendor/mysql411.rb:47:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.11.1/lib/active_record/vendor/mysql411.rb:47:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.11.1/lib/active_record/vendor/mysql411.rb:47:in `real_connect'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.11.1/lib/active_record/connection_adapters/mysql_adapter.rb:39:in `mysql_connection'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.11.1/lib/active_record/query_cache.rb:52:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.11.1/lib/active_record/query_cache.rb:52:in `connection='
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.11.1/lib/active_record/connection_adapters/abstract_adapter.rb:108:in `retrieve_connection'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.11.1/lib/active_record/base.rb:239:in `connection'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.11.1/lib/active_record/base.rb:751:in `add_limit!'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.11.1/lib/active_record/base.rb:746:in `construct_finder_sql'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.11.1/lib/active_record/base.rb:343:in `find'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.11.1/lib/active_record/deprecated_finders.rb:37:in `find_all'
+    /app/controllers/recipe_controller.rb:5:in `list'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:756:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:756:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/filters.rb:295:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/rescue.rb:80:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:356:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:356:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/dispatcher.rb:32:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:105:in `handle_dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:71:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:155:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:94:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:57:in `dispatch'
+    script/server:49
+
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing RecipeController#index (for 127.0.0.1 at Mon Oct 24 13:48:16 CEST 2005)
+  Parameters: {"action"=>"index", "controller"=>"recipe"}
+
+
+Errno::ECONNREFUSED (Connection refused - connect(2)):
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.11.1/lib/active_record/vendor/mysql411.rb:47:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.11.1/lib/active_record/vendor/mysql411.rb:47:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.11.1/lib/active_record/vendor/mysql411.rb:47:in `real_connect'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.11.1/lib/active_record/connection_adapters/mysql_adapter.rb:39:in `mysql_connection'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.11.1/lib/active_record/query_cache.rb:52:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.11.1/lib/active_record/query_cache.rb:52:in `connection='
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.11.1/lib/active_record/connection_adapters/abstract_adapter.rb:108:in `retrieve_connection'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.11.1/lib/active_record/base.rb:239:in `connection'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.11.1/lib/active_record/base.rb:751:in `add_limit!'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.11.1/lib/active_record/base.rb:746:in `construct_finder_sql'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.11.1/lib/active_record/base.rb:343:in `find'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.11.1/lib/active_record/deprecated_finders.rb:37:in `find_all'
+    /app/controllers/recipe_controller.rb:5:in `list'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/scaffolding.rb:94:in `index'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:756:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:756:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/filters.rb:295:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/rescue.rb:80:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:356:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:356:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/dispatcher.rb:32:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:105:in `handle_dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:71:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:155:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:94:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:57:in `dispatch'
+    script/server:49
+
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing RecipeController#index (for 127.0.0.1 at Mon Oct 24 13:50:53 CEST 2005)
+  Parameters: {"action"=>"index", "controller"=>"recipe"}
+
+
+Errno::ECONNREFUSED (Connection refused - connect(2)):
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.11.1/lib/active_record/vendor/mysql411.rb:47:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.11.1/lib/active_record/vendor/mysql411.rb:47:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.11.1/lib/active_record/vendor/mysql411.rb:47:in `real_connect'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.11.1/lib/active_record/connection_adapters/mysql_adapter.rb:39:in `mysql_connection'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.11.1/lib/active_record/query_cache.rb:52:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.11.1/lib/active_record/query_cache.rb:52:in `connection='
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.11.1/lib/active_record/connection_adapters/abstract_adapter.rb:108:in `retrieve_connection'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.11.1/lib/active_record/base.rb:239:in `connection'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.11.1/lib/active_record/base.rb:751:in `add_limit!'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.11.1/lib/active_record/base.rb:746:in `construct_finder_sql'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.11.1/lib/active_record/base.rb:343:in `find'
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.11.1/lib/active_record/deprecated_finders.rb:37:in `find_all'
+    /app/controllers/recipe_controller.rb:10:in `list'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/scaffolding.rb:94:in `index'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:756:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:756:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/filters.rb:295:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/rescue.rb:80:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:356:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:356:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/dispatcher.rb:32:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:105:in `handle_dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:71:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:155:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:94:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:57:in `dispatch'
+    script/server:49
+
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing RecipeController#index (for 127.0.0.1 at Mon Oct 24 13:51:44 CEST 2005)
+  Parameters: {"action"=>"index", "controller"=>"recipe"}
+  [4;33mRecipe Load (0.122589)[m   [1;37mSELECT * FROM recipes [m
+
+
+ActionController::MissingTemplate (Missing template ./script/../config/../app/views//recipe/index.rhtml):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:827:in `assert_existance_of_template_file'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:586:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/layout.rb:216:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:591:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/layout.rb:216:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:604:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/layout.rb:216:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:627:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/layout.rb:216:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:757:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/filters.rb:295:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/rescue.rb:80:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:356:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:356:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/dispatcher.rb:32:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:105:in `handle_dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:71:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:155:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:94:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:57:in `dispatch'
+    script/server:49
+
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing RecipeController#index (for 127.0.0.1 at Mon Oct 24 13:59:16 CEST 2005)
+  Parameters: {"action"=>"index", "controller"=>"recipe"}
+  [4;35mRecipe Load (0.003729)[m   [0;37mSELECT * FROM recipes [m
+
+
+ActionController::MissingTemplate (Missing template ./script/../config/../app/views//recipe/index.rhtml):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:827:in `assert_existance_of_template_file'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:586:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/layout.rb:216:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:591:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/layout.rb:216:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:604:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/layout.rb:216:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:627:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/layout.rb:216:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:757:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/filters.rb:295:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/rescue.rb:80:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:356:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:356:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/dispatcher.rb:32:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:105:in `handle_dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:71:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:155:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:94:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:57:in `dispatch'
+    script/server:49
+
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing RecipeController#index (for 127.0.0.1 at Mon Oct 24 14:02:12 CEST 2005)
+  Parameters: {"action"=>"index", "controller"=>"recipe"}
+  [4;33mRecipe Load (0.003431)[m   [1;37mSELECT * FROM recipes [m
+
+
+ActionController::MissingTemplate (Missing template ./script/../config/../app/views//recipe/index.rhtml):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:827:in `assert_existance_of_template_file'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:586:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/layout.rb:216:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:591:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/layout.rb:216:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:604:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/layout.rb:216:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:627:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/layout.rb:216:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:757:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/filters.rb:295:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/rescue.rb:80:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:356:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:356:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/dispatcher.rb:32:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:105:in `handle_dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:71:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:155:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:94:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:57:in `dispatch'
+    script/server:49
+
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing RecipeController#list (for 127.0.0.1 at Mon Oct 24 14:02:16 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"recipe"}
+  [4;35mRecipe Load (0.003433)[m   [0;37mSELECT * FROM recipes [m
+Rendering recipe/list (200 OK)
+  [4;33mRecipe Columns (0.022675)[m   [1;37mSHOW FIELDS FROM recipes[m
+  [4;35mCategory Load (0.072826)[m   [0;37mSELECT * FROM categories WHERE categories.id = 1 LIMIT 1[m
+  [4;33mCategory Columns (0.003293)[m   [1;37mSHOW FIELDS FROM categories[m
+Completed in 0.16348 (6 reqs/sec) | Rendering: 0.14453 (88%) | DB: 0.00343 (2%) [http://localhost/recipe/list]
+
+
+Processing RecipeController#new (for 127.0.0.1 at Mon Oct 24 14:02:21 CEST 2005)
+  Parameters: {"action"=>"new", "controller"=>"recipe"}
+  [4;35mRecipe Columns (0.004609)[m   [0;37mSHOW FIELDS FROM recipes[m
+  [4;33mCategory Load (0.002451)[m   [1;37mSELECT * FROM categories [m
+Rendering recipe/new (200 OK)
+  [4;35mCategory Columns (0.029463)[m   [0;37mSHOW FIELDS FROM categories[m
+Completed in 0.08133 (12 reqs/sec) | Rendering: 0.05674 (69%) | DB: 0.00706 (8%) [http://localhost/recipe/new]
+
+
+Processing RecipeController#new (for 127.0.0.1 at Mon Oct 24 14:02:49 CEST 2005)
+  Parameters: {"action"=>"new", "controller"=>"recipe"}
+  [4;33mRecipe Columns (0.004511)[m   [1;37mSHOW FIELDS FROM recipes[m
+  [4;35mCategory Load (0.002344)[m   [0;37mSELECT * FROM categories [m
+Rendering recipe/new (200 OK)
+  [4;33mCategory Columns (0.003447)[m   [1;37mSHOW FIELDS FROM categories[m
+Completed in 0.04541 (22 reqs/sec) | Rendering: 0.02120 (46%) | DB: 0.00686 (15%) [http://localhost/recipe/new]
+
+
+Processing RecipeController#new (for 127.0.0.1 at Mon Oct 24 14:28:10 CEST 2005)
+  Parameters: {"action"=>"new", "controller"=>"recipe"}
+  [4;35mRecipe Columns (0.004423)[m   [0;37mSHOW FIELDS FROM recipes[m
+  [4;33mCategory Load (0.016742)[m   [1;37mSELECT * FROM categories [m
+Rendering recipe/new (200 OK)
+  [4;35mCategory Columns (0.003404)[m   [0;37mSHOW FIELDS FROM categories[m
+Completed in 0.14383 (6 reqs/sec) | Rendering: 0.07071 (49%) | DB: 0.02116 (14%) [http://127.0.0.1/recipe/new]
+
+
+Processing RecipeController#create (for 127.0.0.1 at Mon Oct 24 14:28:43 CEST 2005)
+  Parameters: {"action"=>"create", "controller"=>"recipe", "recipe"=>{"title"=>"Killer", "category_id"=>"1", "description"=>"Mushrooms", "instructions"=>" juistja"}}
+  [4;33mRecipe Columns (0.019872)[m   [1;37mSHOW FIELDS FROM recipes[m
+  [4;35mRecipe Columns (0.033239)[m   [0;37mSHOW FIELDS FROM recipes[m
+  [4;33mSQL (0.035900)[m   [1;37mBEGIN[m
+  [4;35mSQL (0.154637)[m   [0;37mINSERT INTO recipes (`title`, `date`, `category_id`, `description`, `instructions`) VALUES('Killer', '2005-10-24', 1, 'Mushrooms', ' juistja')[m
+  [4;33mSQL (0.009058)[m   [1;37mCOMMIT[m
+Redirected to http://127.0.0.1:3000/recipe/list
+Completed in 0.31404 (3 reqs/sec) | DB: 0.25271 (80%) [http://127.0.0.1/recipe/create]
+
+
+Processing RecipeController#list (for 127.0.0.1 at Mon Oct 24 14:28:44 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"recipe"}
+  [4;35mRecipe Load (0.003768)[m   [0;37mSELECT * FROM recipes [m
+Rendering recipe/list (200 OK)
+  [4;33mRecipe Columns (0.004343)[m   [1;37mSHOW FIELDS FROM recipes[m
+  [4;35mCategory Load (0.002314)[m   [0;37mSELECT * FROM categories WHERE categories.id = 1 LIMIT 1[m
+  [4;33mCategory Columns (0.004112)[m   [1;37mSHOW FIELDS FROM categories[m
+  [4;35mCategory Load (0.002369)[m   [0;37mSELECT * FROM categories WHERE categories.id = 1 LIMIT 1[m
+Completed in 0.09009 (11 reqs/sec) | Rendering: 0.06136 (68%) | DB: 0.00377 (4%) [http://127.0.0.1/recipe/list]
+
+
+Processing RecipeController#show (for 127.0.0.1 at Mon Oct 24 14:28:49 CEST 2005)
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"recipe"}
+  [4;33mRecipe Load (0.003774)[m   [1;37mSELECT * FROM recipes WHERE recipes.id = '3' LIMIT 1[m
+  [4;35mRecipe Columns (0.004348)[m   [0;37mSHOW FIELDS FROM recipes[m
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/scaffolds/layout.rhtml (200 OK)
+Completed in 0.08199 (12 reqs/sec) | Rendering: 0.01887 (23%) | DB: 0.00812 (9%) [http://127.0.0.1/recipe/show/3]
+
+
+Processing RecipeController#list (for 127.0.0.1 at Mon Oct 24 14:33:24 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"recipe"}
+  [4;33mRecipe Load (0.004215)[m   [1;37mSELECT * FROM recipes [m
+Rendering recipe/list (200 OK)
+  [4;35mRecipe Columns (0.013662)[m   [0;37mSHOW FIELDS FROM recipes[m
+  [4;33mCategory Load (0.213984)[m   [1;37mSELECT * FROM categories WHERE categories.id = 1 LIMIT 1[m
+  [4;35mCategory Columns (0.009671)[m   [0;37mSHOW FIELDS FROM categories[m
+  [4;33mCategory Load (0.042231)[m   [1;37mSELECT * FROM categories WHERE categories.id = 1 LIMIT 1[m
+Completed in 0.33653 (2 reqs/sec) | Rendering: 0.31680 (94%) | DB: 0.00422 (1%) [http://127.0.0.1/recipe/list]
+
+
+Processing RecipeController#delete (for 127.0.0.1 at Mon Oct 24 14:34:03 CEST 2005)
+  Parameters: {"action"=>"delete", "id"=>"2", "controller"=>"recipe"}
+
+
+ActionController::UnknownAction (No action responded to delete):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/filters.rb:295:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/rescue.rb:80:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:356:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:356:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/dispatcher.rb:32:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:105:in `handle_dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:71:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:155:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:94:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:57:in `dispatch'
+    script/server:49
+
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing RecipeController#delete (for 127.0.0.1 at Mon Oct 24 14:36:57 CEST 2005)
+  Parameters: {"action"=>"delete", "id"=>"2", "controller"=>"recipe"}
+  [4;35mRecipe Load (0.012170)[m   [0;37mSELECT * FROM recipes WHERE recipes.id = '2' LIMIT 1[m
+  [4;33mSQL (0.010214)[m   [1;37mBEGIN[m
+  [4;35mRecipe Columns (0.023825)[m   [0;37mSHOW FIELDS FROM recipes[m
+  [4;33mRecipe Destroy (0.179014)[m   [1;37m DELETE FROM recipes
+ WHERE id = 2
+[m
+  [4;35mSQL (0.000894)[m   [0;37mCOMMIT[m
+Redirected to http://127.0.0.1:3000/recipe/list
+Completed in 0.24894 (4 reqs/sec) | DB: 0.22612 (90%) [http://127.0.0.1/recipe/delete/2]
+
+
+Processing RecipeController#list (for 127.0.0.1 at Mon Oct 24 14:36:57 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"recipe"}
+  [4;33mRecipe Load (0.005139)[m   [1;37mSELECT * FROM recipes [m
+Rendering recipe/list (200 OK)
+  [4;35mRecipe Columns (0.013347)[m   [0;37mSHOW FIELDS FROM recipes[m
+  [4;33mCategory Load (0.002294)[m   [1;37mSELECT * FROM categories WHERE categories.id = 1 LIMIT 1[m
+  [4;35mCategory Columns (0.003351)[m   [0;37mSHOW FIELDS FROM categories[m
+Completed in 0.06019 (16 reqs/sec) | Rendering: 0.03988 (66%) | DB: 0.00514 (8%) [http://127.0.0.1/recipe/list]
+
+
+Processing RecipeController#delete (for 127.0.0.1 at Mon Oct 24 14:45:11 CEST 2005)
+  Parameters: {"action"=>"delete", "id"=>"2", "controller"=>"recipe"}
+  [4;33mRecipe Load (0.003329)[m   [1;37mSELECT * FROM recipes WHERE recipes.id = '2' LIMIT 1[m
+
+
+ActiveRecord::RecordNotFound (Couldn't find Recipe with ID=2):
+    /usr/local/lib/ruby/gems/1.8/gems/activerecord-1.11.1/lib/active_record/base.rb:357:in `find'
+    /app/controllers/recipe_controller.rb:30:in `delete'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:756:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:756:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/filters.rb:295:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/rescue.rb:80:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:356:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:356:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/dispatcher.rb:32:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:105:in `handle_dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:71:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:155:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:94:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:57:in `dispatch'
+    script/server:49
+
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing RecipeController#index (for 127.0.0.1 at Mon Oct 24 14:45:22 CEST 2005)
+  Parameters: {"action"=>"index", "controller"=>"recipe"}
+  [4;35mRecipe Load (0.003624)[m   [0;37mSELECT * FROM recipes [m
+Rendering  within layouts/standard-layout
+
+
+ActionController::MissingTemplate (Missing template ./script/../config/../app/views//recipe/index.rhtml):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:827:in `assert_existance_of_template_file'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:586:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/layout.rb:216:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:591:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/layout.rb:216:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:604:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/layout.rb:216:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:627:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/layout.rb:210:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:757:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/filters.rb:295:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/rescue.rb:80:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:356:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:356:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/dispatcher.rb:32:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:105:in `handle_dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:71:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:155:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:94:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:57:in `dispatch'
+    script/server:49
+
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing RecipeController#index (for 127.0.0.1 at Mon Oct 24 14:45:43 CEST 2005)
+  Parameters: {"action"=>"index", "controller"=>"recipe"}
+  [4;33mRecipe Load (0.040342)[m   [1;37mSELECT * FROM recipes [m
+Rendering  within layouts/standard-layout
+
+
+ActionController::MissingTemplate (Missing template ./script/../config/../app/views//recipe/index.rhtml):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:827:in `assert_existance_of_template_file'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:586:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/layout.rb:216:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:591:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/layout.rb:216:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:604:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/layout.rb:216:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:627:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/layout.rb:210:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:757:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/filters.rb:295:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/rescue.rb:80:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:356:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:356:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/dispatcher.rb:32:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:105:in `handle_dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:71:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:155:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:94:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:57:in `dispatch'
+    script/server:49
+
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing RecipeController#list (for 127.0.0.1 at Mon Oct 24 14:48:03 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"recipe"}
+  [4;35mRecipe Load (0.003452)[m   [0;37mSELECT * FROM recipes [m
+Rendering  within layouts/standard-layout
+Rendering recipe/list (200 OK)
+  [4;33mRecipe Columns (0.004360)[m   [1;37mSHOW FIELDS FROM recipes[m
+  [4;35mCategory Load (0.002308)[m   [0;37mSELECT * FROM categories WHERE categories.id = 1 LIMIT 1[m
+  [4;33mCategory Columns (0.003368)[m   [1;37mSHOW FIELDS FROM categories[m
+Completed in 0.06538 (15 reqs/sec) | Rendering: 0.04649 (71%) | DB: 0.00345 (5%) [http://127.0.0.1/recipe/list]
+
+
+Processing RecipeController#show (for 127.0.0.1 at Mon Oct 24 14:48:08 CEST 2005)
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"recipe"}
+  [4;35mRecipe Load (0.003850)[m   [0;37mSELECT * FROM recipes WHERE recipes.id = '3' LIMIT 1[m
+  [4;33mRecipe Columns (0.015663)[m   [1;37mSHOW FIELDS FROM recipes[m
+Rendering layouts/standard-layout (200 OK)
+Completed in 0.10438 (9 reqs/sec) | Rendering: 0.00739 (7%) | DB: 0.01951 (18%) [http://127.0.0.1/recipe/show/3]
+
+
+Processing RecipeController#edit (for 127.0.0.1 at Mon Oct 24 14:48:13 CEST 2005)
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"recipe"}
+  [4;35mRecipe Load (0.003620)[m   [0;37mSELECT * FROM recipes WHERE recipes.id = '3' LIMIT 1[m
+  [4;33mCategory Load (0.002364)[m   [1;37mSELECT * FROM categories [m
+Rendering  within layouts/standard-layout
+Rendering recipe/edit (200 OK)
+  [4;35mRecipe Columns (0.004525)[m   [0;37mSHOW FIELDS FROM recipes[m
+  [4;33mCategory Columns (0.003436)[m   [1;37mSHOW FIELDS FROM categories[m
+Completed in 0.08283 (12 reqs/sec) | Rendering: 0.05874 (70%) | DB: 0.00598 (7%) [http://127.0.0.1/recipe/edit/3]
+
+
+Processing RecipeController#edit (for 127.0.0.1 at Mon Oct 24 14:49:35 CEST 2005)
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"recipe"}
+  [4;35mRecipe Load (0.003548)[m   [0;37mSELECT * FROM recipes WHERE recipes.id = '3' LIMIT 1[m
+  [4;33mCategory Load (0.002345)[m   [1;37mSELECT * FROM categories [m
+Rendering  within layouts/standard-layout
+Rendering recipe/edit (200 OK)
+  [4;35mRecipe Columns (0.004404)[m   [0;37mSHOW FIELDS FROM recipes[m
+  [4;33mCategory Columns (0.003390)[m   [1;37mSHOW FIELDS FROM categories[m
+Completed in 0.06069 (16 reqs/sec) | Rendering: 0.03659 (60%) | DB: 0.00589 (9%) [http://127.0.0.1/recipe/edit/3]
+
+
+Processing RecipeController#index (for 127.0.0.1 at Mon Oct 24 14:50:19 CEST 2005)
+  Parameters: {"action"=>"index", "controller"=>"recipe"}
+  [4;35mRecipe Load (0.003489)[m   [0;37mSELECT * FROM recipes [m
+Rendering  within layouts/standard-layout
+
+
+ActionController::MissingTemplate (Missing template ./script/../config/../app/views//recipe/index.rhtml):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:827:in `assert_existance_of_template_file'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:586:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/layout.rb:216:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:591:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/layout.rb:216:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:604:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/layout.rb:216:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:627:in `render_with_no_layout'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/layout.rb:210:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:757:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/filters.rb:295:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/rescue.rb:80:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:356:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:356:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/dispatcher.rb:32:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:105:in `handle_dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:71:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:155:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:94:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:57:in `dispatch'
+    script/server:49
+
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing RecipeController#list (for 127.0.0.1 at Mon Oct 24 14:50:24 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"recipe"}
+  [4;33mRecipe Load (0.003504)[m   [1;37mSELECT * FROM recipes [m
+Rendering  within layouts/standard-layout
+Rendering recipe/list (200 OK)
+  [4;35mRecipe Columns (0.004588)[m   [0;37mSHOW FIELDS FROM recipes[m
+  [4;33mCategory Load (0.002357)[m   [1;37mSELECT * FROM categories WHERE categories.id = 1 LIMIT 1[m
+  [4;35mCategory Columns (0.003366)[m   [0;37mSHOW FIELDS FROM categories[m
+Completed in 0.05438 (18 reqs/sec) | Rendering: 0.03554 (65%) | DB: 0.00350 (6%) [http://127.0.0.1/recipe/list]
+
+
+Processing CategoryController#list (for 127.0.0.1 at Mon Oct 24 14:50:45 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"category"}
+  [4;33mCategory Count (0.035349)[m   [1;37mSELECT COUNT(*) FROM categories [m
+  [4;35mCategory Load (0.002390)[m   [0;37mSELECT * FROM categories LIMIT 10[m
+  [4;33mCategory Columns (0.003485)[m   [1;37mSHOW FIELDS FROM categories[m
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/scaffolds/layout.rhtml (200 OK)
+Completed in 0.17967 (5 reqs/sec) | Rendering: 0.00532 (2%) | DB: 0.04122 (22%) [http://127.0.0.1/category/list]
+
+
+Processing CategoryController#show (for 127.0.0.1 at Mon Oct 24 14:50:48 CEST 2005)
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"category"}
+  [4;35mCategory Load (0.002391)[m   [0;37mSELECT * FROM categories WHERE categories.id = '1' LIMIT 1[m
+  [4;33mCategory Columns (0.003483)[m   [1;37mSHOW FIELDS FROM categories[m
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/scaffolds/layout.rhtml (200 OK)
+Completed in 0.03422 (29 reqs/sec) | Rendering: 0.00525 (15%) | DB: 0.00587 (17%) [http://127.0.0.1/category/show/1]
+
+
+Processing CategoryController#list (for 127.0.0.1 at Mon Oct 24 14:50:53 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"category"}
+  [4;35mCategory Count (0.001848)[m   [0;37mSELECT COUNT(*) FROM categories [m
+  [4;33mCategory Load (0.002364)[m   [1;37mSELECT * FROM categories LIMIT 10[m
+  [4;35mCategory Columns (0.003397)[m   [0;37mSHOW FIELDS FROM categories[m
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/scaffolds/layout.rhtml (200 OK)
+Completed in 0.04611 (21 reqs/sec) | Rendering: 0.00569 (12%) | DB: 0.00761 (16%) [http://127.0.0.1/category/list]
+
+
+Processing CategoryController#show (for 127.0.0.1 at Mon Oct 24 14:50:55 CEST 2005)
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"category"}
+  [4;33mCategory Load (0.002361)[m   [1;37mSELECT * FROM categories WHERE categories.id = '2' LIMIT 1[m
+  [4;35mCategory Columns (0.003419)[m   [0;37mSHOW FIELDS FROM categories[m
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/scaffolds/layout.rhtml (200 OK)
+Completed in 0.03416 (29 reqs/sec) | Rendering: 0.00527 (15%) | DB: 0.00578 (16%) [http://127.0.0.1/category/show/2]
+
+
+Processing CategoryController#list (for 127.0.0.1 at Mon Oct 24 14:50:59 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"category"}
+  [4;33mCategory Count (0.002468)[m   [1;37mSELECT COUNT(*) FROM categories [m
+  [4;35mCategory Load (0.002447)[m   [0;37mSELECT * FROM categories LIMIT 10[m
+  [4;33mCategory Columns (0.003475)[m   [1;37mSHOW FIELDS FROM categories[m
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/scaffolds/layout.rhtml (200 OK)
+Completed in 0.04708 (21 reqs/sec) | Rendering: 0.00571 (12%) | DB: 0.00839 (17%) [http://127.0.0.1/category/list]
+
+
+Processing CategoryController#list (for 127.0.0.1 at Mon Oct 24 15:04:34 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"category"}
+  [4;35mCategory Count (0.001825)[m   [0;37mSELECT COUNT(*) FROM categories [m
+  [4;33mCategory Load (0.002339)[m   [1;37mSELECT * FROM categories LIMIT 10[m
+  [4;35mCategory Columns (0.003452)[m   [0;37mSHOW FIELDS FROM categories[m
+Rendering layouts/standard-layout (200 OK)
+Completed in 0.04788 (20 reqs/sec) | Rendering: 0.00680 (14%) | DB: 0.00762 (15%) [http://127.0.0.1/category/list]
+
+
+Processing CategoryController#show (for 127.0.0.1 at Mon Oct 24 15:42:32 CEST 2005)
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"category"}
+  [4;33mCategory Load (0.002333)[m   [1;37mSELECT * FROM categories WHERE categories.id = '1' LIMIT 1[m
+  [4;35mCategory Columns (0.003388)[m   [0;37mSHOW FIELDS FROM categories[m
+Rendering layouts/standard-layout (200 OK)
+Completed in 0.03525 (28 reqs/sec) | Rendering: 0.00660 (18%) | DB: 0.00572 (16%) [http://127.0.0.1/category/show/1]
+
+
+Processing CategoryController#list (for 127.0.0.1 at Mon Oct 24 15:42:36 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"category"}
+  [4;33mCategory Count (0.047725)[m   [1;37mSELECT COUNT(*) FROM categories [m
+  [4;35mCategory Load (0.002792)[m   [0;37mSELECT * FROM categories LIMIT 10[m
+  [4;33mCategory Columns (0.003821)[m   [1;37mSHOW FIELDS FROM categories[m
+Rendering layouts/standard-layout (200 OK)
+Completed in 0.14769 (6 reqs/sec) | Rendering: 0.04134 (27%) | DB: 0.05434 (36%) [http://127.0.0.1/category/list]
+
+
+Processing CategoryController#show (for 127.0.0.1 at Mon Oct 24 15:42:44 CEST 2005)
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"category"}
+  [4;35mCategory Load (0.032416)[m   [0;37mSELECT * FROM categories WHERE categories.id = '1' LIMIT 1[m
+  [4;33mCategory Columns (0.066643)[m   [1;37mSHOW FIELDS FROM categories[m
+Rendering layouts/standard-layout (200 OK)
+Completed in 0.12869 (7 reqs/sec) | Rendering: 0.00671 (5%) | DB: 0.09906 (76%) [http://127.0.0.1/category/show/1]
+
+
+Processing CategoryController#list (for 127.0.0.1 at Mon Oct 24 15:42:47 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"category"}
+  [4;35mCategory Count (0.001790)[m   [0;37mSELECT COUNT(*) FROM categories [m
+  [4;33mCategory Load (0.002404)[m   [1;37mSELECT * FROM categories LIMIT 10[m
+  [4;35mCategory Columns (0.003425)[m   [0;37mSHOW FIELDS FROM categories[m
+Rendering layouts/standard-layout (200 OK)
+Completed in 0.04686 (21 reqs/sec) | Rendering: 0.00692 (14%) | DB: 0.00762 (16%) [http://127.0.0.1/category/list]
+
+
+Processing CategoryController#show (for 127.0.0.1 at Mon Oct 24 15:42:49 CEST 2005)
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"category"}
+  [4;33mCategory Load (0.002406)[m   [1;37mSELECT * FROM categories WHERE categories.id = '2' LIMIT 1[m
+  [4;35mCategory Columns (0.003498)[m   [0;37mSHOW FIELDS FROM categories[m
+Rendering layouts/standard-layout (200 OK)
+Completed in 0.03794 (26 reqs/sec) | Rendering: 0.00689 (18%) | DB: 0.00590 (15%) [http://127.0.0.1/category/show/2]
+
+
+Processing CategoryController#list (for 127.0.0.1 at Mon Oct 24 15:42:53 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"category"}
+  [4;33mCategory Count (0.001858)[m   [1;37mSELECT COUNT(*) FROM categories [m
+  [4;35mCategory Load (0.002361)[m   [0;37mSELECT * FROM categories LIMIT 10[m
+  [4;33mCategory Columns (0.003569)[m   [1;37mSHOW FIELDS FROM categories[m
+Rendering layouts/standard-layout (200 OK)
+Completed in 0.04569 (21 reqs/sec) | Rendering: 0.00674 (14%) | DB: 0.00779 (17%) [http://127.0.0.1/category/list]
+
+
+Processing RecipeController#list (for 127.0.0.1 at Mon Oct 24 15:43:23 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"recipe"}
+  [4;35mRecipe Load (0.003435)[m   [0;37mSELECT * FROM recipes [m
+Rendering  within layouts/standard-layout
+Rendering recipe/list (200 OK)
+  [4;33mRecipe Columns (0.004315)[m   [1;37mSHOW FIELDS FROM recipes[m
+  [4;35mCategory Load (0.002352)[m   [0;37mSELECT * FROM categories WHERE categories.id = 1 LIMIT 1[m
+  [4;33mCategory Columns (0.003465)[m   [1;37mSHOW FIELDS FROM categories[m
+Completed in 0.06648 (15 reqs/sec) | Rendering: 0.04662 (70%) | DB: 0.00344 (5%) [http://127.0.0.1/recipe/list]
+
+
+Processing RecipeController#show (for 127.0.0.1 at Mon Oct 24 15:43:28 CEST 2005)
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"recipe"}
+  [4;35mRecipe Load (0.003660)[m   [0;37mSELECT * FROM recipes WHERE recipes.id = '3' LIMIT 1[m
+  [4;33mRecipe Columns (0.004477)[m   [1;37mSHOW FIELDS FROM recipes[m
+Rendering layouts/standard-layout (200 OK)
+Completed in 0.04214 (23 reqs/sec) | Rendering: 0.00670 (15%) | DB: 0.00814 (19%) [http://127.0.0.1/recipe/show/3]
+
+
+Processing RecipeController#list (for 127.0.0.1 at Mon Oct 24 15:43:33 CEST 2005)
+  Parameters: {"category"=>"snacks", "action"=>"list", "controller"=>"recipe"}
+  [4;35mRecipe Load (0.003465)[m   [0;37mSELECT * FROM recipes [m
+Rendering  within layouts/standard-layout
+Rendering recipe/list (200 OK)
+  [4;33mRecipe Columns (0.004493)[m   [1;37mSHOW FIELDS FROM recipes[m
+  [4;35mCategory Load (0.002269)[m   [0;37mSELECT * FROM categories WHERE categories.id = 1 LIMIT 1[m
+  [4;33mCategory Columns (0.003414)[m   [1;37mSHOW FIELDS FROM categories[m
+Completed in 0.05587 (17 reqs/sec) | Rendering: 0.03703 (66%) | DB: 0.00347 (6%) [http://127.0.0.1/recipe/list?category=snacks]
+
+
+Processing RecipeController#list (for 127.0.0.1 at Mon Oct 24 17:17:49 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"recipe"}
+  [4;35mRecipe Load (0.003452)[m   [0;37mSELECT * FROM recipes [m
+Rendering  within layouts/standard-layout
+Rendering recipe/list (200 OK)
+  [4;33mRecipe Columns (0.004336)[m   [1;37mSHOW FIELDS FROM recipes[m
+  [4;35mCategory Load (0.002280)[m   [0;37mSELECT * FROM categories WHERE categories.id = 1 LIMIT 1[m
+  [4;33mCategory Columns (0.003384)[m   [1;37mSHOW FIELDS FROM categories[m
+
+
+ActionView::ActionViewError (No rhtml, rxml, or delegate template found for layouts/standard-layout):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_view/base.rb:220:in `pick_template_extension'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_view/base.rb:163:in `render_file'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/layout.rb:214:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:757:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/filters.rb:295:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/rescue.rb:80:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:356:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:356:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/dispatcher.rb:32:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:105:in `handle_dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:71:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:155:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:94:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:57:in `dispatch'
+    script/server:49
+
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing RecipeController#list (for 127.0.0.1 at Mon Oct 24 17:18:08 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"recipe"}
+  [4;35mRecipe Load (0.015376)[m   [0;37mSELECT * FROM recipes [m
+Rendering recipe/list (200 OK)
+  [4;33mRecipe Columns (0.062841)[m   [1;37mSHOW FIELDS FROM recipes[m
+  [4;35mCategory Load (0.032323)[m   [0;37mSELECT * FROM categories WHERE categories.id = 1 LIMIT 1[m
+  [4;33mCategory Columns (0.003437)[m   [1;37mSHOW FIELDS FROM categories[m
+Completed in 0.61183 (1 reqs/sec) | Rendering: 0.12008 (19%) | DB: 0.01538 (2%) [http://localhost/recipe/list]
+
+
+Processing RecipeController#list (for 127.0.0.1 at Mon Oct 24 17:18:38 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"recipe"}
+  [4;35mRecipe Load (0.003442)[m   [0;37mSELECT * FROM recipes [m
+Rendering  within layouts/recipes.rhtml
+Rendering recipe/list (200 OK)
+  [4;33mRecipe Columns (0.004379)[m   [1;37mSHOW FIELDS FROM recipes[m
+  [4;35mCategory Load (0.002317)[m   [0;37mSELECT * FROM categories WHERE categories.id = 1 LIMIT 1[m
+  [4;33mCategory Columns (0.003429)[m   [1;37mSHOW FIELDS FROM categories[m
+
+
+ActionView::ActionViewError (No rhtml, rxml, or delegate template found for layouts/recipes.rhtml):
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_view/base.rb:220:in `pick_template_extension'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_view/base.rb:163:in `render_file'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/layout.rb:214:in `render_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:25:in `render'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:757:in `perform_action_without_filters'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/filters.rb:295:in `perform_action_without_benchmark'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `measure'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/benchmarking.rb:41:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/rescue.rb:80:in `perform_action'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:356:in `send'
+    /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/base.rb:356:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/dispatcher.rb:32:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:105:in `handle_dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:71:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:155:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:144:in `start_thread'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:94:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `each'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:89:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/1.8/webrick/server.rb:79:in `start'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-0.13.1/lib/webrick_server.rb:57:in `dispatch'
+    script/server:49
+
+
+Rendering /usr/local/lib/ruby/gems/1.8/gems/actionpack-1.9.1/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing RecipeController#list (for 127.0.0.1 at Mon Oct 24 17:18:47 CEST 2005)
+  Parameters: {"action"=>"list", "controller"=>"recipe"}
+  [4;35mRecipe Load (0.003440)[m   [0;37mSELECT * FROM recipes [m
+Rendering  within layouts/recipes
+Rendering recipe/list (200 OK)
+  [4;33mRecipe Columns (0.004375)[m   [1;37mSHOW FIELDS FROM recipes[m
+  [4;35mCategory Load (0.002320)[m   [0;37mSELECT * FROM categories WHERE categories.id = 1 LIMIT 1[m
+  [4;33mCategory Columns (0.003433)[m   [1;37mSHOW FIELDS FROM categories[m
+Completed in 0.05667 (17 reqs/sec) | Rendering: 0.03712 (65%) | DB: 0.00344 (6%) [http://localhost/recipe/list]

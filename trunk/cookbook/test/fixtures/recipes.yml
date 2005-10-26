@@ -1,0 +1,5 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+first_recipe:
+  id: 1
+another_recipe:
+  id: 2
