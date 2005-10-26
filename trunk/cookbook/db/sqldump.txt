@@ -1,0 +1,43 @@
+-- MySQL dump 9.11
+--
+-- Host: 127.0.0.1    Database: cookbook
+-- ------------------------------------------------------
+-- Server version	4.0.23
+
+--
+-- Table structure for table `categories`
+--
+
+CREATE TABLE categories (
+  id int(11) NOT NULL auto_increment,
+  name varchar(55) default NULL,
+  PRIMARY KEY  (id)
+) TYPE=MyISAM;
+
+--
+-- Dumping data for table `categories`
+--
+
+INSERT INTO categories VALUES (1,'snacks');
+INSERT INTO categories VALUES (2,'beverages');
+
+--
+-- Table structure for table `recipes`
+--
+
+CREATE TABLE recipes (
+  id int(11) NOT NULL auto_increment,
+  title varchar(255) NOT NULL default '',
+  description varchar(255) default NULL,
+  date date default NULL,
+  instructions text,
+  category_id int(6) default NULL,
+  PRIMARY KEY  (id)
+) TYPE=MyISAM;
+
+--
+-- Dumping data for table `recipes`
+--
+
+INSERT INTO recipes VALUES (3,'Killer','Mushrooms','2005-10-24',' juistja',1);
+
