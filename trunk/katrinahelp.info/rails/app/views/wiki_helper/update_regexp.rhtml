@@ -1,0 +1,7 @@
+<p><%= @flash[:notice] %></p>
+
+<p>Update the Spam Filter for katrinahelp.info by clicking the link below</p>
+
+<%= link_to "Update Spam Filter", :controller => 'wiki_helper',
+                                  :action => 'update_regexp',
+                                  :approved => true %>
