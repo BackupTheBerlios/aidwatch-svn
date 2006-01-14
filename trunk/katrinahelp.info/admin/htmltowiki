@@ -1,0 +1,10 @@
+#!/usr/bin/perl -w
+use strict;
+my ($html, $wc);
+
+use HTML::WikiConverter;
+undef $/;  # read whole file
+$html = <>;
+$wc = new HTML::WikiConverter( dialect => 'MediaWiki' );
+print $wc->html2wiki( $html );
+print "\n";
